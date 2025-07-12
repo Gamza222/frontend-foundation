@@ -1,0 +1,205 @@
+// ComponentLoadingFallback SCSS Module
+// Component-level loading fallback with subtle animations
+
+.componentLoading {
+  @include flex-center;
+  flex-direction: column;
+  gap: spacing('sm');
+  padding: spacing('md');
+  border-radius: radius('md');
+  background: rgba(color('gray', 50), 0.5);
+  border: 1px solid rgba(color('gray', 200), 0.3);
+  position: relative;
+
+  // Smooth entrance animation
+  animation: componentFadeIn 0.2s ease-out;
+
+  // Height variations
+  &.small {
+    min-height: 3rem;
+    padding: spacing('sm');
+  }
+
+  &.medium {
+    min-height: 5rem;
+    padding: spacing('md');
+  }
+
+  &.large {
+    min-height: 8rem;
+    padding: spacing('lg');
+  }
+
+  // Subtle shimmer effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(color('primary', 500), 0.05), transparent);
+    animation: componentShimmer 1.5s infinite;
+  }
+}
+
+.spinner {
+  @include spinner('sm');
+  color: color('primary', 500);
+  flex-shrink: 0;
+
+  // Size variations
+  &.tiny {
+    @include spinner('sm');
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  &.small {
+    @include spinner('sm');
+  }
+
+  &.medium {
+    @include spinner('md');
+  }
+
+  // Gentle rotation with slight pause
+  animation: componentSpin 1.2s ease-in-out infinite;
+}
+
+.message {
+  color: color('gray', 500);
+  font-size: font-size('xs');
+  font-weight: font-weight('normal');
+  text-align: center;
+  opacity: 0.7;
+
+  // Subtle text animation
+  animation: componentMessageFade 1.8s ease-in-out infinite;
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: spacing('xs');
+  width: 100%;
+
+  .bar {
+    @include loading-skeleton;
+    height: 0.5rem;
+    border-radius: radius('sm');
+
+    &:nth-child(1) {
+      width: 100%;
+      animation-delay: 0s;
+    }
+
+    &:nth-child(2) {
+      width: 75%;
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+      width: 50%;
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+// Keyframe animations
+@keyframes componentFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes componentShimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes componentSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes componentMessageFade {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+// Responsive adjustments
+@include responsive('sm') {
+  .componentLoading {
+    &.small {
+      min-height: 4rem;
+    }
+
+    &.medium {
+      min-height: 6rem;
+    }
+
+    &.large {
+      min-height: 10rem;
+    }
+  }
+
+  .message {
+    font-size: font-size('sm');
+  }
+}
+
+// Dark mode support
+@media (prefers-color-scheme: dark) {
+  .componentLoading {
+    background: rgba(color('gray', 800), 0.5);
+    border-color: rgba(color('gray', 700), 0.3);
+
+    &::before {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(color('primary', 400), 0.08),
+        transparent
+      );
+    }
+  }
+
+  .message {
+    color: color('gray', 400);
+  }
+
+  .spinner {
+    color: color('primary', 400);
+  }
+
+  .skeleton .bar {
+    background: linear-gradient(
+      90deg,
+      color('gray', 700) 25%,
+      color('gray', 600) 50%,
+      color('gray', 700) 75%
+    );
+  }
+}
