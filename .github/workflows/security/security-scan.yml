@@ -1,0 +1,120 @@
+name: Security Scanning
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  schedule:
+    - cron: '0 2 * * 1' # Weekly security scan
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  # ============================================================================
+  # DEPENDENCY SECURITY SCANNING
+  # ============================================================================
+
+  dependency-scan:
+    name: Dependency Security Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run npm audit
+        run: |
+          echo "🔍 Running npm audit..."
+          npm audit --audit-level=moderate
+          echo "✅ npm audit completed"
+
+      - name: Run Snyk security scan
+        uses: snyk/actions/node@master
+        continue-on-error: true
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --severity-threshold=high --file=package.json
+
+      - name: Run Snyk code scan
+        uses: snyk/actions/node@master
+        continue-on-error: true
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: code test --severity-threshold=high
+
+  # ============================================================================
+  # CODE SECURITY SCANNING
+  # ============================================================================
+
+  code-scan:
+    name: Code Security Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Semgrep security scan
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: >-
+            p/security-audit
+            p/owasp-top-ten
+            p/javascript
+            p/typescript
+            p/react
+        env:
+          SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
+
+      - name: Run TruffleHog secrets scan
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: main
+          head: HEAD
+          extra_args: --debug --only-verified
+
+  # ============================================================================
+  # SECURITY GATES
+  # ============================================================================
+
+  security-gates:
+    name: Security Gates
+    runs-on: ubuntu-latest
+    needs: [dependency-scan, code-scan]
+    if: always()
+
+    steps:
+      - name: Security Gate - Dependencies
+        run: |
+          if [ "${{ needs.dependency-scan.result }}" != "success" ]; then
+            echo "❌ Dependency security scan failed"
+            exit 1
+          fi
+          echo "✅ Dependency security scan passed"
+
+      - name: Security Gate - Code
+        run: |
+          if [ "${{ needs.code-scan.result }}" != "success" ]; then
+            echo "❌ Code security scan failed"
+            exit 1
+          fi
+          echo "✅ Code security scan passed"
+
+      - name: All Security Gates Passed
+        run: |
+          echo "🔒 All security gates passed!"
+          echo "✅ Code is secure for deployment"

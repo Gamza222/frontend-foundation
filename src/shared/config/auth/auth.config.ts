@@ -35,7 +35,7 @@ export const getAuthHeaders = (
 export const isTokenExpired = (token: string): boolean => {
   try {
     const parts = token.split('.');
-    if (parts.length !== 3) return true;
+    if (parts.length !== 3 || !parts[1]) return true;
     const payload = JSON.parse(atob(parts[1])) as JwtPayload;
     const currentTime = Date.now() / 1000;
     return payload.exp < currentTime;
@@ -52,7 +52,7 @@ export const isTokenExpired = (token: string): boolean => {
 export const shouldRefreshToken = (token: string): boolean => {
   try {
     const parts = token.split('.');
-    if (parts.length !== 3) return true;
+    if (parts.length !== 3 || !parts[1]) return true;
     const payload = JSON.parse(atob(parts[1])) as JwtPayload;
     const currentTime = Date.now() / 1000;
     return payload.exp - currentTime < authConfig.refreshThreshold;

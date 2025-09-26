@@ -1,4 +1,4 @@
-import React from 'react';
+// Removed unused React import
 import { render, screen } from '@testing-library/react';
 import { Button } from './Button';
 import { ButtonSize, ButtonVariant } from './Button.types';
@@ -38,7 +38,7 @@ describe('Button', () => {
   test('applies fullWidth styles', () => {
     render(<Button fullWidth>Full Width</Button>);
     const button = screen.getByRole('button', { name: /full width/i });
-    expect(button).toHaveClass('w-full');
+    expect(button).toHaveClass('fullWidth');
   });
 
   test('renders an icon', () => {

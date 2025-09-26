@@ -1,127 +1,139 @@
-// Button Component SCSS Module
-// This works alongside Tailwind utilities for component-specific styling
-@import '../../styles/mixins';
+// Clean Button SCSS Module - NO Tailwind, NO complex mixins
 
 .button {
-  // Base button styling that complements Tailwind classes
-  @include button-base;
-
-  // Custom focus state that's more complex than Tailwind's utilities
-  &:focus-visible {
-    box-shadow:
-      0 0 0 2px color('primary', 500),
-      0 0 0 4px rgba(color('primary', 500), 0.2);
-  }
-
-  // Loading state with custom animation
-  &.loading {
-    position: relative;
-
-    .content {
-      opacity: 0.7;
-    }
-
-    .spinner {
-      @include spinner('sm');
-      position: absolute;
-      left: spacing('sm');
-    }
-  }
-
-  // Enhanced hover states
-  &:hover:not(:disabled):not(.loading) {
-    transform: translateY(-1px);
-    transition: transform transition('fast');
-  }
-
-  &:active:not(:disabled) {
-    transform: translateY(0);
-  }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-family: inherit;
+  line-height: 1;
+  outline: none;
+  gap: 8px;
 }
 
-// Variant-specific styling (complements Tailwind variant classes)
+// Variants
 .primary {
-  // Enhanced primary button with gradient on hover
-  &:hover:not(:disabled) {
-    background: linear-gradient(135deg, color('primary', 600), color('primary', 700));
+  background-color: #3b82f6;
+  color: white;
+
+  &:hover:not(.disabled) {
+    background-color: #2563eb;
   }
 
-  &:active:not(:disabled) {
-    background: color('primary', 700);
+  &:focus-visible {
+    box-shadow:
+      0 0 0 2px #3b82f6,
+      0 0 0 4px rgba(59, 130, 246, 0.2);
   }
 }
 
 .secondary {
-  // Enhanced secondary button with subtle shadow
-  &:hover:not(:disabled) {
-    box-shadow: shadow('sm');
-    border-color: color('gray', 400);
+  background-color: #6b7280;
+  color: white;
+
+  &:hover:not(.disabled) {
+    background-color: #4b5563;
+  }
+
+  &:focus-visible {
+    box-shadow:
+      0 0 0 2px #6b7280,
+      0 0 0 4px rgba(107, 114, 128, 0.2);
   }
 }
 
-// Size-specific enhancements
+.danger {
+  background-color: #ef4444;
+  color: white;
+
+  &:hover:not(.disabled) {
+    background-color: #dc2626;
+  }
+
+  &:focus-visible {
+    box-shadow:
+      0 0 0 2px #ef4444,
+      0 0 0 4px rgba(239, 68, 68, 0.2);
+  }
+}
+
+// Sizes
+.sm {
+  height: 36px;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.md {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.lg {
+  height: 44px;
+  padding: 0 32px;
+  font-size: 18px;
+}
+
+// States
 .fullWidth {
   width: 100%;
+}
 
-  // Custom responsive behavior
-  @include responsive('sm') {
-    max-width: 300px;
-    margin: 0 auto;
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  &:hover {
+    // No hover effect when disabled
   }
 }
 
-// Custom loading spinner animation
-@keyframes buttonSpinner {
-  0% {
+.loading {
+  cursor: not-allowed;
+  position: relative;
+  color: transparent;
+
+  .content {
+    opacity: 0;
+  }
+}
+
+// Spinner
+.spinner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  color: white;
+}
+
+// Icon and content
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+// Animation
+@keyframes spin {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
-  }
-}
-
-.spinner {
-  animation: buttonSpinner 1s linear infinite;
-}
-
-// Interactive states that are hard to achieve with Tailwind alone
-.button {
-  // Ripple effect on click
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    transform: translate(-50%, -50%);
-    transition:
-      width 0.3s,
-      height 0.3s;
-  }
-
-  &:active::before {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-// Dark mode support (if needed)
-@media (prefers-color-scheme: dark) {
-  .button {
-    &.secondary {
-      background-color: color('gray', 700);
-      color: color('gray', 100);
-      border-color: color('gray', 600);
-
-      &:hover:not(:disabled) {
-        background-color: color('gray', 600);
-      }
-    }
   }
 }

@@ -261,7 +261,7 @@ describe('classNames utility', () => {
         zero: 0,
         boolean: true,
         booleanFalse: false,
-        undefined: undefined,
+        undefined,
         null: null,
       };
 

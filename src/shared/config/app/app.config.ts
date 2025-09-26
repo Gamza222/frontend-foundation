@@ -1,5 +1,5 @@
 import { AppConfig } from './app.types';
-import { envConfig } from '../env';
+import { envConfig } from '../../../../config/env';
 import { BuildMode } from '../common';
 
 /**

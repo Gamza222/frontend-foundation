@@ -3,6 +3,7 @@ import { ButtonHTMLAttributes, ReactNode } from 'react';
 export enum ButtonVariant {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
+  DANGER = 'danger',
 }
 
 export enum ButtonSize {

@@ -1,5 +1,5 @@
 import { ApiConfig } from './api.types';
-import { envConfig } from '../env';
+import { envConfig } from '../../../../config/env';
 
 /**
  * API client configuration

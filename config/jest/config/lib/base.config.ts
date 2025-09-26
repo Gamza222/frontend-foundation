@@ -4,60 +4,85 @@ import { resolve } from 'path';
 export const baseConfig: Config.InitialOptions = {
   testEnvironment: 'jsdom',
   roots: ['<rootDir>/src'],
-  setupFilesAfterEnv: [resolve(__dirname, '../../setup/index.ts')],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
-  testRegex: '.*\\.test\\.(ts|tsx)$',
+  preset: 'ts-jest',
   transform: {
-    '^.+\\.(ts|tsx)$': [
+    '^.+\\.(ts|tsx|js|jsx)$': [
       'ts-jest',
       {
-        // TypeScript configuration for Jest
-        tsconfig: {
-          jsx: 'react-jsx',
-          esModuleInterop: true,
-          allowSyntheticDefaultImports: true,
-          skipLibCheck: true,
-          strict: false, // Less strict for tests
-          noImplicitAny: false, // Allow implicit any in tests
-          noUnusedLocals: false, // Allow unused locals in tests
-          noUnusedParameters: false, // Allow unused parameters in tests
-          exactOptionalPropertyTypes: false, // Less strict for tests
-          noImplicitReturns: false, // Allow implicit returns in tests
-          noFallthroughCasesInSwitch: false, // Allow fallthrough in tests
-          noUncheckedIndexedAccess: false, // Allow unchecked indexed access in tests
-          noImplicitOverride: false, // Allow implicit overrides in tests
-        },
+        tsconfig: resolve(__dirname, '../../tsconfig.json'),
         useESM: false,
       },
     ],
+    // Custom SCSS transformer for design tokens and mixins
+    '\\.module\\.scss$': '<rootDir>/src/shared/testing/transformers/scss-transformer.js',
   },
-  globalSetup: '<rootDir>/config/jest/setup/global/setup.ts',
+  transformIgnorePatterns: ['node_modules/(?!(react-error-boundary)/)'],
   moduleNameMapper: {
-    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+    // CSS imports (excluding .module.scss which uses custom transformer)
+    '\\.(css|less)$': 'identity-obj-proxy',
 
-    // Handle image imports
-    '\\.(jpg|jpeg|png|gif|webp)$': '<rootDir>/config/jest/mocks/assets/components/Image.mock.tsx',
-
-    // Handle SVG imports
-    '\\.svg$': '<rootDir>/config/jest/mocks/assets/components/Svg.mock.tsx',
-
-    // Handle other assets like fonts, videos, etc.
+    // Static asset imports (AUTOMATIC mocks)
+    '\\.(jpg|jpeg|png|gif|webp)$':
+      '<rootDir>/src/shared/testing/mocks/assets/components/Image.mock.tsx',
+    '\\.svg$': '<rootDir>/src/shared/testing/mocks/assets/components/Svg.mock.tsx',
     '\\.(woff|woff2|eot|ttf|otf|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/config/jest/mocks/assets/lib/file.mock.ts',
+      '<rootDir>/src/shared/testing/mocks/assets/lib/file.mock.ts',
 
-    // Path aliases
+    // UI Component mocks (AUTOMATIC mocks)
+    // Note: Button and Text components are not mocked - using real components for better integration testing
+
+    // External library mocks (AUTOMATIC mocks)
+    // (Add library mocks here as needed)
+
+    // Path aliases for application layers
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@app/(.*)$': '<rootDir>/src/app/$1',
-    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
+    // '^@pages/(.*)$': '<rootDir>/src/pages/$1', // Removed - using App Router
     '^@widgets/(.*)$': '<rootDir>/src/widgets/$1',
     '^@features/(.*)$': '<rootDir>/src/features/$1',
     '^@entities/(.*)$': '<rootDir>/src/entities/$1',
     '^@shared/(.*)$': '<rootDir>/src/shared/$1',
+    '^@infrastructure/(.*)$': '<rootDir>/src/infrastructure/$1',
+
+    // Path aliases for Jest mocks and providers (UPDATED)
+    '^@jestmocks/(.*)$': '<rootDir>/src/shared/testing/mocks/$1',
+    '^@jestproviders/(.*)$': '<rootDir>/src/shared/testing/providers/$1',
   },
-  verbose: true,
-  // Additional Jest configuration for better TypeScript support
-  preset: 'ts-jest',
+  verbose: false, // Disable verbose output for faster tests
+  // Add mock reset configuration
+  clearMocks: true,
+  resetMocks: true,
+  restoreMocks: true,
+  // Add cleanup configuration to prevent memory leaks
+  setupFilesAfterEnv: [
+    resolve(__dirname, '../../../../src/shared/testing/setup/index.ts'),
+    resolve(__dirname, '../../../../src/shared/testing/setup/global/setup.ts'),
+    // Add setup to check TypeScript compilation
+    resolve(__dirname, '../../../../config/jest/setup/check-typescript.ts'),
+  ],
+  // Force exit after tests to prevent hanging
+  forceExit: true,
+  // Detect open handles to help identify memory leaks
+  detectOpenHandles: false, // Disable for faster tests
+  // Fail tests on console errors and unhandled exceptions
+  errorOnDeprecated: false, // Disable for faster tests
+  // Show console output in tests and fail on errors
+  silent: true, // Enable silent mode for faster tests
+  // Performance optimizations
+  maxWorkers: '50%', // Use half of available CPU cores
+  cache: true, // Enable Jest cache
+  cacheDirectory: '<rootDir>/.jest-cache', // Specify cache directory
+  // Reduce test timeout for faster feedback
+  testTimeout: 10000, // 10 seconds instead of default 5 seconds
+  // Make tests fail on unhandled promise rejections
   testEnvironmentOptions: {
     customExportConditions: ['node', 'node-addons'],
+    // Fail on unhandled promise rejections
+    beforeParse: (window: Window) => {
+      window.addEventListener('unhandledrejection', (event: PromiseRejectionEvent) => {
+        throw new Error(`Unhandled promise rejection: ${event.reason}`);
+      });
+    },
   },
 };

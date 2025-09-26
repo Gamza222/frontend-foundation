@@ -8,7 +8,7 @@
 type VariantValue = string | boolean | null | undefined;
 
 /**
- * @example { primary: 'bg-blue-500', secondary: 'bg-gray-200' }
+ * @example { primary: 'button-primary', secondary: 'button-secondary' }
  */
 type VariantConfig = Record<string, string>;
 type Variants = Record<string, VariantConfig>;
@@ -49,8 +49,10 @@ export const cva = <V extends Variants>(config: CvaConfig<V>) => {
     // Resolve standard variants based on the provided props.
     const variantClasses = variants
       ? Object.keys(variants).map((variantKey) => {
-          const variantValue = resolvedProps[variantKey as keyof typeof resolvedProps];
-          if (variantValue === null || variantValue === undefined) return undefined;
+          const variantValue =
+            resolvedProps[variantKey as keyof typeof resolvedProps];
+          if (variantValue === null || variantValue === undefined)
+            return undefined;
           return variants?.[variantKey]?.[String(variantValue)];
         })
       : [];
@@ -69,11 +71,15 @@ export const cva = <V extends Variants>(config: CvaConfig<V>) => {
         })
       : [];
 
-    return [...(Array.isArray(base) ? base : [base]), ...variantClasses, ...compoundVariantClasses]
+    return [
+      ...(Array.isArray(base) ? base : [base]),
+      ...variantClasses,
+      ...compoundVariantClasses,
+    ]
       .filter(Boolean)
       .flatMap((item) => {
         if (!item) return [];
-        return Array.isArray(item) ? item : item.split(' ');
+        return Array.isArray(item) ? item : item.split(" ");
       }) as string[];
   };
 };

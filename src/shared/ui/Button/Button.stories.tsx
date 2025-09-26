@@ -1,29 +1,44 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button, ButtonVariant, ButtonSize } from './Button';
+import { Button } from './Button';
+import { ButtonSize, ButtonVariant } from './Button.types';
 
 const meta = {
-  title: 'Shared/Button',
+  title: 'Shared/UI/Button',
   component: Button,
   parameters: {
     layout: 'centered',
+    docs: {
+      description: {
+        component: 'A versatile button component with multiple variants and sizes.',
+      },
+    },
   },
   argTypes: {
     variant: {
-      control: { type: 'select' },
+      control: 'select',
       options: Object.values(ButtonVariant),
+      description: 'Button style variant',
     },
     size: {
-      control: { type: 'select' },
+      control: 'select',
       options: Object.values(ButtonSize),
-    },
-    fullWidth: {
-      control: { type: 'boolean' },
-    },
-    loading: {
-      control: { type: 'boolean' },
+      description: 'Button size',
     },
     disabled: {
-      control: { type: 'boolean' },
+      control: 'boolean',
+      description: 'Whether the button is disabled',
+    },
+    loading: {
+      control: 'boolean',
+      description: 'Whether the button is in loading state',
+    },
+    children: {
+      control: 'text',
+      description: 'Button content',
+    },
+    icon: {
+      control: false,
+      description: 'Icon to display (as JSX)',
     },
   },
 } satisfies Meta<typeof Button>;
@@ -34,7 +49,6 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     variant: ButtonVariant.PRIMARY,
-    size: ButtonSize.MD,
     children: 'Primary Button',
   },
 };
@@ -42,50 +56,55 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     variant: ButtonVariant.SECONDARY,
-    size: ButtonSize.MD,
     children: 'Secondary Button',
+  },
+};
+
+export const Outline: Story = {
+  args: {
+    variant: ButtonVariant.SECONDARY,
+    children: 'Outline Button',
+  },
+};
+
+export const Ghost: Story = {
+  args: {
+    variant: ButtonVariant.SECONDARY,
+    children: 'Ghost Button',
   },
 };
 
 export const Small: Story = {
   args: {
-    variant: ButtonVariant.PRIMARY,
     size: ButtonSize.SM,
     children: 'Small Button',
   },
 };
 
+export const Medium: Story = {
+  args: {
+    size: ButtonSize.MD,
+    children: 'Medium Button',
+  },
+};
+
 export const Large: Story = {
   args: {
-    variant: ButtonVariant.PRIMARY,
     size: ButtonSize.LG,
     children: 'Large Button',
   },
 };
 
-export const Loading: Story = {
-  args: {
-    variant: ButtonVariant.PRIMARY,
-    size: ButtonSize.MD,
-    loading: true,
-    children: 'Loading Button',
-  },
-};
-
 export const Disabled: Story = {
   args: {
-    variant: ButtonVariant.PRIMARY,
-    size: ButtonSize.MD,
     disabled: true,
     children: 'Disabled Button',
   },
 };
 
-export const FullWidth: Story = {
+export const Loading: Story = {
   args: {
-    variant: ButtonVariant.PRIMARY,
-    size: ButtonSize.MD,
-    fullWidth: true,
-    children: 'Full Width Button',
+    loading: true,
+    children: 'Loading Button',
   },
 };

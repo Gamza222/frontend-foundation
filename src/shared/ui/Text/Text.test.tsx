@@ -1,4 +1,4 @@
-import React from 'react';
+// Removed unused React import
 import { render, screen } from '@testing-library/react';
 import { Text } from './Text';
 import { TextAlign, TextSize, TextVariant } from './Text.types';
@@ -24,8 +24,8 @@ describe('Text', () => {
       </Text>
     );
     const textElement = screen.getByText(/styled text/i);
-    // Note: We test for the functional CSS class, not the implementation-specific one
-    expect(textElement).toHaveClass('text-lg', 'text-center');
+    // Test for CSS module classes instead of Tailwind classes
+    expect(textElement).toHaveClass('secondary', 'lg', 'center');
   });
 
   test('applies custom className', () => {
