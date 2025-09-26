@@ -1,0 +1,273 @@
+1c3b2d244cd92313c7d3677d8a3746c4
+"use strict";
+
+/**
+ * State Management Types
+ *
+ * Universal types for state management that work with any application.
+ * Foundation-level only - no overengineering.
+ */
+/* istanbul ignore next */
+function cov_utmusjix4() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/state/types/types.ts";
+  var hash = "b521cba387cc7c2e7156f1919f70513ad30ccf97";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/state/types/types.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 8,
+          column: 0
+        },
+        end: {
+          line: 8,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 9,
+          column: 0
+        },
+        end: {
+          line: 9,
+          column: 79
+        }
+      },
+      "2": {
+        start: {
+          line: 13,
+          column: 19
+        },
+        end: {
+          line: 13,
+          column: 42
+        }
+      },
+      "3": {
+        start: {
+          line: 14,
+          column: 0
+        },
+        end: {
+          line: 14,
+          column: 123
+        }
+      },
+      "4": {
+        start: {
+          line: 14,
+          column: 85
+        },
+        end: {
+          line: 14,
+          column: 117
+        }
+      },
+      "5": {
+        start: {
+          line: 15,
+          column: 0
+        },
+        end: {
+          line: 15,
+          column: 123
+        }
+      },
+      "6": {
+        start: {
+          line: 15,
+          column: 85
+        },
+        end: {
+          line: 15,
+          column: 117
+        }
+      },
+      "7": {
+        start: {
+          line: 16,
+          column: 0
+        },
+        end: {
+          line: 16,
+          column: 135
+        }
+      },
+      "8": {
+        start: {
+          line: 16,
+          column: 91
+        },
+        end: {
+          line: 16,
+          column: 129
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 14,
+            column: 71
+          },
+          end: {
+            line: 14,
+            column: 72
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 83
+          },
+          end: {
+            line: 14,
+            column: 119
+          }
+        },
+        line: 14
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 15,
+            column: 71
+          },
+          end: {
+            line: 15,
+            column: 72
+          }
+        },
+        loc: {
+          start: {
+            line: 15,
+            column: 83
+          },
+          end: {
+            line: 15,
+            column: 119
+          }
+        },
+        line: 15
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 16,
+            column: 77
+          },
+          end: {
+            line: 16,
+            column: 78
+          }
+        },
+        loc: {
+          start: {
+            line: 16,
+            column: 89
+          },
+          end: {
+            line: 16,
+            column: 131
+          }
+        },
+        line: 16
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/state/types/types.ts",
+      mappings: ";AAAA;;;;;GAKG;;;AAEH,+EAA+E;AAC/E,cAAc;AACd,+EAA+E;AAE/E,2CAA2E;AAAlE,yGAAA,WAAW,OAAA;AAAE,yGAAA,WAAW,OAAA;AAAE,+GAAA,iBAAiB,OAAA",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/state/types/types.ts"],
+      sourcesContent: ["/**\n * State Management Types\n *\n * Universal types for state management that work with any application.\n * Foundation-level only - no overengineering.\n */\n\n// ============================================================================\n// STATE ENUMS\n// ============================================================================\n\nexport { StorageType, Environment, BaseStateProperty } from './stateEnums';\nimport { StorageType } from './stateEnums';\n\n// ============================================================================\n// CORE TYPES\n// ============================================================================\n\nexport interface BaseState {\n  _hydrated: boolean;\n}\n\nexport interface StoreConfig<T> {\n  name: string;\n  initialState: T;\n  persist?: {\n    key: string;\n    storage?: StorageType;\n  };\n  devtools?: boolean;\n}\n\nexport interface EnhancedStore<T> {\n  getState: () => T;\n  setState: (partial: T | Partial<T> | ((state: T) => T | Partial<T>)) => void;\n  subscribe: (listener: (state: T, prevState: T) => void) => () => void;\n  reset: () => void;\n  clearStorage: () => void;\n}\n\n// ============================================================================\n// COMMON STATE PATTERNS\n// ============================================================================\n\n/**\n * Standard async operation state\n */\nexport interface AsyncState<T = unknown> {\n  data: T | null;\n  loading: boolean;\n  error: string | null;\n}\n\n/**\n * Standard pagination state\n */\nexport interface PaginationState {\n  page: number;\n  limit: number;\n  total: number;\n  hasNext: boolean;\n  hasPrev: boolean;\n}\n\n/**\n * Standard filter state\n */\nexport interface FilterState {\n  search: string;\n  filters: Record<string, unknown>;\n  sortBy: string;\n  sortOrder: 'asc' | 'desc';\n}\n\n/**\n * Standard UI state\n */\nexport interface UIState {\n  sidebarOpen: boolean;\n  theme: 'light' | 'dark';\n  currentRoute: string;\n}\n\n// ============================================================================\n// STORE UTILITIES\n// ============================================================================\n\n/**\n * Helper type to extract state type from store\n */\nexport type StoreState<T> = T extends EnhancedStore<infer S> ? S : never;\n\n/**\n * Helper type for store selector functions\n */\nexport type Selector<TStore, TResult> = (state: StoreState<TStore>) => TResult;\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "b521cba387cc7c2e7156f1919f70513ad30ccf97"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_utmusjix4 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_utmusjix4();
+cov_utmusjix4().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_utmusjix4().s[1]++;
+exports.BaseStateProperty = exports.Environment = exports.StorageType = void 0;
+// ============================================================================
+// STATE ENUMS
+// ============================================================================
+var stateEnums_1 =
+/* istanbul ignore next */
+(cov_utmusjix4().s[2]++, require("./stateEnums"));
+/* istanbul ignore next */
+cov_utmusjix4().s[3]++;
+Object.defineProperty(exports, "StorageType", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_utmusjix4().f[0]++;
+    cov_utmusjix4().s[4]++;
+    return stateEnums_1.StorageType;
+  }
+});
+/* istanbul ignore next */
+cov_utmusjix4().s[5]++;
+Object.defineProperty(exports, "Environment", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_utmusjix4().f[1]++;
+    cov_utmusjix4().s[6]++;
+    return stateEnums_1.Environment;
+  }
+});
+/* istanbul ignore next */
+cov_utmusjix4().s[7]++;
+Object.defineProperty(exports, "BaseStateProperty", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_utmusjix4().f[2]++;
+    cov_utmusjix4().s[8]++;
+    return stateEnums_1.BaseStateProperty;
+  }
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfdXRtdXNqaXg0IiwicGF0aCIsImhhc2giLCJnbG9iYWwiLCJGdW5jdGlvbiIsImdjdiIsImNvdmVyYWdlRGF0YSIsInN0YXRlbWVudE1hcCIsInN0YXJ0IiwibGluZSIsImNvbHVtbiIsImVuZCIsImZuTWFwIiwibmFtZSIsImRlY2wiLCJsb2MiLCJicmFuY2hNYXAiLCJzIiwiZiIsImIiLCJpbnB1dFNvdXJjZU1hcCIsImZpbGUiLCJtYXBwaW5ncyIsIm5hbWVzIiwic291cmNlcyIsInNvdXJjZXNDb250ZW50IiwidmVyc2lvbiIsIl9jb3ZlcmFnZVNjaGVtYSIsImNvdmVyYWdlIiwiYWN0dWFsQ292ZXJhZ2UiLCJzdGF0ZUVudW1zXzEiLCJyZXF1aXJlIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJleHBvcnRzIiwiZW51bWVyYWJsZSIsImdldCIsIlN0b3JhZ2VUeXBlIiwiRW52aXJvbm1lbnQiLCJCYXNlU3RhdGVQcm9wZXJ0eSJdLCJzb3VyY2VzIjpbIi9Vc2Vycy9nYW16YXJhbWF6YW5vdi9EZXNrdG9wL2Fic3RyYWN0LXRlYW0vc3JjL2luZnJhc3RydWN0dXJlL3N0YXRlL3R5cGVzL3R5cGVzLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogU3RhdGUgTWFuYWdlbWVudCBUeXBlc1xuICpcbiAqIFVuaXZlcnNhbCB0eXBlcyBmb3Igc3RhdGUgbWFuYWdlbWVudCB0aGF0IHdvcmsgd2l0aCBhbnkgYXBwbGljYXRpb24uXG4gKiBGb3VuZGF0aW9uLWxldmVsIG9ubHkgLSBubyBvdmVyZW5naW5lZXJpbmcuXG4gKi9cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU1RBVEUgRU5VTVNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuZXhwb3J0IHsgU3RvcmFnZVR5cGUsIEVudmlyb25tZW50LCBCYXNlU3RhdGVQcm9wZXJ0eSB9IGZyb20gJy4vc3RhdGVFbnVtcyc7XG5pbXBvcnQgeyBTdG9yYWdlVHlwZSB9IGZyb20gJy4vc3RhdGVFbnVtcyc7XG5cbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIENPUkUgVFlQRVNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuZXhwb3J0IGludGVyZmFjZSBCYXNlU3RhdGUge1xuICBfaHlkcmF0ZWQ6IGJvb2xlYW47XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgU3RvcmVDb25maWc8VD4ge1xuICBuYW1lOiBzdHJpbmc7XG4gIGluaXRpYWxTdGF0ZTogVDtcbiAgcGVyc2lzdD86IHtcbiAgICBrZXk6IHN0cmluZztcbiAgICBzdG9yYWdlPzogU3RvcmFnZVR5cGU7XG4gIH07XG4gIGRldnRvb2xzPzogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBFbmhhbmNlZFN0b3JlPFQ+IHtcbiAgZ2V0U3RhdGU6ICgpID0+IFQ7XG4gIHNldFN0YXRlOiAocGFydGlhbDogVCB8IFBhcnRpYWw8VD4gfCAoKHN0YXRlOiBUKSA9PiBUIHwgUGFydGlhbDxUPikpID0+IHZvaWQ7XG4gIHN1YnNjcmliZTogKGxpc3RlbmVyOiAoc3RhdGU6IFQsIHByZXZTdGF0ZTogVCkgPT4gdm9pZCkgPT4gKCkgPT4gdm9pZDtcbiAgcmVzZXQ6ICgpID0+IHZvaWQ7XG4gIGNsZWFyU3RvcmFnZTogKCkgPT4gdm9pZDtcbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gQ09NTU9OIFNUQVRFIFBBVFRFUk5TXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5cbi8qKlxuICogU3RhbmRhcmQgYXN5bmMgb3BlcmF0aW9uIHN0YXRlXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgQXN5bmNTdGF0ZTxUID0gdW5rbm93bj4ge1xuICBkYXRhOiBUIHwgbnVsbDtcbiAgbG9hZGluZzogYm9vbGVhbjtcbiAgZXJyb3I6IHN0cmluZyB8IG51bGw7XG59XG5cbi8qKlxuICogU3RhbmRhcmQgcGFnaW5hdGlvbiBzdGF0ZVxuICovXG5leHBvcnQgaW50ZXJmYWNlIFBhZ2luYXRpb25TdGF0ZSB7XG4gIHBhZ2U6IG51bWJlcjtcbiAgbGltaXQ6IG51bWJlcjtcbiAgdG90YWw6IG51bWJlcjtcbiAgaGFzTmV4dDogYm9vbGVhbjtcbiAgaGFzUHJldjogYm9vbGVhbjtcbn1cblxuLyoqXG4gKiBTdGFuZGFyZCBmaWx0ZXIgc3RhdGVcbiAqL1xuZXhwb3J0IGludGVyZmFjZSBGaWx0ZXJTdGF0ZSB7XG4gIHNlYXJjaDogc3RyaW5nO1xuICBmaWx0ZXJzOiBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPjtcbiAgc29ydEJ5OiBzdHJpbmc7XG4gIHNvcnRPcmRlcjogJ2FzYycgfCAnZGVzYyc7XG59XG5cbi8qKlxuICogU3RhbmRhcmQgVUkgc3RhdGVcbiAqL1xuZXhwb3J0IGludGVyZmFjZSBVSVN0YXRlIHtcbiAgc2lkZWJhck9wZW46IGJvb2xlYW47XG4gIHRoZW1lOiAnbGlnaHQnIHwgJ2RhcmsnO1xuICBjdXJyZW50Um91dGU6IHN0cmluZztcbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU1RPUkUgVVRJTElUSUVTXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5cbi8qKlxuICogSGVscGVyIHR5cGUgdG8gZXh0cmFjdCBzdGF0ZSB0eXBlIGZyb20gc3RvcmVcbiAqL1xuZXhwb3J0IHR5cGUgU3RvcmVTdGF0ZTxUPiA9IFQgZXh0ZW5kcyBFbmhhbmNlZFN0b3JlPGluZmVyIFM+ID8gUyA6IG5ldmVyO1xuXG4vKipcbiAqIEhlbHBlciB0eXBlIGZvciBzdG9yZSBzZWxlY3RvciBmdW5jdGlvbnNcbiAqL1xuZXhwb3J0IHR5cGUgU2VsZWN0b3I8VFN0b3JlLCBUUmVzdWx0PiA9IChzdGF0ZTogU3RvcmVTdGF0ZTxUU3RvcmU+KSA9PiBUUmVzdWx0O1xuIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7Ozs7QUFBQTtBQUFBLFNBQUFBLGNBQUE7RUFBQSxJQUFBQyxJQUFBO0VBQUEsSUFBQUMsSUFBQTtFQUFBLElBQUFDLE1BQUEsT0FBQUMsUUFBQTtFQUFBLElBQUFDLEdBQUE7RUFBQSxJQUFBQyxZQUFBO0lBQUFMLElBQUE7SUFBQU0sWUFBQTtNQUFBO1FBQUFDLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtJQUFBO0lBQUFFLEtBQUE7TUFBQTtRQUFBQyxJQUFBO1FBQUFDLElBQUE7VUFBQU4sS0FBQTtZQUFBQyxJQUFBO1lBQUFDLE1BQUE7VUFBQTtVQUFBQyxHQUFBO1lBQUFGLElBQUE7WUFBQUMsTUFBQTtVQUFBO1FBQUE7UUFBQUssR0FBQTtVQUFBUCxLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtRQUFBRCxJQUFBO01BQUE7TUFBQTtRQUFBSSxJQUFBO1FBQUFDLElBQUE7VUFBQU4sS0FBQTtZQUFBQyxJQUFBO1lBQUFDLE1BQUE7VUFBQTtVQUFBQyxHQUFBO1lBQUFGLElBQUE7WUFBQUMsTUFBQTtVQUFBO1FBQUE7UUFBQUssR0FBQTtVQUFBUCxLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtRQUFBRCxJQUFBO01BQUE7TUFBQTtRQUFBSSxJQUFBO1FBQUFDLElBQUE7VUFBQU4sS0FBQTtZQUFBQyxJQUFBO1lBQUFDLE1BQUE7VUFBQTtVQUFBQyxHQUFBO1lBQUFGLElBQUE7WUFBQUMsTUFBQTtVQUFBO1FBQUE7UUFBQUssR0FBQTtVQUFBUCxLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtRQUFBRCxJQUFBO01BQUE7SUFBQTtJQUFBTyxTQUFBO0lBQUFDLENBQUE7TUFBQTtNQUFBO01BQUE7TUFBQTtNQUFBO01BQUE7TUFBQTtNQUFBO01BQUE7SUFBQTtJQUFBQyxDQUFBO01BQUE7TUFBQTtNQUFBO0lBQUE7SUFBQUMsQ0FBQTtJQUFBQyxjQUFBO01BQUFDLElBQUE7TUFBQUMsUUFBQTtNQUFBQyxLQUFBO01BQUFDLE9BQUE7TUFBQUMsY0FBQTtNQUFBQyxPQUFBO0lBQUE7SUFBQUMsZUFBQTtJQUFBekIsSUFBQTtFQUFBO0VBQUEsSUFBQTBCLFFBQUEsR0FBQXpCLE1BQUEsQ0FBQUUsR0FBQSxNQUFBRixNQUFBLENBQUFFLEdBQUE7RUFBQSxLQUFBdUIsUUFBQSxDQUFBM0IsSUFBQSxLQUFBMkIsUUFBQSxDQUFBM0IsSUFBQSxFQUFBQyxJQUFBLEtBQUFBLElBQUE7SUFBQTBCLFFBQUEsQ0FBQTNCLElBQUEsSUFBQUssWUFBQTtFQUFBO0VBQUEsSUFBQXVCLGNBQUEsR0FBQUQsUUFBQSxDQUFBM0IsSUFBQTtFQUFBO0lBV21DO0lBQUFELGFBQUEsWUFBQUEsQ0FBQTtNQUFBLE9BQUE2QixjQUFBO0lBQUE7RUFBQTtFQUFBLE9BQUFBLGNBQUE7QUFBQTtBQUFBN0IsYUFBQTtBQUFBQSxhQUFBLEdBQUFpQixDQUFBOzs7Ozs7O0FBSm5DO0FBQ0E7QUFDQTtBQUVBLElBQUFhLFlBQUE7QUFBQTtBQUFBLENBQUE5QixhQUFBLEdBQUFpQixDQUFBLE9BQUFjLE9BQUE7QUFBMkU7QUFBQS9CLGFBQUEsR0FBQWlCLENBQUE7QUFBbEVlLE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO0VBQUFDLFVBQUE7RUFBQUMsR0FBQSxXQUFBQSxDQUFBO0lBQUE7SUFBQXBDLGFBQUEsR0FBQWtCLENBQUE7SUFBQWxCLGFBQUEsR0FBQWlCLENBQUE7SUFBQSxPQUFBYSxZQUFBLENBQUFPLFdBQVc7RUFBQTtBQUFBO0FBQUE7QUFBQXJDLGFBQUEsR0FBQWlCLENBQUE7QUFBRWUsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7RUFBQUMsVUFBQTtFQUFBQyxHQUFBLFdBQUFBLENBQUE7SUFBQTtJQUFBcEMsYUFBQSxHQUFBa0IsQ0FBQTtJQUFBbEIsYUFBQSxHQUFBaUIsQ0FBQTtJQUFBLE9BQUFhLFlBQUEsQ0FBQVEsV0FBVztFQUFBO0FBQUE7QUFBQTtBQUFBdEMsYUFBQSxHQUFBaUIsQ0FBQTtBQUFFZSxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtFQUFBQyxVQUFBO0VBQUFDLEdBQUEsV0FBQUEsQ0FBQTtJQUFBO0lBQUFwQyxhQUFBLEdBQUFrQixDQUFBO0lBQUFsQixhQUFBLEdBQUFpQixDQUFBO0lBQUEsT0FBQWEsWUFBQSxDQUFBUyxpQkFBaUI7RUFBQTtBQUFBIiwiaWdub3JlTGlzdCI6W119

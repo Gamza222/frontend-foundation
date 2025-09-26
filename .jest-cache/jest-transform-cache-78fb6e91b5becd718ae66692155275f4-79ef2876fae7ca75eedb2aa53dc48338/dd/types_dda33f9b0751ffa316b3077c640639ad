@@ -1,0 +1,60 @@
+cbc0e55f9c00a15f9dd1070ee3747284
+"use strict";
+
+/* istanbul ignore next */
+function cov_j9ko5jaj() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/error-handling/types/types.ts";
+  var hash = "9864378721013452430ac90ebad2eea72aa47725";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/error-handling/types/types.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/error-handling/types/types.ts",
+      mappings: "",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/error-handling/types/types.ts"],
+      sourcesContent: ["import type { ReactNode } from \"react\";\n\nexport interface ErrorBoundaryProps {\n  children: ReactNode;\n}\n\nexport interface ErrorBoundaryState {\n  hasError: boolean;\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "9864378721013452430ac90ebad2eea72aa47725"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_j9ko5jaj = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_j9ko5jaj();
+cov_j9ko5jaj().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sInNvdXJjZXMiOlsiL1VzZXJzL2dhbXphcmFtYXphbm92L0Rlc2t0b3AvYWJzdHJhY3QtdGVhbS9zcmMvaW5mcmFzdHJ1Y3R1cmUvZXJyb3ItaGFuZGxpbmcvdHlwZXMvdHlwZXMudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHR5cGUgeyBSZWFjdE5vZGUgfSBmcm9tIFwicmVhY3RcIjtcblxuZXhwb3J0IGludGVyZmFjZSBFcnJvckJvdW5kYXJ5UHJvcHMge1xuICBjaGlsZHJlbjogUmVhY3ROb2RlO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEVycm9yQm91bmRhcnlTdGF0ZSB7XG4gIGhhc0Vycm9yOiBib29sZWFuO1xufVxuIl0sIm1hcHBpbmdzIjoiIiwiaWdub3JlTGlzdCI6W119

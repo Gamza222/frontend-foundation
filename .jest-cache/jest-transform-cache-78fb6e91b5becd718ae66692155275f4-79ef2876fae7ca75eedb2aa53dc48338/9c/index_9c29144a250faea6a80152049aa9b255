@@ -1,0 +1,50 @@
+83cad9476f56a3d7f829512b7d50deb2
+"use strict";
+
+/**
+ * Entity Mocks
+ *
+ * Generic, reusable mocks for entity testing.
+ * Foundation-level only - no overengineering.
+ */
+// Entity mocks will be added when entities are implemented
+/* istanbul ignore next */
+function cov_2f9gezpab6() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/entities/index.ts";
+  var hash = "93840071d4e7650a20716c5b8da21904ba1988df";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/entities/index.ts",
+    statementMap: {},
+    fnMap: {},
+    branchMap: {},
+    s: {},
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/entities/index.ts",
+      mappings: ";AAAA;;;;;GAKG;AAEH,2DAA2D",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/entities/index.ts"],
+      sourcesContent: ["/**\n * Entity Mocks\n *\n * Generic, reusable mocks for entity testing.\n * Foundation-level only - no overengineering.\n */\n\n// Entity mocks will be added when entities are implemented\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "93840071d4e7650a20716c5b8da21904ba1988df"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2f9gezpab6 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_2f9gezpab6();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMmY5Z2V6cGFiNiIsInBhdGgiLCJoYXNoIiwiZ2xvYmFsIiwiRnVuY3Rpb24iLCJnY3YiLCJjb3ZlcmFnZURhdGEiLCJzdGF0ZW1lbnRNYXAiLCJmbk1hcCIsImJyYW5jaE1hcCIsInMiLCJmIiwiYiIsImlucHV0U291cmNlTWFwIiwiZmlsZSIsIm1hcHBpbmdzIiwibmFtZXMiLCJzb3VyY2VzIiwic291cmNlc0NvbnRlbnQiLCJ2ZXJzaW9uIiwiX2NvdmVyYWdlU2NoZW1hIiwiY292ZXJhZ2UiLCJhY3R1YWxDb3ZlcmFnZSJdLCJzb3VyY2VzIjpbIi9Vc2Vycy9nYW16YXJhbWF6YW5vdi9EZXNrdG9wL2Fic3RyYWN0LXRlYW0vc3JjL3NoYXJlZC90ZXN0aW5nL21vY2tzL2VudGl0aWVzL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogRW50aXR5IE1vY2tzXG4gKlxuICogR2VuZXJpYywgcmV1c2FibGUgbW9ja3MgZm9yIGVudGl0eSB0ZXN0aW5nLlxuICogRm91bmRhdGlvbi1sZXZlbCBvbmx5IC0gbm8gb3ZlcmVuZ2luZWVyaW5nLlxuICovXG5cbi8vIEVudGl0eSBtb2NrcyB3aWxsIGJlIGFkZGVkIHdoZW4gZW50aXRpZXMgYXJlIGltcGxlbWVudGVkXG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7OztBQU9BO0FBQUE7QUFBQSxTQUFBQSxlQUFBO0VBQUEsSUFBQUMsSUFBQTtFQUFBLElBQUFDLElBQUE7RUFBQSxJQUFBQyxNQUFBLE9BQUFDLFFBQUE7RUFBQSxJQUFBQyxHQUFBO0VBQUEsSUFBQUMsWUFBQTtJQUFBTCxJQUFBO0lBQUFNLFlBQUE7SUFBQUMsS0FBQTtJQUFBQyxTQUFBO0lBQUFDLENBQUE7SUFBQUMsQ0FBQTtJQUFBQyxDQUFBO0lBQUFDLGNBQUE7TUFBQUMsSUFBQTtNQUFBQyxRQUFBO01BQUFDLEtBQUE7TUFBQUMsT0FBQTtNQUFBQyxjQUFBO01BQUFDLE9BQUE7SUFBQTtJQUFBQyxlQUFBO0lBQUFsQixJQUFBO0VBQUE7RUFBQSxJQUFBbUIsUUFBQSxHQUFBbEIsTUFBQSxDQUFBRSxHQUFBLE1BQUFGLE1BQUEsQ0FBQUUsR0FBQTtFQUFBLEtBQUFnQixRQUFBLENBQUFwQixJQUFBLEtBQUFvQixRQUFBLENBQUFwQixJQUFBLEVBQUFDLElBQUEsS0FBQUEsSUFBQTtJQUFBbUIsUUFBQSxDQUFBcEIsSUFBQSxJQUFBSyxZQUFBO0VBQUE7RUFBQSxJQUFBZ0IsY0FBQSxHQUFBRCxRQUFBLENBQUFwQixJQUFBO0VBQUEiLCJpZ25vcmVMaXN0IjpbXX0=

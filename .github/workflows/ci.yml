@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: CI/CD Pipeline
 
 on:
   push:
@@ -7,15 +7,16 @@ on:
     branches: [main, develop]
 
 env:
-  NODE_VERSION: '18'
+  NODE_VERSION: "18"
+  CI: true
 
 jobs:
   # ============================================================================
-  # CI ORCHESTRATOR
+  # CODE QUALITY & TESTING
   # ============================================================================
 
-  ci-pipeline:
-    name: CI Pipeline
+  quality-check:
+    name: Code Quality & Testing
     runs-on: ubuntu-latest
 
     steps:
@@ -26,46 +27,144 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Quick validation
-        run: |
-          echo "🚀 CI Pipeline - Quick Validation"
-          echo "📋 Running essential checks..."
+      - name: Type checking
+        run: npm run type-check
 
-          # Quick type check
-          npm run type-check
+      - name: Linting
+        run: npm run lint
 
-          # Quick lint check
-          npm run lint
+      - name: Format checking
+        run: npm run format:check
 
-          echo "✅ Quick validation passed"
-          echo "📋 Full pipeline will run in parallel workflows"
+      - name: Run tests with coverage
+        run: npm run test:ci
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage/lcov.info
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: true
 
   # ============================================================================
-  # NOTIFICATION
+  # SECURITY SCANNING
+  # ============================================================================
+
+  security-scan:
+    name: Security Scanning
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run npm audit
+        run: npm audit --audit-level=moderate
+
+      - name: Check for vulnerabilities
+        run: |
+          VULNERABILITIES=$(npm audit --json | jq '.vulnerabilities | length')
+          echo "Found $VULNERABILITIES vulnerabilities"
+          if [ "$VULNERABILITIES" -gt 0 ]; then
+            echo "❌ Found $VULNERABILITIES vulnerabilities"
+            npm audit
+            exit 1
+          else
+            echo "✅ No vulnerabilities found"
+          fi
+
+  # ============================================================================
+  # BUILD VALIDATION
+  # ============================================================================
+  
+  build-validation:
+    name: Build Validation
+    runs-on: ubuntu-latest
+    needs: [quality-check, security-scan]
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build application
+        run: npm run build
+        env:
+          NODE_ENV: production
+          
+      - name: Create build info file
+        run: |
+          cat > build-info.json << EOF
+          {
+            "version": "$(npm run version:display --silent)",
+            "environment": "production",
+            "branch": "${{ github.ref_name }}",
+            "commit": "${{ github.sha }}",
+            "buildTime": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "buildUrl": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          }
+          EOF
+          echo "Created build-info.json:"
+          cat build-info.json
+          
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: |
+            .next/
+            build-info.json
+          retention-days: 7
+
+  # ============================================================================
+  # NOTIFICATIONS
   # ============================================================================
 
   notify:
-    name: Notify Results
+    name: Notifications
     runs-on: ubuntu-latest
-    needs: ci-pipeline
+    needs: [quality-check, security-scan, build-validation]
     if: always()
-
+    
     steps:
       - name: Notify on success
-        if: needs.ci-pipeline.result == 'success'
+        if: needs.build-validation.result == 'success'
         run: |
-          echo "🎉 CI Pipeline completed successfully!"
-          echo "✅ All essential checks passed"
-          echo "🚀 Ready for full pipeline execution"
-
+          echo "🎉 CI/CD Pipeline completed successfully!"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Build URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo "All checks passed and build was successful."
+          
       - name: Notify on failure
-        if: needs.ci-pipeline.result == 'failure'
+        if: needs.build-validation.result == 'failure'
         run: |
-          echo "❌ CI Pipeline failed!"
-          echo "🔍 Please check the logs for details"
+          echo "❌ CI/CD Pipeline failed!"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Build URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo "Please check the logs for details."
           exit 1

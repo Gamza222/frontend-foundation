@@ -1,0 +1,112 @@
+9f6ab4c88c98217fd8220e7053909b9f
+"use strict";
+
+/* istanbul ignore next */
+function cov_rzhpx87mn() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/browser/lib/navigator/navigator.mock.ts";
+  var hash = "c70d4eaef4e315d7d1bebf3ce88949a80e959e39";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/browser/lib/navigator/navigator.mock.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 31
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 0
+        },
+        end: {
+          line: 10,
+          column: 2
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 15,
+          column: 3
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/browser/lib/navigator/navigator.mock.ts",
+      mappings: ";;;AAEa,QAAA,aAAa,GAA2B;IACnD,SAAS,EAAE;QACT,SAAS,EAAE,IAAI,CAAC,EAAE,EAAE;QACpB,QAAQ,EAAE,IAAI,CAAC,EAAE,EAAE;KACpB;IACD,SAAS,EACP,2HAA2H;CAC9H,CAAC;AAEF,4CAA4C;AAC5C,MAAM,CAAC,cAAc,CAAC,MAAM,EAAE,WAAW,EAAE;IACzC,KAAK,EAAE,qBAAa;IACpB,QAAQ,EAAE,IAAI;CACf,CAAC,CAAC",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/browser/lib/navigator/navigator.mock.ts"],
+      sourcesContent: ["import { mockNavigatorInterface } from '../../types/types';\n\nexport const mockNavigator: mockNavigatorInterface = {\n  clipboard: {\n    writeText: jest.fn(),\n    readText: jest.fn(),\n  },\n  userAgent:\n    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',\n};\n\n// Allows properties to be modified in tests\nObject.defineProperty(window, 'navigator', {\n  value: mockNavigator,\n  writable: true,\n});\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "c70d4eaef4e315d7d1bebf3ce88949a80e959e39"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_rzhpx87mn = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_rzhpx87mn();
+cov_rzhpx87mn().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_rzhpx87mn().s[1]++;
+exports.mockNavigator = void 0;
+/* istanbul ignore next */
+cov_rzhpx87mn().s[2]++;
+exports.mockNavigator = {
+  clipboard: {
+    writeText: jest.fn(),
+    readText: jest.fn()
+  },
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+};
+// Allows properties to be modified in tests
+/* istanbul ignore next */
+cov_rzhpx87mn().s[3]++;
+Object.defineProperty(window, 'navigator', {
+  value: exports.mockNavigator,
+  writable: true
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJleHBvcnRzIiwibW9ja05hdmlnYXRvciIsImNsaXBib2FyZCIsIndyaXRlVGV4dCIsImplc3QiLCJmbiIsInJlYWRUZXh0IiwidXNlckFnZW50IiwiY292X3J6aHB4ODdtbiIsInMiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsIndpbmRvdyIsInZhbHVlIiwid3JpdGFibGUiXSwic291cmNlcyI6WyIvVXNlcnMvZ2FtemFyYW1hemFub3YvRGVza3RvcC9hYnN0cmFjdC10ZWFtL3NyYy9zaGFyZWQvdGVzdGluZy9tb2Nrcy9icm93c2VyL2xpYi9uYXZpZ2F0b3IvbmF2aWdhdG9yLm1vY2sudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgbW9ja05hdmlnYXRvckludGVyZmFjZSB9IGZyb20gJy4uLy4uL3R5cGVzL3R5cGVzJztcblxuZXhwb3J0IGNvbnN0IG1vY2tOYXZpZ2F0b3I6IG1vY2tOYXZpZ2F0b3JJbnRlcmZhY2UgPSB7XG4gIGNsaXBib2FyZDoge1xuICAgIHdyaXRlVGV4dDogamVzdC5mbigpLFxuICAgIHJlYWRUZXh0OiBqZXN0LmZuKCksXG4gIH0sXG4gIHVzZXJBZ2VudDpcbiAgICAnTW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTVfNykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzkxLjAuNDQ3Mi4xMjQgU2FmYXJpLzUzNy4zNicsXG59O1xuXG4vLyBBbGxvd3MgcHJvcGVydGllcyB0byBiZSBtb2RpZmllZCBpbiB0ZXN0c1xuT2JqZWN0LmRlZmluZVByb3BlcnR5KHdpbmRvdywgJ25hdmlnYXRvcicsIHtcbiAgdmFsdWU6IG1vY2tOYXZpZ2F0b3IsXG4gIHdyaXRhYmxlOiB0cnVlLFxufSk7XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUVhQSxPQUFBLENBQUFDLGFBQWEsR0FBMkI7RUFDbkRDLFNBQVMsRUFBRTtJQUNUQyxTQUFTLEVBQUVDLElBQUksQ0FBQ0MsRUFBRSxFQUFFO0lBQ3BCQyxRQUFRLEVBQUVGLElBQUksQ0FBQ0MsRUFBRTtHQUNsQjtFQUNERSxTQUFTLEVBQ1A7Q0FDSDtBQUVEO0FBQUE7QUFBQUMsYUFBQSxHQUFBQyxDQUFBO0FBQ0FDLE1BQU0sQ0FBQ0MsY0FBYyxDQUFDQyxNQUFNLEVBQUUsV0FBVyxFQUFFO0VBQ3pDQyxLQUFLLEVBQUViLE9BQUEsQ0FBQUMsYUFBYTtFQUNwQmEsUUFBUSxFQUFFO0NBQ1gsQ0FBQyIsImlnbm9yZUxpc3QiOltdfQ==

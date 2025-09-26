@@ -3,6 +3,7 @@ module.exports = {
   ignorePatterns: [
     "src/shared/testing/transformers/**/*.js", // Ignore JS transformer files
     "structure/**/*", // Ignore structure directory
+    "next-env.d.ts", // Ignore Next.js environment file
   ],
   env: {
     browser: true, // Enable browser globals like window and document
@@ -50,6 +51,7 @@ module.exports = {
     "@typescript-eslint/no-misused-promises": "error", // Prevents common promise mistakes (like using promises in useEffect deps)
     "@typescript-eslint/await-thenable": "error", // Ensures await is only used with promises
     "@typescript-eslint/no-unnecessary-type-assertion": "error", // Prevents redundant type casts
+    "@typescript-eslint/triple-slash-reference": "off", // Allow triple slash references (needed for Next.js)
 
     // React Specific Rules
     "react/prop-types": "off", // Disable prop-types as we use TypeScript

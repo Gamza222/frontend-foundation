@@ -1,0 +1,622 @@
+0bed49ec9d9a31aa1c659912e9d1efdb
+"use strict";
+
+/* istanbul ignore next */
+function cov_19couxr03w() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/browser/lib/storage/storage.mock.ts";
+  var hash = "4db52f2c0ea11ffe028a7398ad8749638570f125";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/browser/lib/storage/storage.mock.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 29
+        }
+      },
+      "2": {
+        start: {
+          line: 10,
+          column: 18
+        },
+        end: {
+          line: 35,
+          column: 1
+        }
+      },
+      "3": {
+        start: {
+          line: 11,
+          column: 4
+        },
+        end: {
+          line: 11,
+          column: 53
+        }
+      },
+      "4": {
+        start: {
+          line: 11,
+          column: 34
+        },
+        end: {
+          line: 11,
+          column: 51
+        }
+      },
+      "5": {
+        start: {
+          line: 12,
+          column: 16
+        },
+        end: {
+          line: 12,
+          column: 52
+        }
+      },
+      "6": {
+        start: {
+          line: 13,
+          column: 22
+        },
+        end: {
+          line: 33,
+          column: 5
+        }
+      },
+      "7": {
+        start: {
+          line: 15,
+          column: 12
+        },
+        end: {
+          line: 15,
+          column: 30
+        }
+      },
+      "8": {
+        start: {
+          line: 18,
+          column: 12
+        },
+        end: {
+          line: 18,
+          column: 42
+        }
+      },
+      "9": {
+        start: {
+          line: 21,
+          column: 12
+        },
+        end: {
+          line: 21,
+          column: 34
+        }
+      },
+      "10": {
+        start: {
+          line: 24,
+          column: 12
+        },
+        end: {
+          line: 24,
+          column: 30
+        }
+      },
+      "11": {
+        start: {
+          line: 27,
+          column: 12
+        },
+        end: {
+          line: 27,
+          column: 26
+        }
+      },
+      "12": {
+        start: {
+          line: 30,
+          column: 23
+        },
+        end: {
+          line: 30,
+          column: 47
+        }
+      },
+      "13": {
+        start: {
+          line: 31,
+          column: 12
+        },
+        end: {
+          line: 31,
+          column: 39
+        }
+      },
+      "14": {
+        start: {
+          line: 34,
+          column: 4
+        },
+        end: {
+          line: 34,
+          column: 23
+        }
+      },
+      "15": {
+        start: {
+          line: 36,
+          column: 0
+        },
+        end: {
+          line: 36,
+          column: 34
+        }
+      },
+      "16": {
+        start: {
+          line: 38,
+          column: 0
+        },
+        end: {
+          line: 38,
+          column: 85
+        }
+      },
+      "17": {
+        start: {
+          line: 39,
+          column: 0
+        },
+        end: {
+          line: 39,
+          column: 87
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 10,
+            column: 18
+          },
+          end: {
+            line: 10,
+            column: 19
+          }
+        },
+        loc: {
+          start: {
+            line: 10,
+            column: 41
+          },
+          end: {
+            line: 35,
+            column: 1
+          }
+        },
+        line: 10
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 14,
+            column: 8
+          },
+          end: {
+            line: 14,
+            column: 9
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 21
+          },
+          end: {
+            line: 16,
+            column: 9
+          }
+        },
+        line: 14
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 17,
+            column: 17
+          },
+          end: {
+            line: 17,
+            column: 18
+          }
+        },
+        loc: {
+          start: {
+            line: 17,
+            column: 32
+          },
+          end: {
+            line: 19,
+            column: 9
+          }
+        },
+        line: 17
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 20,
+            column: 17
+          },
+          end: {
+            line: 20,
+            column: 18
+          }
+        },
+        loc: {
+          start: {
+            line: 20,
+            column: 39
+          },
+          end: {
+            line: 22,
+            column: 9
+          }
+        },
+        line: 20
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 23,
+            column: 20
+          },
+          end: {
+            line: 23,
+            column: 21
+          }
+        },
+        loc: {
+          start: {
+            line: 23,
+            column: 35
+          },
+          end: {
+            line: 25,
+            column: 9
+          }
+        },
+        line: 23
+      },
+      "5": {
+        name: "(anonymous_5)",
+        decl: {
+          start: {
+            line: 26,
+            column: 15
+          },
+          end: {
+            line: 26,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 26,
+            column: 27
+          },
+          end: {
+            line: 28,
+            column: 9
+          }
+        },
+        line: 26
+      },
+      "6": {
+        name: "(anonymous_6)",
+        decl: {
+          start: {
+            line: 29,
+            column: 13
+          },
+          end: {
+            line: 29,
+            column: 14
+          }
+        },
+        loc: {
+          start: {
+            line: 29,
+            column: 30
+          },
+          end: {
+            line: 32,
+            column: 9
+          }
+        },
+        line: 29
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 11,
+            column: 4
+          },
+          end: {
+            line: 11,
+            column: 53
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 11,
+            column: 4
+          },
+          end: {
+            line: 11,
+            column: 53
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 11
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 18,
+            column: 19
+          },
+          end: {
+            line: 18,
+            column: 41
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 18,
+            column: 19
+          },
+          end: {
+            line: 18,
+            column: 33
+          }
+        }, {
+          start: {
+            line: 18,
+            column: 37
+          },
+          end: {
+            line: 18,
+            column: 41
+          }
+        }],
+        line: 18
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 31,
+            column: 19
+          },
+          end: {
+            line: 31,
+            column: 38
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 31,
+            column: 19
+          },
+          end: {
+            line: 31,
+            column: 30
+          }
+        }, {
+          start: {
+            line: 31,
+            column: 34
+          },
+          end: {
+            line: 31,
+            column: 38
+          }
+        }],
+        line: 31
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/browser/lib/storage/storage.mock.ts",
+      mappings: ";;;AAEA;;;;;GAKG;AACI,IAAM,WAAW,GAAG,UAAC,WAAwC;IAAxC,4BAAA,EAAA,gBAAwC;IAClE,IAAM,KAAK,GAAG,IAAI,GAAG,CAAiB,MAAM,CAAC,OAAO,CAAC,WAAW,CAAC,CAAC,CAAC;IAEnE,IAAM,WAAW,GAAyB;QACxC,IAAI,MAAM;YACR,OAAO,KAAK,CAAC,IAAI,CAAC;QACpB,CAAC;QAED,OAAO,YAAC,GAAW;YACjB,OAAO,KAAK,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,IAAI,CAAC;QAChC,CAAC;QAED,OAAO,YAAC,GAAW,EAAE,KAAa;YAChC,KAAK,CAAC,GAAG,CAAC,GAAG,EAAE,KAAK,CAAC,CAAC;QACxB,CAAC;QAED,UAAU,YAAC,GAAW;YACpB,KAAK,CAAC,MAAM,CAAC,GAAG,CAAC,CAAC;QACpB,CAAC;QAED,KAAK;YACH,KAAK,CAAC,KAAK,EAAE,CAAC;QAChB,CAAC;QAED,GAAG,YAAC,KAAa;YACf,IAAM,IAAI,GAAG,KAAK,CAAC,IAAI,CAAC,KAAK,CAAC,IAAI,EAAE,CAAC,CAAC;YACtC,OAAO,IAAI,CAAC,KAAK,CAAC,IAAI,IAAI,CAAC;QAC7B,CAAC;KACF,CAAC;IAEF,OAAO,WAAW,CAAC;AACrB,CAAC,CAAC;AA/BW,QAAA,WAAW,eA+BtB;AAEF,8BAA8B;AAC9B,MAAM,CAAC,cAAc,CAAC,MAAM,EAAE,cAAc,EAAE,EAAE,KAAK,EAAE,IAAA,mBAAW,GAAE,EAAE,CAAC,CAAC;AACxE,MAAM,CAAC,cAAc,CAAC,MAAM,EAAE,gBAAgB,EAAE,EAAE,KAAK,EAAE,IAAA,mBAAW,GAAE,EAAE,CAAC,CAAC",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/browser/lib/storage/storage.mock.ts"],
+      sourcesContent: ["import { mockStorageInterface } from '../../types/types';\n\n/**\n * Creates a mock storage object for testing\n *\n * @param initialData - Optional initial data to populate the storage\n * @returns A mock storage object that implements StorageMockInterface\n */\nexport const mockStorage = (initialData: Record<string, string> = {}): mockStorageInterface => {\n  const store = new Map<string, string>(Object.entries(initialData));\n\n  const storageMock: mockStorageInterface = {\n    get length() {\n      return store.size;\n    },\n\n    getItem(key: string): string | null {\n      return store.get(key) || null;\n    },\n\n    setItem(key: string, value: string): void {\n      store.set(key, value);\n    },\n\n    removeItem(key: string): void {\n      store.delete(key);\n    },\n\n    clear(): void {\n      store.clear();\n    },\n\n    key(index: number): string | null {\n      const keys = Array.from(store.keys());\n      return keys[index] || null;\n    },\n  };\n\n  return storageMock;\n};\n\n// Replace window storage APIs\nObject.defineProperty(window, 'localStorage', { value: mockStorage() });\nObject.defineProperty(window, 'sessionStorage', { value: mockStorage() });\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "4db52f2c0ea11ffe028a7398ad8749638570f125"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_19couxr03w = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_19couxr03w();
+cov_19couxr03w().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_19couxr03w().s[1]++;
+exports.mockStorage = void 0;
+/**
+ * Creates a mock storage object for testing
+ *
+ * @param initialData - Optional initial data to populate the storage
+ * @returns A mock storage object that implements StorageMockInterface
+ */
+/* istanbul ignore next */
+cov_19couxr03w().s[2]++;
+var mockStorage = function (initialData) {
+  /* istanbul ignore next */
+  cov_19couxr03w().f[0]++;
+  cov_19couxr03w().s[3]++;
+  if (initialData === void 0) {
+    /* istanbul ignore next */
+    cov_19couxr03w().b[0][0]++;
+    cov_19couxr03w().s[4]++;
+    initialData = {};
+  } else
+  /* istanbul ignore next */
+  {
+    cov_19couxr03w().b[0][1]++;
+  }
+  var store =
+  /* istanbul ignore next */
+  (cov_19couxr03w().s[5]++, new Map(Object.entries(initialData)));
+  var storageMock =
+  /* istanbul ignore next */
+  (cov_19couxr03w().s[6]++, {
+    get length() {
+      /* istanbul ignore next */
+      cov_19couxr03w().f[1]++;
+      cov_19couxr03w().s[7]++;
+      return store.size;
+    },
+    getItem: function (key) {
+      /* istanbul ignore next */
+      cov_19couxr03w().f[2]++;
+      cov_19couxr03w().s[8]++;
+      return /* istanbul ignore next */(cov_19couxr03w().b[1][0]++, store.get(key)) ||
+      /* istanbul ignore next */
+      (cov_19couxr03w().b[1][1]++, null);
+    },
+    setItem: function (key, value) {
+      /* istanbul ignore next */
+      cov_19couxr03w().f[3]++;
+      cov_19couxr03w().s[9]++;
+      store.set(key, value);
+    },
+    removeItem: function (key) {
+      /* istanbul ignore next */
+      cov_19couxr03w().f[4]++;
+      cov_19couxr03w().s[10]++;
+      store.delete(key);
+    },
+    clear: function () {
+      /* istanbul ignore next */
+      cov_19couxr03w().f[5]++;
+      cov_19couxr03w().s[11]++;
+      store.clear();
+    },
+    key: function (index) {
+      /* istanbul ignore next */
+      cov_19couxr03w().f[6]++;
+      var keys =
+      /* istanbul ignore next */
+      (cov_19couxr03w().s[12]++, Array.from(store.keys()));
+      /* istanbul ignore next */
+      cov_19couxr03w().s[13]++;
+      return /* istanbul ignore next */(cov_19couxr03w().b[2][0]++, keys[index]) ||
+      /* istanbul ignore next */
+      (cov_19couxr03w().b[2][1]++, null);
+    }
+  });
+  /* istanbul ignore next */
+  cov_19couxr03w().s[14]++;
+  return storageMock;
+};
+/* istanbul ignore next */
+cov_19couxr03w().s[15]++;
+exports.mockStorage = mockStorage;
+// Replace window storage APIs
+/* istanbul ignore next */
+cov_19couxr03w().s[16]++;
+Object.defineProperty(window, 'localStorage', {
+  value: (0, exports.mockStorage)()
+});
+/* istanbul ignore next */
+cov_19couxr03w().s[17]++;
+Object.defineProperty(window, 'sessionStorage', {
+  value: (0, exports.mockStorage)()
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMTljb3V4cjAzdyIsImFjdHVhbENvdmVyYWdlIiwicyIsIm1vY2tTdG9yYWdlIiwiaW5pdGlhbERhdGEiLCJmIiwiYiIsInN0b3JlIiwiTWFwIiwiT2JqZWN0IiwiZW50cmllcyIsInN0b3JhZ2VNb2NrIiwibGVuZ3RoIiwic2l6ZSIsImdldEl0ZW0iLCJrZXkiLCJnZXQiLCJzZXRJdGVtIiwidmFsdWUiLCJzZXQiLCJyZW1vdmVJdGVtIiwiZGVsZXRlIiwiY2xlYXIiLCJpbmRleCIsImtleXMiLCJBcnJheSIsImZyb20iLCJleHBvcnRzIiwiZGVmaW5lUHJvcGVydHkiLCJ3aW5kb3ciXSwic291cmNlcyI6WyIvVXNlcnMvZ2FtemFyYW1hemFub3YvRGVza3RvcC9hYnN0cmFjdC10ZWFtL3NyYy9zaGFyZWQvdGVzdGluZy9tb2Nrcy9icm93c2VyL2xpYi9zdG9yYWdlL3N0b3JhZ2UubW9jay50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBtb2NrU3RvcmFnZUludGVyZmFjZSB9IGZyb20gJy4uLy4uL3R5cGVzL3R5cGVzJztcblxuLyoqXG4gKiBDcmVhdGVzIGEgbW9jayBzdG9yYWdlIG9iamVjdCBmb3IgdGVzdGluZ1xuICpcbiAqIEBwYXJhbSBpbml0aWFsRGF0YSAtIE9wdGlvbmFsIGluaXRpYWwgZGF0YSB0byBwb3B1bGF0ZSB0aGUgc3RvcmFnZVxuICogQHJldHVybnMgQSBtb2NrIHN0b3JhZ2Ugb2JqZWN0IHRoYXQgaW1wbGVtZW50cyBTdG9yYWdlTW9ja0ludGVyZmFjZVxuICovXG5leHBvcnQgY29uc3QgbW9ja1N0b3JhZ2UgPSAoaW5pdGlhbERhdGE6IFJlY29yZDxzdHJpbmcsIHN0cmluZz4gPSB7fSk6IG1vY2tTdG9yYWdlSW50ZXJmYWNlID0+IHtcbiAgY29uc3Qgc3RvcmUgPSBuZXcgTWFwPHN0cmluZywgc3RyaW5nPihPYmplY3QuZW50cmllcyhpbml0aWFsRGF0YSkpO1xuXG4gIGNvbnN0IHN0b3JhZ2VNb2NrOiBtb2NrU3RvcmFnZUludGVyZmFjZSA9IHtcbiAgICBnZXQgbGVuZ3RoKCkge1xuICAgICAgcmV0dXJuIHN0b3JlLnNpemU7XG4gICAgfSxcblxuICAgIGdldEl0ZW0oa2V5OiBzdHJpbmcpOiBzdHJpbmcgfCBudWxsIHtcbiAgICAgIHJldHVybiBzdG9yZS5nZXQoa2V5KSB8fCBudWxsO1xuICAgIH0sXG5cbiAgICBzZXRJdGVtKGtleTogc3RyaW5nLCB2YWx1ZTogc3RyaW5nKTogdm9pZCB7XG4gICAgICBzdG9yZS5zZXQoa2V5LCB2YWx1ZSk7XG4gICAgfSxcblxuICAgIHJlbW92ZUl0ZW0oa2V5OiBzdHJpbmcpOiB2b2lkIHtcbiAgICAgIHN0b3JlLmRlbGV0ZShrZXkpO1xuICAgIH0sXG5cbiAgICBjbGVhcigpOiB2b2lkIHtcbiAgICAgIHN0b3JlLmNsZWFyKCk7XG4gICAgfSxcblxuICAgIGtleShpbmRleDogbnVtYmVyKTogc3RyaW5nIHwgbnVsbCB7XG4gICAgICBjb25zdCBrZXlzID0gQXJyYXkuZnJvbShzdG9yZS5rZXlzKCkpO1xuICAgICAgcmV0dXJuIGtleXNbaW5kZXhdIHx8IG51bGw7XG4gICAgfSxcbiAgfTtcblxuICByZXR1cm4gc3RvcmFnZU1vY2s7XG59O1xuXG4vLyBSZXBsYWNlIHdpbmRvdyBzdG9yYWdlIEFQSXNcbk9iamVjdC5kZWZpbmVQcm9wZXJ0eSh3aW5kb3csICdsb2NhbFN0b3JhZ2UnLCB7IHZhbHVlOiBtb2NrU3RvcmFnZSgpIH0pO1xuT2JqZWN0LmRlZmluZVByb3BlcnR5KHdpbmRvdywgJ3Nlc3Npb25TdG9yYWdlJywgeyB2YWx1ZTogbW9ja1N0b3JhZ2UoKSB9KTtcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7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

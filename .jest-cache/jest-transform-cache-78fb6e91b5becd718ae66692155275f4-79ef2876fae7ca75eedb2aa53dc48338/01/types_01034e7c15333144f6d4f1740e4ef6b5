@@ -1,0 +1,69 @@
+b62c3627b3ee10846bf7035030c58092
+"use strict";
+
+/**
+ * Infrastructure Mock Types
+ *
+ * Type definitions for infrastructure-related mocks.
+ */
+/* istanbul ignore next */
+function cov_yy7sbtbjf() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/infrastructure/types/types.ts";
+  var hash = "63e4e52cae252ec3a288b8773997a323f38937e7";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/infrastructure/types/types.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 7,
+          column: 0
+        },
+        end: {
+          line: 7,
+          column: 62
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/infrastructure/types/types.ts",
+      mappings: ";AAAA;;;;GAIG;;AA0KH,+EAA+E;AAC/E,UAAU;AACV,+EAA+E;AAE/E,sCAAsC",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/infrastructure/types/types.ts"],
+      sourcesContent: ["/**\n * Infrastructure Mock Types\n *\n * Type definitions for infrastructure-related mocks.\n */\n\nimport type { BaseState, EnhancedStore } from '@/infrastructure/state';\n\n// ============================================================================\n// STATE MANAGEMENT MOCK TYPES\n// ============================================================================\n\n/**\n * Mock store factory options\n */\nexport interface MockStoreOptions {\n  name?: string;\n  persistence?: boolean;\n  devtools?: boolean;\n}\n\n/**\n * Mock store with additional testing utilities\n */\nexport interface MockStoreWithUtils<T> extends EnhancedStore<T & BaseState> {\n  mockUtils: {\n    reset: () => void;\n    setLoading: (loading: boolean) => void;\n    simulateError: (error: Error) => void;\n    waitForState: (predicate: (state: T & BaseState) => boolean) => Promise<T & BaseState>;\n  };\n}\n\n/**\n * State change tracker\n */\nexport interface StateChangeTracker<T> {\n  changes: T[];\n  unsubscribe: () => void;\n  getChangeCount: () => number;\n  getLastChange: () => T | undefined;\n}\n\n/**\n * Mock middleware logger\n */\nexport interface MockLogger {\n  logs: Array<{ action: string; state: unknown; timestamp: number }>;\n  middleware: (f: unknown) => unknown;\n  clearLogs: () => void;\n  getLastLog: () => unknown;\n}\n\n/**\n * Mock analytics tracker\n */\nexport interface MockAnalytics {\n  events: Array<{ type: string; data: unknown; timestamp: number }>;\n  track: (type: string, data: unknown) => void;\n  clearEvents: () => void;\n  getEventCount: () => number;\n  getLastEvent: () => unknown;\n}\n\n// ============================================================================\n// COMMON TEST PATTERNS\n// ============================================================================\n\n/**\n * Common loading state pattern\n */\nexport interface LoadingState {\n  isLoading: boolean;\n  error: string | null;\n}\n\n/**\n * Common async action state pattern\n */\nexport interface AsyncActionState<T> extends LoadingState {\n  data: T | null;\n  lastFetch: number | null;\n}\n\n/**\n * Common paginated data pattern\n */\nexport interface PaginatedState<T> {\n  items: T[];\n  page: number;\n  pageSize: number;\n  total: number;\n  hasMore: boolean;\n}\n\n// ============================================================================\n// SECURITY MOCK TYPES\n// ============================================================================\n\n/**\n * Mock user interface for testing\n */\nexport interface mockUserInterface {\n  id: string;\n  email: string;\n  username: string;\n  role: string;\n  isActive: boolean;\n  permissions: string[];\n  createdAt: Date;\n  updatedAt: Date;\n}\n\n/**\n * Mock login credentials interface for testing\n */\nexport interface mockLoginCredentialsInterface {\n  email: string;\n  password: string;\n}\n\n/**\n * Mock permission type for testing\n */\nexport type mockPermissionInterface = string;\n\n/**\n * Mock auth service interface for testing\n */\nexport interface mockAuthServiceInterface {\n  register: jest.Mock;\n  login: jest.Mock;\n  verifyToken: jest.Mock;\n  getSecurityEvents: jest.Mock;\n}\n\n/**\n * Mock authorization service interface for testing\n */\nexport interface mockAuthorizationServiceInterface {\n  hasPermission: jest.Mock;\n  hasAnyPermission: jest.Mock;\n  hasAllPermissions: jest.Mock;\n  hasRole: jest.Mock;\n  hasAnyRole: jest.Mock;\n  canAccessResource: jest.Mock;\n  getEffectivePermissions: jest.Mock;\n  canPerformAction: jest.Mock;\n  getRolePermissions: jest.Mock;\n}\n\n/**\n * Mock rate limit info interface for testing\n */\nexport interface mockRateLimitInfoInterface {\n  count: number;\n  resetTime: number;\n  limit: number;\n  remaining: number;\n  windowMs: number;\n}\n\n/**\n * Mock rate limiter service interface for testing\n */\nexport interface mockRateLimiterServiceInterface {\n  checkRateLimit: jest.Mock;\n  getRateLimitInfo: jest.Mock;\n  resetRateLimit: jest.Mock;\n  generateKey: jest.Mock;\n  getAllActiveRateLimits: jest.Mock;\n  getStatistics: jest.Mock;\n}\n\n// ============================================================================\n// EXPORTS\n// ============================================================================\n\n// All types are exported inline above\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "63e4e52cae252ec3a288b8773997a323f38937e7"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_yy7sbtbjf = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_yy7sbtbjf();
+cov_yy7sbtbjf().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// ============================================================================
+// EXPORTS
+// ============================================================================
+// All types are exported inline above
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfeXk3c2J0YmpmIiwicGF0aCIsImhhc2giLCJnbG9iYWwiLCJGdW5jdGlvbiIsImdjdiIsImNvdmVyYWdlRGF0YSIsInN0YXRlbWVudE1hcCIsInN0YXJ0IiwibGluZSIsImNvbHVtbiIsImVuZCIsImZuTWFwIiwiYnJhbmNoTWFwIiwicyIsImYiLCJiIiwiaW5wdXRTb3VyY2VNYXAiLCJmaWxlIiwibWFwcGluZ3MiLCJuYW1lcyIsInNvdXJjZXMiLCJzb3VyY2VzQ29udGVudCIsInZlcnNpb24iLCJfY292ZXJhZ2VTY2hlbWEiLCJjb3ZlcmFnZSIsImFjdHVhbENvdmVyYWdlIl0sInNvdXJjZXMiOlsiL1VzZXJzL2dhbXphcmFtYXphbm92L0Rlc2t0b3AvYWJzdHJhY3QtdGVhbS9zcmMvc2hhcmVkL3Rlc3RpbmcvbW9ja3MvaW5mcmFzdHJ1Y3R1cmUvdHlwZXMvdHlwZXMudHMiXSwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBJbmZyYXN0cnVjdHVyZSBNb2NrIFR5cGVzXG4gKlxuICogVHlwZSBkZWZpbml0aW9ucyBmb3IgaW5mcmFzdHJ1Y3R1cmUtcmVsYXRlZCBtb2Nrcy5cbiAqL1xuXG5pbXBvcnQgdHlwZSB7IEJhc2VTdGF0ZSwgRW5oYW5jZWRTdG9yZSB9IGZyb20gJ0AvaW5mcmFzdHJ1Y3R1cmUvc3RhdGUnO1xuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBTVEFURSBNQU5BR0VNRU5UIE1PQ0sgVFlQRVNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuLyoqXG4gKiBNb2NrIHN0b3JlIGZhY3Rvcnkgb3B0aW9uc1xuICovXG5leHBvcnQgaW50ZXJmYWNlIE1vY2tTdG9yZU9wdGlvbnMge1xuICBuYW1lPzogc3RyaW5nO1xuICBwZXJzaXN0ZW5jZT86IGJvb2xlYW47XG4gIGRldnRvb2xzPzogYm9vbGVhbjtcbn1cblxuLyoqXG4gKiBNb2NrIHN0b3JlIHdpdGggYWRkaXRpb25hbCB0ZXN0aW5nIHV0aWxpdGllc1xuICovXG5leHBvcnQgaW50ZXJmYWNlIE1vY2tTdG9yZVdpdGhVdGlsczxUPiBleHRlbmRzIEVuaGFuY2VkU3RvcmU8VCAmIEJhc2VTdGF0ZT4ge1xuICBtb2NrVXRpbHM6IHtcbiAgICByZXNldDogKCkgPT4gdm9pZDtcbiAgICBzZXRMb2FkaW5nOiAobG9hZGluZzogYm9vbGVhbikgPT4gdm9pZDtcbiAgICBzaW11bGF0ZUVycm9yOiAoZXJyb3I6IEVycm9yKSA9PiB2b2lkO1xuICAgIHdhaXRGb3JTdGF0ZTogKHByZWRpY2F0ZTogKHN0YXRlOiBUICYgQmFzZVN0YXRlKSA9PiBib29sZWFuKSA9PiBQcm9taXNlPFQgJiBCYXNlU3RhdGU+O1xuICB9O1xufVxuXG4vKipcbiAqIFN0YXRlIGNoYW5nZSB0cmFja2VyXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgU3RhdGVDaGFuZ2VUcmFja2VyPFQ+IHtcbiAgY2hhbmdlczogVFtdO1xuICB1bnN1YnNjcmliZTogKCkgPT4gdm9pZDtcbiAgZ2V0Q2hhbmdlQ291bnQ6ICgpID0+IG51bWJlcjtcbiAgZ2V0TGFzdENoYW5nZTogKCkgPT4gVCB8IHVuZGVmaW5lZDtcbn1cblxuLyoqXG4gKiBNb2NrIG1pZGRsZXdhcmUgbG9nZ2VyXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgTW9ja0xvZ2dlciB7XG4gIGxvZ3M6IEFycmF5PHsgYWN0aW9uOiBzdHJpbmc7IHN0YXRlOiB1bmtub3duOyB0aW1lc3RhbXA6IG51bWJlciB9PjtcbiAgbWlkZGxld2FyZTogKGY6IHVua25vd24pID0+IHVua25vd247XG4gIGNsZWFyTG9nczogKCkgPT4gdm9pZDtcbiAgZ2V0TGFzdExvZzogKCkgPT4gdW5rbm93bjtcbn1cblxuLyoqXG4gKiBNb2NrIGFuYWx5dGljcyB0cmFja2VyXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgTW9ja0FuYWx5dGljcyB7XG4gIGV2ZW50czogQXJyYXk8eyB0eXBlOiBzdHJpbmc7IGRhdGE6IHVua25vd247IHRpbWVzdGFtcDogbnVtYmVyIH0+O1xuICB0cmFjazogKHR5cGU6IHN0cmluZywgZGF0YTogdW5rbm93bikgPT4gdm9pZDtcbiAgY2xlYXJFdmVudHM6ICgpID0+IHZvaWQ7XG4gIGdldEV2ZW50Q291bnQ6ICgpID0+IG51bWJlcjtcbiAgZ2V0TGFzdEV2ZW50OiAoKSA9PiB1bmtub3duO1xufVxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBDT01NT04gVEVTVCBQQVRURVJOU1xuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuXG4vKipcbiAqIENvbW1vbiBsb2FkaW5nIHN0YXRlIHBhdHRlcm5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBMb2FkaW5nU3RhdGUge1xuICBpc0xvYWRpbmc6IGJvb2xlYW47XG4gIGVycm9yOiBzdHJpbmcgfCBudWxsO1xufVxuXG4vKipcbiAqIENvbW1vbiBhc3luYyBhY3Rpb24gc3RhdGUgcGF0dGVyblxuICovXG5leHBvcnQgaW50ZXJmYWNlIEFzeW5jQWN0aW9uU3RhdGU8VD4gZXh0ZW5kcyBMb2FkaW5nU3RhdGUge1xuICBkYXRhOiBUIHwgbnVsbDtcbiAgbGFzdEZldGNoOiBudW1iZXIgfCBudWxsO1xufVxuXG4vKipcbiAqIENvbW1vbiBwYWdpbmF0ZWQgZGF0YSBwYXR0ZXJuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgUGFnaW5hdGVkU3RhdGU8VD4ge1xuICBpdGVtczogVFtdO1xuICBwYWdlOiBudW1iZXI7XG4gIHBhZ2VTaXplOiBudW1iZXI7XG4gIHRvdGFsOiBudW1iZXI7XG4gIGhhc01vcmU6IGJvb2xlYW47XG59XG5cbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIFNFQ1VSSVRZIE1PQ0sgVFlQRVNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuLyoqXG4gKiBNb2NrIHVzZXIgaW50ZXJmYWNlIGZvciB0ZXN0aW5nXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgbW9ja1VzZXJJbnRlcmZhY2Uge1xuICBpZDogc3RyaW5nO1xuICBlbWFpbDogc3RyaW5nO1xuICB1c2VybmFtZTogc3RyaW5nO1xuICByb2xlOiBzdHJpbmc7XG4gIGlzQWN0aXZlOiBib29sZWFuO1xuICBwZXJtaXNzaW9uczogc3RyaW5nW107XG4gIGNyZWF0ZWRBdDogRGF0ZTtcbiAgdXBkYXRlZEF0OiBEYXRlO1xufVxuXG4vKipcbiAqIE1vY2sgbG9naW4gY3JlZGVudGlhbHMgaW50ZXJmYWNlIGZvciB0ZXN0aW5nXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgbW9ja0xvZ2luQ3JlZGVudGlhbHNJbnRlcmZhY2Uge1xuICBlbWFpbDogc3RyaW5nO1xuICBwYXNzd29yZDogc3RyaW5nO1xufVxuXG4vKipcbiAqIE1vY2sgcGVybWlzc2lvbiB0eXBlIGZvciB0ZXN0aW5nXG4gKi9cbmV4cG9ydCB0eXBlIG1vY2tQZXJtaXNzaW9uSW50ZXJmYWNlID0gc3RyaW5nO1xuXG4vKipcbiAqIE1vY2sgYXV0aCBzZXJ2aWNlIGludGVyZmFjZSBmb3IgdGVzdGluZ1xuICovXG5leHBvcnQgaW50ZXJmYWNlIG1vY2tBdXRoU2VydmljZUludGVyZmFjZSB7XG4gIHJlZ2lzdGVyOiBqZXN0Lk1vY2s7XG4gIGxvZ2luOiBqZXN0Lk1vY2s7XG4gIHZlcmlmeVRva2VuOiBqZXN0Lk1vY2s7XG4gIGdldFNlY3VyaXR5RXZlbnRzOiBqZXN0Lk1vY2s7XG59XG5cbi8qKlxuICogTW9jayBhdXRob3JpemF0aW9uIHNlcnZpY2UgaW50ZXJmYWNlIGZvciB0ZXN0aW5nXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgbW9ja0F1dGhvcml6YXRpb25TZXJ2aWNlSW50ZXJmYWNlIHtcbiAgaGFzUGVybWlzc2lvbjogamVzdC5Nb2NrO1xuICBoYXNBbnlQZXJtaXNzaW9uOiBqZXN0Lk1vY2s7XG4gIGhhc0FsbFBlcm1pc3Npb25zOiBqZXN0Lk1vY2s7XG4gIGhhc1JvbGU6IGplc3QuTW9jaztcbiAgaGFzQW55Um9sZTogamVzdC5Nb2NrO1xuICBjYW5BY2Nlc3NSZXNvdXJjZTogamVzdC5Nb2NrO1xuICBnZXRFZmZlY3RpdmVQZXJtaXNzaW9uczogamVzdC5Nb2NrO1xuICBjYW5QZXJmb3JtQWN0aW9uOiBqZXN0Lk1vY2s7XG4gIGdldFJvbGVQZXJtaXNzaW9uczogamVzdC5Nb2NrO1xufVxuXG4vKipcbiAqIE1vY2sgcmF0ZSBsaW1pdCBpbmZvIGludGVyZmFjZSBmb3IgdGVzdGluZ1xuICovXG5leHBvcnQgaW50ZXJmYWNlIG1vY2tSYXRlTGltaXRJbmZvSW50ZXJmYWNlIHtcbiAgY291bnQ6IG51bWJlcjtcbiAgcmVzZXRUaW1lOiBudW1iZXI7XG4gIGxpbWl0OiBudW1iZXI7XG4gIHJlbWFpbmluZzogbnVtYmVyO1xuICB3aW5kb3dNczogbnVtYmVyO1xufVxuXG4vKipcbiAqIE1vY2sgcmF0ZSBsaW1pdGVyIHNlcnZpY2UgaW50ZXJmYWNlIGZvciB0ZXN0aW5nXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgbW9ja1JhdGVMaW1pdGVyU2VydmljZUludGVyZmFjZSB7XG4gIGNoZWNrUmF0ZUxpbWl0OiBqZXN0Lk1vY2s7XG4gIGdldFJhdGVMaW1pdEluZm86IGplc3QuTW9jaztcbiAgcmVzZXRSYXRlTGltaXQ6IGplc3QuTW9jaztcbiAgZ2VuZXJhdGVLZXk6IGplc3QuTW9jaztcbiAgZ2V0QWxsQWN0aXZlUmF0ZUxpbWl0czogamVzdC5Nb2NrO1xuICBnZXRTdGF0aXN0aWNzOiBqZXN0Lk1vY2s7XG59XG5cbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIEVYUE9SVFNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuLy8gQWxsIHR5cGVzIGFyZSBleHBvcnRlZCBpbmxpbmUgYWJvdmVcbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7Ozs7QUFBQTtBQUFBLFNBQUFBLGNBQUE7RUFBQSxJQUFBQyxJQUFBO0VBQUEsSUFBQUMsSUFBQTtFQUFBLElBQUFDLE1BQUEsT0FBQUMsUUFBQTtFQUFBLElBQUFDLEdBQUE7RUFBQSxJQUFBQyxZQUFBO0lBQUFMLElBQUE7SUFBQU0sWUFBQTtNQUFBO1FBQUFDLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO0lBQUE7SUFBQUUsS0FBQTtJQUFBQyxTQUFBO0lBQUFDLENBQUE7TUFBQTtJQUFBO0lBQUFDLENBQUE7SUFBQUMsQ0FBQTtJQUFBQyxjQUFBO01BQUFDLElBQUE7TUFBQUMsUUFBQTtNQUFBQyxLQUFBO01BQUFDLE9BQUE7TUFBQUMsY0FBQTtNQUFBQyxPQUFBO0lBQUE7SUFBQUMsZUFBQTtJQUFBdEIsSUFBQTtFQUFBO0VBQUEsSUFBQXVCLFFBQUEsR0FBQXRCLE1BQUEsQ0FBQUUsR0FBQSxNQUFBRixNQUFBLENBQUFFLEdBQUE7RUFBQSxLQUFBb0IsUUFBQSxDQUFBeEIsSUFBQSxLQUFBd0IsUUFBQSxDQUFBeEIsSUFBQSxFQUFBQyxJQUFBLEtBQUFBLElBQUE7SUFBQXVCLFFBQUEsQ0FBQXhCLElBQUEsSUFBQUssWUFBQTtFQUFBO0VBQUEsSUFBQW9CLGNBQUEsR0FBQUQsUUFBQSxDQUFBeEIsSUFBQTtFQUFBOzs7Ozs7Ozs7Ozs7O0FBOEtBO0FBQ0E7QUFDQTtBQUVBIiwiaWdub3JlTGlzdCI6W119

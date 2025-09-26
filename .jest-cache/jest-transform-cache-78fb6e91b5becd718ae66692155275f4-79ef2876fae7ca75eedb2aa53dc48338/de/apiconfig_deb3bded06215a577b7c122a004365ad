@@ -1,0 +1,137 @@
+67880e3329928c917ff72268dc0507fc
+"use strict";
+
+/* istanbul ignore next */
+function cov_wkxm5hxn9() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/api.config.ts";
+  var hash = "ee28190b6b215e9405cfe9b1245e7bbe158f3b5a";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/api.config.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 46
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 12
+        },
+        end: {
+          line: 4,
+          column: 45
+        }
+      },
+      "3": {
+        start: {
+          line: 8,
+          column: 0
+        },
+        end: {
+          line: 16,
+          column: 2
+        }
+      },
+      "4": {
+        start: {
+          line: 20,
+          column: 0
+        },
+        end: {
+          line: 25,
+          column: 2
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/api.config.ts",
+      mappings: ";;;AACA,8CAAmD;AAEnD;;GAEG;AACU,QAAA,SAAS,GAAc;IAClC,OAAO,EAAE,eAAS,CAAC,MAAM;IACzB,OAAO,EAAE,KAAK,EAAE,aAAa;IAC7B,aAAa,EAAE,CAAC;IAChB,OAAO,EAAE;QACP,cAAc,EAAE,kBAAkB;QAClC,MAAM,EAAE,kBAAkB;KAC3B;CACF,CAAC;AAEF;;GAEG;AACU,QAAA,QAAQ,GAAG;IACtB,GAAG,EAAE,eAAS,CAAC,KAAK;IACpB,iBAAiB,EAAE,CAAC;IACpB,iBAAiB,EAAE,IAAI,EAAE,YAAY;IACrC,iBAAiB,EAAE,KAAK,EAAE,aAAa;CAC/B,CAAC",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/api.config.ts"],
+      sourcesContent: ["import { ApiConfig } from './api.types';\nimport { envConfig } from '../../../../config/env';\n\n/**\n * API client configuration\n */\nexport const apiConfig: ApiConfig = {\n  baseUrl: envConfig.apiUrl,\n  timeout: 30000, // 30 seconds\n  retryAttempts: 3,\n  headers: {\n    'Content-Type': 'application/json',\n    Accept: 'application/json',\n  },\n};\n\n/**\n * WebSocket configuration\n */\nexport const wsConfig = {\n  url: envConfig.wsUrl,\n  reconnectAttempts: 5,\n  reconnectInterval: 3000, // 3 seconds\n  heartbeatInterval: 30000, // 30 seconds\n} as const;\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "ee28190b6b215e9405cfe9b1245e7bbe158f3b5a"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_wkxm5hxn9 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_wkxm5hxn9();
+cov_wkxm5hxn9().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_wkxm5hxn9().s[1]++;
+exports.wsConfig = exports.apiConfig = void 0;
+var env_1 =
+/* istanbul ignore next */
+(cov_wkxm5hxn9().s[2]++, require("../../../../config/env"));
+/**
+ * API client configuration
+ */
+/* istanbul ignore next */
+cov_wkxm5hxn9().s[3]++;
+exports.apiConfig = {
+  baseUrl: env_1.envConfig.apiUrl,
+  timeout: 30000,
+  // 30 seconds
+  retryAttempts: 3,
+  headers: {
+    'Content-Type': 'application/json',
+    Accept: 'application/json'
+  }
+};
+/**
+ * WebSocket configuration
+ */
+/* istanbul ignore next */
+cov_wkxm5hxn9().s[4]++;
+exports.wsConfig = {
+  url: env_1.envConfig.wsUrl,
+  reconnectAttempts: 5,
+  reconnectInterval: 3000,
+  // 3 seconds
+  heartbeatInterval: 30000 // 30 seconds
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3Zfd2t4bTVoeG45IiwiYWN0dWFsQ292ZXJhZ2UiLCJzIiwiZW52XzEiLCJyZXF1aXJlIiwiZXhwb3J0cyIsImFwaUNvbmZpZyIsImJhc2VVcmwiLCJlbnZDb25maWciLCJhcGlVcmwiLCJ0aW1lb3V0IiwicmV0cnlBdHRlbXB0cyIsImhlYWRlcnMiLCJBY2NlcHQiLCJ3c0NvbmZpZyIsInVybCIsIndzVXJsIiwicmVjb25uZWN0QXR0ZW1wdHMiLCJyZWNvbm5lY3RJbnRlcnZhbCIsImhlYXJ0YmVhdEludGVydmFsIl0sInNvdXJjZXMiOlsiL1VzZXJzL2dhbXphcmFtYXphbm92L0Rlc2t0b3AvYWJzdHJhY3QtdGVhbS9zcmMvc2hhcmVkL2NvbmZpZy9hcGkvYXBpLmNvbmZpZy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBcGlDb25maWcgfSBmcm9tICcuL2FwaS50eXBlcyc7XG5pbXBvcnQgeyBlbnZDb25maWcgfSBmcm9tICcuLi8uLi8uLi8uLi9jb25maWcvZW52JztcblxuLyoqXG4gKiBBUEkgY2xpZW50IGNvbmZpZ3VyYXRpb25cbiAqL1xuZXhwb3J0IGNvbnN0IGFwaUNvbmZpZzogQXBpQ29uZmlnID0ge1xuICBiYXNlVXJsOiBlbnZDb25maWcuYXBpVXJsLFxuICB0aW1lb3V0OiAzMDAwMCwgLy8gMzAgc2Vjb25kc1xuICByZXRyeUF0dGVtcHRzOiAzLFxuICBoZWFkZXJzOiB7XG4gICAgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyxcbiAgICBBY2NlcHQ6ICdhcHBsaWNhdGlvbi9qc29uJyxcbiAgfSxcbn07XG5cbi8qKlxuICogV2ViU29ja2V0IGNvbmZpZ3VyYXRpb25cbiAqL1xuZXhwb3J0IGNvbnN0IHdzQ29uZmlnID0ge1xuICB1cmw6IGVudkNvbmZpZy53c1VybCxcbiAgcmVjb25uZWN0QXR0ZW1wdHM6IDUsXG4gIHJlY29ubmVjdEludGVydmFsOiAzMDAwLCAvLyAzIHNlY29uZHNcbiAgaGVhcnRiZWF0SW50ZXJ2YWw6IDMwMDAwLCAvLyAzMCBzZWNvbmRzXG59IGFzIGNvbnN0O1xuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFjRTtJQUFBQSxhQUFBLFlBQUFBLENBQUE7TUFBQSxPQUFBQyxjQUFBO0lBQUE7RUFBQTtFQUFBLE9BQUFBLGNBQUE7QUFBQTtBQUFBRCxhQUFBO0FBQUFBLGFBQUEsR0FBQUUsQ0FBQTs7Ozs7OztBQWJGLElBQUFDLEtBQUE7QUFBQTtBQUFBLENBQUFILGFBQUEsR0FBQUUsQ0FBQSxPQUFBRSxPQUFBO0FBRUE7OztBQUFBO0FBQUFKLGFBQUEsR0FBQUUsQ0FBQTtBQUdhRyxPQUFBLENBQUFDLFNBQVMsR0FBYztFQUNsQ0MsT0FBTyxFQUFFSixLQUFBLENBQUFLLFNBQVMsQ0FBQ0MsTUFBTTtFQUN6QkMsT0FBTyxFQUFFLEtBQUs7RUFBRTtFQUNoQkMsYUFBYSxFQUFFLENBQUM7RUFDaEJDLE9BQU8sRUFBRTtJQUNQLGNBQWMsRUFBRSxrQkFBa0I7SUFDbENDLE1BQU0sRUFBRTs7Q0FFWDtBQUVEOzs7QUFBQTtBQUFBYixhQUFBLEdBQUFFLENBQUE7QUFHYUcsT0FBQSxDQUFBUyxRQUFRLEdBQUc7RUFDdEJDLEdBQUcsRUFBRVosS0FBQSxDQUFBSyxTQUFTLENBQUNRLEtBQUs7RUFDcEJDLGlCQUFpQixFQUFFLENBQUM7RUFDcEJDLGlCQUFpQixFQUFFLElBQUk7RUFBRTtFQUN6QkMsaUJBQWlCLEVBQUUsS0FBSyxDQUFFO0NBQ2xCIiwiaWdub3JlTGlzdCI6W119

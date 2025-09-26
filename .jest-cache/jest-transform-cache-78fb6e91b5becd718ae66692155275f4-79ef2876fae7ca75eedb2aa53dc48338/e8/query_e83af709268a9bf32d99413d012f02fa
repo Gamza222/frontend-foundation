@@ -1,0 +1,165 @@
+f0e9c7bcceb6055320d58176d89e58fb
+"use strict";
+"use client";
+
+/* istanbul ignore next */
+function cov_uvuqcushp() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/providers/query/ui/query.tsx";
+  var hash = "115cf15aea005706c9da465a6cef5d620d4675fd";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/providers/query/ui/query.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 4,
+          column: 20
+        },
+        end: {
+          line: 4,
+          column: 48
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 20
+        },
+        end: {
+          line: 10,
+          column: 1
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 19
+        },
+        end: {
+          line: 6,
+          column: 33
+        }
+      },
+      "4": {
+        start: {
+          line: 9,
+          column: 4
+        },
+        end: {
+          line: 9,
+          column: 82
+        }
+      },
+      "5": {
+        start: {
+          line: 11,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 32
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 20
+          },
+          end: {
+            line: 5,
+            column: 21
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 37
+          },
+          end: {
+            line: 10,
+            column: 1
+          }
+        },
+        line: 5
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/providers/query/ui/query.tsx",
+      mappings: ";AAAA,YAAY,CAAC;;;AASb,IAAM,aAAa,GAA2B,UAAC,KAAK;IAC1C,IAAA,QAAQ,GAAK,KAAK,SAAV,CAAW;IAE3B,0EAA0E;IAC1E,yDAAyD;IACzD,OAAO,2DAAG,QAAQ,GAAI,CAAC;AACzB,CAAC,CAAC;AAEF,kBAAe,aAAa,CAAC",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/providers/query/ui/query.tsx"],
+      sourcesContent: ["\"use client\";\n\nimport { type FC, type PropsWithChildren } from \"react\";\n\ninterface QueryProviderProps extends PropsWithChildren {\n  // Add custom query client if needed\n  client?: unknown;\n}\n\nconst QueryProvider: FC<QueryProviderProps> = (props) => {\n  const { children } = props;\n\n  // For now, just return children without QueryClient to avoid build issues\n  // TODO: Re-implement QueryClient properly for production\n  return <>{children}</>;\n};\n\nexport default QueryProvider;\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "115cf15aea005706c9da465a6cef5d620d4675fd"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_uvuqcushp = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_uvuqcushp();
+cov_uvuqcushp().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var jsx_runtime_1 =
+/* istanbul ignore next */
+(cov_uvuqcushp().s[1]++, require("react/jsx-runtime"));
+/* istanbul ignore next */
+cov_uvuqcushp().s[2]++;
+var QueryProvider = function (props) {
+  /* istanbul ignore next */
+  cov_uvuqcushp().f[0]++;
+  var children =
+  /* istanbul ignore next */
+  (cov_uvuqcushp().s[3]++, props.children);
+  // For now, just return children without QueryClient to avoid build issues
+  // TODO: Re-implement QueryClient properly for production
+  /* istanbul ignore next */
+  cov_uvuqcushp().s[4]++;
+  return (0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, {
+    children: children
+  });
+};
+/* istanbul ignore next */
+cov_uvuqcushp().s[5]++;
+exports.default = QueryProvider;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfdXZ1cWN1c2hwIiwicGF0aCIsImhhc2giLCJnbG9iYWwiLCJGdW5jdGlvbiIsImdjdiIsImNvdmVyYWdlRGF0YSIsInN0YXRlbWVudE1hcCIsInN0YXJ0IiwibGluZSIsImNvbHVtbiIsImVuZCIsImZuTWFwIiwibmFtZSIsImRlY2wiLCJsb2MiLCJicmFuY2hNYXAiLCJzIiwiZiIsImIiLCJpbnB1dFNvdXJjZU1hcCIsImZpbGUiLCJtYXBwaW5ncyIsIm5hbWVzIiwic291cmNlcyIsInNvdXJjZXNDb250ZW50IiwidmVyc2lvbiIsIl9jb3ZlcmFnZVNjaGVtYSIsImNvdmVyYWdlIiwiYWN0dWFsQ292ZXJhZ2UiLCJRdWVyeVByb3ZpZGVyIiwicHJvcHMiLCJjaGlsZHJlbiIsImpzeF9ydW50aW1lXzEiLCJqc3giLCJGcmFnbWVudCIsImV4cG9ydHMiLCJkZWZhdWx0Il0sInNvdXJjZXMiOlsiL1VzZXJzL2dhbXphcmFtYXphbm92L0Rlc2t0b3AvYWJzdHJhY3QtdGVhbS9zcmMvaW5mcmFzdHJ1Y3R1cmUvcHJvdmlkZXJzL3F1ZXJ5L3VpL3F1ZXJ5LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBjbGllbnRcIjtcblxuaW1wb3J0IHsgdHlwZSBGQywgdHlwZSBQcm9wc1dpdGhDaGlsZHJlbiB9IGZyb20gXCJyZWFjdFwiO1xuXG5pbnRlcmZhY2UgUXVlcnlQcm92aWRlclByb3BzIGV4dGVuZHMgUHJvcHNXaXRoQ2hpbGRyZW4ge1xuICAvLyBBZGQgY3VzdG9tIHF1ZXJ5IGNsaWVudCBpZiBuZWVkZWRcbiAgY2xpZW50PzogdW5rbm93bjtcbn1cblxuY29uc3QgUXVlcnlQcm92aWRlcjogRkM8UXVlcnlQcm92aWRlclByb3BzPiA9IChwcm9wcykgPT4ge1xuICBjb25zdCB7IGNoaWxkcmVuIH0gPSBwcm9wcztcblxuICAvLyBGb3Igbm93LCBqdXN0IHJldHVybiBjaGlsZHJlbiB3aXRob3V0IFF1ZXJ5Q2xpZW50IHRvIGF2b2lkIGJ1aWxkIGlzc3Vlc1xuICAvLyBUT0RPOiBSZS1pbXBsZW1lbnQgUXVlcnlDbGllbnQgcHJvcGVybHkgZm9yIHByb2R1Y3Rpb25cbiAgcmV0dXJuIDw+e2NoaWxkcmVufTwvPjtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IFF1ZXJ5UHJvdmlkZXI7XG4iXSwibWFwcGluZ3MiOiI7QUFBQSxZQUFZOztBQUFDO0FBQUEsU0FBQUEsY0FBQTtFQUFBLElBQUFDLElBQUE7RUFBQSxJQUFBQyxJQUFBO0VBQUEsSUFBQUMsTUFBQSxPQUFBQyxRQUFBO0VBQUEsSUFBQUMsR0FBQTtFQUFBLElBQUFDLFlBQUE7SUFBQUwsSUFBQTtJQUFBTSxZQUFBO01BQUE7UUFBQUMsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO0lBQUE7SUFBQUUsS0FBQTtNQUFBO1FBQUFDLElBQUE7UUFBQUMsSUFBQTtVQUFBTixLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtRQUFBSyxHQUFBO1VBQUFQLEtBQUE7WUFBQUMsSUFBQTtZQUFBQyxNQUFBO1VBQUE7VUFBQUMsR0FBQTtZQUFBRixJQUFBO1lBQUFDLE1BQUE7VUFBQTtRQUFBO1FBQUFELElBQUE7TUFBQTtJQUFBO0lBQUFPLFNBQUE7SUFBQUMsQ0FBQTtNQUFBO01BQUE7TUFBQTtNQUFBO01BQUE7TUFBQTtJQUFBO0lBQUFDLENBQUE7TUFBQTtJQUFBO0lBQUFDLENBQUE7SUFBQUMsY0FBQTtNQUFBQyxJQUFBO01BQUFDLFFBQUE7TUFBQUMsS0FBQTtNQUFBQyxPQUFBO01BQUFDLGNBQUE7TUFBQUMsT0FBQTtJQUFBO0lBQUFDLGVBQUE7SUFBQXpCLElBQUE7RUFBQTtFQUFBLElBQUEwQixRQUFBLEdBQUF6QixNQUFBLENBQUFFLEdBQUEsTUFBQUYsTUFBQSxDQUFBRSxHQUFBO0VBQUEsS0FBQXVCLFFBQUEsQ0FBQTNCLElBQUEsS0FBQTJCLFFBQUEsQ0FBQTNCLElBQUEsRUFBQUMsSUFBQSxLQUFBQSxJQUFBO0lBQUEwQixRQUFBLENBQUEzQixJQUFBLElBQUFLLFlBQUE7RUFBQTtFQUFBLElBQUF1QixjQUFBLEdBQUFELFFBQUEsQ0FBQTNCLElBQUE7RUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBU2IsSUFBTTZCLGFBQWEsR0FBMkIsU0FBQUEsQ0FBQ0MsS0FBSztFQUFBO0VBQUEvQixhQUFBLEdBQUFrQixDQUFBO0VBQzFDLElBQUFjLFFBQVE7RUFBQTtFQUFBLENBQUFoQyxhQUFBLEdBQUFpQixDQUFBLE9BQUtjLEtBQUssQ0FBQUMsUUFBVjtFQUVoQjtFQUNBO0VBQUE7RUFBQWhDLGFBQUEsR0FBQWlCLENBQUE7RUFDQSxPQUFPLElBQUFnQixhQUFBLENBQUFDLEdBQUEsRUFBQUQsYUFBQSxDQUFBRSxRQUFBO0lBQUFILFFBQUEsRUFBR0E7RUFBUSxFQUFJO0FBQ3hCLENBQUM7QUFBQztBQUFBaEMsYUFBQSxHQUFBaUIsQ0FBQTtBQUVGbUIsT0FBQSxDQUFBQyxPQUFBLEdBQWVQLGFBQWEiLCJpZ25vcmVMaXN0IjpbXX0=

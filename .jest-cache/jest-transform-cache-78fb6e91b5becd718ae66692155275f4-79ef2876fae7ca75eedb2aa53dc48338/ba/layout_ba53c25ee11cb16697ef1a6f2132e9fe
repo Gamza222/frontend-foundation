@@ -1,0 +1,481 @@
+73c346986e790cf9160ed34ac7d561ed
+"use strict";
+
+/* istanbul ignore next */
+function cov_112tv65b8i() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/app/(admin)/layout.tsx";
+  var hash = "55a950057b7104b5da184555566f6508d59fd747";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/app/(admin)/layout.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 22
+        },
+        end: {
+          line: 4,
+          column: 1
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 4
+        },
+        end: {
+          line: 3,
+          column: 62
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 62
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 30
+        }
+      },
+      "4": {
+        start: {
+          line: 7,
+          column: 20
+        },
+        end: {
+          line: 7,
+          column: 48
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 13
+        },
+        end: {
+          line: 8,
+          column: 40
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 19
+        },
+        end: {
+          line: 9,
+          column: 57
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 15
+        },
+        end: {
+          line: 10,
+          column: 44
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 21
+        },
+        end: {
+          line: 11,
+          column: 63
+        }
+      },
+      "9": {
+        start: {
+          line: 12,
+          column: 13
+        },
+        end: {
+          line: 12,
+          column: 50
+        }
+      },
+      "10": {
+        start: {
+          line: 13,
+          column: 27
+        },
+        end: {
+          line: 13,
+          column: 75
+        }
+      },
+      "11": {
+        start: {
+          line: 15,
+          column: 19
+        },
+        end: {
+          line: 15,
+          column: 30
+        }
+      },
+      "12": {
+        start: {
+          line: 16,
+          column: 4
+        },
+        end: {
+          line: 16,
+          column: 2328
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 2,
+            column: 57
+          }
+        },
+        loc: {
+          start: {
+            line: 2,
+            column: 71
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        line: 2
+      },
+      "1": {
+        name: "AdminLayout",
+        decl: {
+          start: {
+            line: 14,
+            column: 9
+          },
+          end: {
+            line: 14,
+            column: 20
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 25
+          },
+          end: {
+            line: 17,
+            column: 1
+          }
+        },
+        line: 14
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 2,
+            column: 22
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 2,
+            column: 23
+          },
+          end: {
+            line: 2,
+            column: 27
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 31
+          },
+          end: {
+            line: 2,
+            column: 51
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        }],
+        line: 2
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 3,
+            column: 11
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 37
+          },
+          end: {
+            line: 3,
+            column: 40
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 43
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        }],
+        line: 3
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 15
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 19
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        }],
+        line: 3
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {
+      "0": [0, 0, 0],
+      "1": [0, 0],
+      "2": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/app/(admin)/layout.tsx",
+      mappings: ";;;;;AAYA,8BAyDC;;AApED,yCAAwC;AACxC,0DAAoE;AACpE,6CAA4C;AAC5C,gEAAgE;AAChE,mDAA6B;AAC7B,4EAA0C;AAM1C,SAAwB,WAAW,CAAC,EAA8B;QAA5B,QAAQ,cAAA;IAC5C,OAAO,CACL,iCAAK,SAAS,EAAE,4BAAM,CAAC,SAAS,aAE9B,mCAAQ,SAAS,EAAE,4BAAM,CAAC,MAAM,YAC9B,iCAAK,SAAS,EAAE,4BAAM,CAAC,aAAa,aAClC,uBAAC,WAAI,IAAC,OAAO,EAAE,wBAAW,CAAC,OAAO,EAAE,IAAI,EAAE,qBAAQ,CAAC,EAAE,oCAE9C,EAEP,iCAAK,SAAS,EAAE,4BAAM,CAAC,GAAG,aACxB,uBAAC,cAAI,IAAC,IAAI,EAAC,gBAAgB,YACzB,uBAAC,eAAM,IAAC,OAAO,EAAE,4BAAa,CAAC,SAAS,8BAAwB,GAC3D,EACP,uBAAC,cAAI,IAAC,IAAI,EAAC,GAAG,YACZ,uBAAC,eAAM,IAAC,OAAO,EAAE,4BAAa,CAAC,SAAS,qBAAe,GAClD,IACH,IACF,GACC,EAGT,iCAAK,SAAS,EAAE,4BAAM,CAAC,OAAO,aAC5B,mCAAO,SAAS,EAAE,4BAAM,CAAC,OAAO,aAC9B,uBAAC,WAAI,IACH,OAAO,EAAE,wBAAW,CAAC,OAAO,EAC5B,IAAI,EAAE,qBAAQ,CAAC,EAAE,EACjB,SAAS,EAAE,4BAAM,CAAC,YAAY,2BAGzB,EACP,iCAAK,SAAS,EAAE,4BAAM,CAAC,UAAU,aAC/B,uBAAC,cAAI,IAAC,IAAI,EAAC,gBAAgB,EAAC,SAAS,EAAE,4BAAM,CAAC,WAAW,iCAElD,EACP,uBAAC,cAAI,IAAC,IAAI,EAAC,gBAAgB,EAAC,SAAS,EAAE,4BAAM,CAAC,WAAW,gCAElD,EACP,uBAAC,cAAI,IAAC,IAAI,EAAC,gBAAgB,EAAC,SAAS,EAAE,4BAAM,CAAC,WAAW,qCAElD,IACH,IACA,EAER,iCAAM,SAAS,EAAE,4BAAM,CAAC,IAAI,YAAG,QAAQ,GAAQ,IAC3C,EAGN,mCAAQ,SAAS,EAAE,4BAAM,CAAC,MAAM,YAC9B,gCAAK,SAAS,EAAE,4BAAM,CAAC,aAAa,YAClC,uBAAC,WAAI,IAAC,OAAO,EAAE,wBAAW,CAAC,OAAO,EAAE,IAAI,EAAE,qBAAQ,CAAC,EAAE,2CAE9C,GACH,GACC,IACL,CACP,CAAC;AACJ,CAAC",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/app/(admin)/layout.tsx"],
+      sourcesContent: ["import { ReactNode } from \"react\";\nimport { Text } from \"@/shared/ui/Text\";\nimport { TextSize, TextVariant } from \"@/shared/ui/Text/Text.types\";\nimport { Button } from \"@/shared/ui/Button\";\nimport { ButtonVariant } from \"@/shared/ui/Button/Button.types\";\nimport Link from \"next/link\";\nimport styles from \"./layout.module.scss\";\n\ninterface AdminLayoutProps {\n  children: ReactNode;\n}\n\nexport default function AdminLayout({ children }: AdminLayoutProps) {\n  return (\n    <div className={styles.container}>\n      {/* Header */}\n      <header className={styles.header}>\n        <div className={styles.headerContent}>\n          <Text variant={TextVariant.PRIMARY} size={TextSize.LG}>\n            Admin Configuration\n          </Text>\n\n          <nav className={styles.nav}>\n            <Link href=\"/configuration\">\n              <Button variant={ButtonVariant.SECONDARY}>Configuration</Button>\n            </Link>\n            <Link href=\"/\">\n              <Button variant={ButtonVariant.SECONDARY}>Home</Button>\n            </Link>\n          </nav>\n        </div>\n      </header>\n\n      {/* Sidebar + Main Content */}\n      <div className={styles.content}>\n        <aside className={styles.sidebar}>\n          <Text\n            variant={TextVariant.PRIMARY}\n            size={TextSize.MD}\n            className={styles.sidebarTitle}\n          >\n            Admin Menu\n          </Text>\n          <nav className={styles.sidebarNav}>\n            <Link href=\"/configuration\" className={styles.sidebarLink}>\n              General Settings\n            </Link>\n            <Link href=\"/configuration\" className={styles.sidebarLink}>\n              User Management\n            </Link>\n            <Link href=\"/configuration\" className={styles.sidebarLink}>\n              System Configuration\n            </Link>\n          </nav>\n        </aside>\n\n        <main className={styles.main}>{children}</main>\n      </div>\n\n      {/* Footer */}\n      <footer className={styles.footer}>\n        <div className={styles.footerContent}>\n          <Text variant={TextVariant.PRIMARY} size={TextSize.SM}>\n            Admin Configuration Footer\n          </Text>\n        </div>\n      </footer>\n    </div>\n  );\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "55a950057b7104b5da184555566f6508d59fd747"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_112tv65b8i = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_112tv65b8i();
+var __importDefault =
+/* istanbul ignore next */
+(cov_112tv65b8i().s[0]++,
+/* istanbul ignore next */
+(cov_112tv65b8i().b[0][0]++, this) &&
+/* istanbul ignore next */
+(cov_112tv65b8i().b[0][1]++, this.__importDefault) ||
+/* istanbul ignore next */
+(cov_112tv65b8i().b[0][2]++, function (mod) {
+  /* istanbul ignore next */
+  cov_112tv65b8i().f[0]++;
+  cov_112tv65b8i().s[1]++;
+  return /* istanbul ignore next */(cov_112tv65b8i().b[2][0]++, mod) &&
+  /* istanbul ignore next */
+  (cov_112tv65b8i().b[2][1]++, mod.__esModule) ?
+  /* istanbul ignore next */
+  (cov_112tv65b8i().b[1][0]++, mod) :
+  /* istanbul ignore next */
+  (cov_112tv65b8i().b[1][1]++, {
+    "default": mod
+  });
+}));
+/* istanbul ignore next */
+cov_112tv65b8i().s[2]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_112tv65b8i().s[3]++;
+exports.default = AdminLayout;
+var jsx_runtime_1 =
+/* istanbul ignore next */
+(cov_112tv65b8i().s[4]++, require("react/jsx-runtime"));
+var Text_1 =
+/* istanbul ignore next */
+(cov_112tv65b8i().s[5]++, require("@/shared/ui/Text"));
+var Text_types_1 =
+/* istanbul ignore next */
+(cov_112tv65b8i().s[6]++, require("@/shared/ui/Text/Text.types"));
+var Button_1 =
+/* istanbul ignore next */
+(cov_112tv65b8i().s[7]++, require("@/shared/ui/Button"));
+var Button_types_1 =
+/* istanbul ignore next */
+(cov_112tv65b8i().s[8]++, require("@/shared/ui/Button/Button.types"));
+var link_1 =
+/* istanbul ignore next */
+(cov_112tv65b8i().s[9]++, __importDefault(require("next/link")));
+var layout_module_scss_1 =
+/* istanbul ignore next */
+(cov_112tv65b8i().s[10]++, __importDefault(require("./layout.module.scss")));
+function AdminLayout(_a) {
+  /* istanbul ignore next */
+  cov_112tv65b8i().f[1]++;
+  var children =
+  /* istanbul ignore next */
+  (cov_112tv65b8i().s[11]++, _a.children);
+  /* istanbul ignore next */
+  cov_112tv65b8i().s[12]++;
+  return (0, jsx_runtime_1.jsxs)("div", {
+    className: layout_module_scss_1.default.container,
+    children: [(0, jsx_runtime_1.jsx)("header", {
+      className: layout_module_scss_1.default.header,
+      children: (0, jsx_runtime_1.jsxs)("div", {
+        className: layout_module_scss_1.default.headerContent,
+        children: [(0, jsx_runtime_1.jsx)(Text_1.Text, {
+          variant: Text_types_1.TextVariant.PRIMARY,
+          size: Text_types_1.TextSize.LG,
+          children: "Admin Configuration"
+        }), (0, jsx_runtime_1.jsxs)("nav", {
+          className: layout_module_scss_1.default.nav,
+          children: [(0, jsx_runtime_1.jsx)(link_1.default, {
+            href: "/configuration",
+            children: (0, jsx_runtime_1.jsx)(Button_1.Button, {
+              variant: Button_types_1.ButtonVariant.SECONDARY,
+              children: "Configuration"
+            })
+          }), (0, jsx_runtime_1.jsx)(link_1.default, {
+            href: "/",
+            children: (0, jsx_runtime_1.jsx)(Button_1.Button, {
+              variant: Button_types_1.ButtonVariant.SECONDARY,
+              children: "Home"
+            })
+          })]
+        })]
+      })
+    }), (0, jsx_runtime_1.jsxs)("div", {
+      className: layout_module_scss_1.default.content,
+      children: [(0, jsx_runtime_1.jsxs)("aside", {
+        className: layout_module_scss_1.default.sidebar,
+        children: [(0, jsx_runtime_1.jsx)(Text_1.Text, {
+          variant: Text_types_1.TextVariant.PRIMARY,
+          size: Text_types_1.TextSize.MD,
+          className: layout_module_scss_1.default.sidebarTitle,
+          children: "Admin Menu"
+        }), (0, jsx_runtime_1.jsxs)("nav", {
+          className: layout_module_scss_1.default.sidebarNav,
+          children: [(0, jsx_runtime_1.jsx)(link_1.default, {
+            href: "/configuration",
+            className: layout_module_scss_1.default.sidebarLink,
+            children: "General Settings"
+          }), (0, jsx_runtime_1.jsx)(link_1.default, {
+            href: "/configuration",
+            className: layout_module_scss_1.default.sidebarLink,
+            children: "User Management"
+          }), (0, jsx_runtime_1.jsx)(link_1.default, {
+            href: "/configuration",
+            className: layout_module_scss_1.default.sidebarLink,
+            children: "System Configuration"
+          })]
+        })]
+      }), (0, jsx_runtime_1.jsx)("main", {
+        className: layout_module_scss_1.default.main,
+        children: children
+      })]
+    }), (0, jsx_runtime_1.jsx)("footer", {
+      className: layout_module_scss_1.default.footer,
+      children: (0, jsx_runtime_1.jsx)("div", {
+        className: layout_module_scss_1.default.footerContent,
+        children: (0, jsx_runtime_1.jsx)(Text_1.Text, {
+          variant: Text_types_1.TextVariant.PRIMARY,
+          size: Text_types_1.TextSize.SM,
+          children: "Admin Configuration Footer"
+        })
+      })
+    })]
+  });
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMTEydHY2NWI4aSIsImFjdHVhbENvdmVyYWdlIiwiZXhwb3J0cyIsImRlZmF1bHQiLCJBZG1pbkxheW91dCIsIlRleHRfMSIsInMiLCJyZXF1aXJlIiwiVGV4dF90eXBlc18xIiwiQnV0dG9uXzEiLCJCdXR0b25fdHlwZXNfMSIsImxpbmtfMSIsIl9faW1wb3J0RGVmYXVsdCIsImxheW91dF9tb2R1bGVfc2Nzc18xIiwiX2EiLCJmIiwiY2hpbGRyZW4iLCJqc3hfcnVudGltZV8xIiwianN4cyIsImNsYXNzTmFtZSIsImNvbnRhaW5lciIsImpzeCIsImhlYWRlciIsImhlYWRlckNvbnRlbnQiLCJUZXh0IiwidmFyaWFudCIsIlRleHRWYXJpYW50IiwiUFJJTUFSWSIsInNpemUiLCJUZXh0U2l6ZSIsIkxHIiwibmF2IiwiaHJlZiIsIkJ1dHRvbiIsIkJ1dHRvblZhcmlhbnQiLCJTRUNPTkRBUlkiLCJjb250ZW50Iiwic2lkZWJhciIsIk1EIiwic2lkZWJhclRpdGxlIiwic2lkZWJhck5hdiIsInNpZGViYXJMaW5rIiwibWFpbiIsImZvb3RlciIsImZvb3RlckNvbnRlbnQiLCJTTSJdLCJzb3VyY2VzIjpbIi9Vc2Vycy9nYW16YXJhbWF6YW5vdi9EZXNrdG9wL2Fic3RyYWN0LXRlYW0vc3JjL2FwcC8oYWRtaW4pL2xheW91dC50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUmVhY3ROb2RlIH0gZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBUZXh0IH0gZnJvbSBcIkAvc2hhcmVkL3VpL1RleHRcIjtcbmltcG9ydCB7IFRleHRTaXplLCBUZXh0VmFyaWFudCB9IGZyb20gXCJAL3NoYXJlZC91aS9UZXh0L1RleHQudHlwZXNcIjtcbmltcG9ydCB7IEJ1dHRvbiB9IGZyb20gXCJAL3NoYXJlZC91aS9CdXR0b25cIjtcbmltcG9ydCB7IEJ1dHRvblZhcmlhbnQgfSBmcm9tIFwiQC9zaGFyZWQvdWkvQnV0dG9uL0J1dHRvbi50eXBlc1wiO1xuaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvbGlua1wiO1xuaW1wb3J0IHN0eWxlcyBmcm9tIFwiLi9sYXlvdXQubW9kdWxlLnNjc3NcIjtcblxuaW50ZXJmYWNlIEFkbWluTGF5b3V0UHJvcHMge1xuICBjaGlsZHJlbjogUmVhY3ROb2RlO1xufVxuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBZG1pbkxheW91dCh7IGNoaWxkcmVuIH06IEFkbWluTGF5b3V0UHJvcHMpIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmNvbnRhaW5lcn0+XG4gICAgICB7LyogSGVhZGVyICovfVxuICAgICAgPGhlYWRlciBjbGFzc05hbWU9e3N0eWxlcy5oZWFkZXJ9PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmhlYWRlckNvbnRlbnR9PlxuICAgICAgICAgIDxUZXh0IHZhcmlhbnQ9e1RleHRWYXJpYW50LlBSSU1BUll9IHNpemU9e1RleHRTaXplLkxHfT5cbiAgICAgICAgICAgIEFkbWluIENvbmZpZ3VyYXRpb25cbiAgICAgICAgICA8L1RleHQ+XG5cbiAgICAgICAgICA8bmF2IGNsYXNzTmFtZT17c3R5bGVzLm5hdn0+XG4gICAgICAgICAgICA8TGluayBocmVmPVwiL2NvbmZpZ3VyYXRpb25cIj5cbiAgICAgICAgICAgICAgPEJ1dHRvbiB2YXJpYW50PXtCdXR0b25WYXJpYW50LlNFQ09OREFSWX0+Q29uZmlndXJhdGlvbjwvQnV0dG9uPlxuICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9cIj5cbiAgICAgICAgICAgICAgPEJ1dHRvbiB2YXJpYW50PXtCdXR0b25WYXJpYW50LlNFQ09OREFSWX0+SG9tZTwvQnV0dG9uPlxuICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgIDwvbmF2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvaGVhZGVyPlxuXG4gICAgICB7LyogU2lkZWJhciArIE1haW4gQ29udGVudCAqL31cbiAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMuY29udGVudH0+XG4gICAgICAgIDxhc2lkZSBjbGFzc05hbWU9e3N0eWxlcy5zaWRlYmFyfT5cbiAgICAgICAgICA8VGV4dFxuICAgICAgICAgICAgdmFyaWFudD17VGV4dFZhcmlhbnQuUFJJTUFSWX1cbiAgICAgICAgICAgIHNpemU9e1RleHRTaXplLk1EfVxuICAgICAgICAgICAgY2xhc3NOYW1lPXtzdHlsZXMuc2lkZWJhclRpdGxlfVxuICAgICAgICAgID5cbiAgICAgICAgICAgIEFkbWluIE1lbnVcbiAgICAgICAgICA8L1RleHQ+XG4gICAgICAgICAgPG5hdiBjbGFzc05hbWU9e3N0eWxlcy5zaWRlYmFyTmF2fT5cbiAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvY29uZmlndXJhdGlvblwiIGNsYXNzTmFtZT17c3R5bGVzLnNpZGViYXJMaW5rfT5cbiAgICAgICAgICAgICAgR2VuZXJhbCBTZXR0aW5nc1xuICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9jb25maWd1cmF0aW9uXCIgY2xhc3NOYW1lPXtzdHlsZXMuc2lkZWJhckxpbmt9PlxuICAgICAgICAgICAgICBVc2VyIE1hbmFnZW1lbnRcbiAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvY29uZmlndXJhdGlvblwiIGNsYXNzTmFtZT17c3R5bGVzLnNpZGViYXJMaW5rfT5cbiAgICAgICAgICAgICAgU3lzdGVtIENvbmZpZ3VyYXRpb25cbiAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICA8L25hdj5cbiAgICAgICAgPC9hc2lkZT5cblxuICAgICAgICA8bWFpbiBjbGFzc05hbWU9e3N0eWxlcy5tYWlufT57Y2hpbGRyZW59PC9tYWluPlxuICAgICAgPC9kaXY+XG5cbiAgICAgIHsvKiBGb290ZXIgKi99XG4gICAgICA8Zm9vdGVyIGNsYXNzTmFtZT17c3R5bGVzLmZvb3Rlcn0+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMuZm9vdGVyQ29udGVudH0+XG4gICAgICAgICAgPFRleHQgdmFyaWFudD17VGV4dFZhcmlhbnQuUFJJTUFSWX0gc2l6ZT17VGV4dFNpemUuU019PlxuICAgICAgICAgICAgQWRtaW4gQ29uZmlndXJhdGlvbiBGb290ZXJcbiAgICAgICAgICA8L1RleHQ+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9mb290ZXI+XG4gICAgPC9kaXY+XG4gICk7XG59XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFjSTtJQUFBQSxjQUFBLFlBQUFBLENBQUE7TUFBQSxPQUFBQyxjQUFBO0lBQUE7RUFBQTtFQUFBLE9BQUFBLGNBQUE7QUFBQTtBQUFBRCxjQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFGSkUsT0FBQSxDQUFBQyxPQUFBLEdBQUFDLFdBQUE7Ozs7QUFYQSxJQUFBQyxNQUFBO0FBQUE7QUFBQSxDQUFBTCxjQUFBLEdBQUFNLENBQUEsT0FBQUMsT0FBQTtBQUNBLElBQUFDLFlBQUE7QUFBQTtBQUFBLENBQUFSLGNBQUEsR0FBQU0sQ0FBQSxPQUFBQyxPQUFBO0FBQ0EsSUFBQUUsUUFBQTtBQUFBO0FBQUEsQ0FBQVQsY0FBQSxHQUFBTSxDQUFBLE9BQUFDLE9BQUE7QUFDQSxJQUFBRyxjQUFBO0FBQUE7QUFBQSxDQUFBVixjQUFBLEdBQUFNLENBQUEsT0FBQUMsT0FBQTtBQUNBLElBQUFJLE1BQUE7QUFBQTtBQUFBLENBQUFYLGNBQUEsR0FBQU0sQ0FBQSxPQUFBTSxlQUFBLENBQUFMLE9BQUE7QUFDQSxJQUFBTSxvQkFBQTtBQUFBO0FBQUEsQ0FBQWIsY0FBQSxHQUFBTSxDQUFBLFFBQUFNLGVBQUEsQ0FBQUwsT0FBQTtBQU1BLFNBQXdCSCxXQUFXQSxDQUFDVSxFQUE4QjtFQUFBO0VBQUFkLGNBQUEsR0FBQWUsQ0FBQTtNQUE1QkMsUUFBUTtFQUFBO0VBQUEsQ0FBQWhCLGNBQUEsR0FBQU0sQ0FBQSxRQUFBUSxFQUFBLENBQUFFLFFBQUE7RUFBQTtFQUFBaEIsY0FBQSxHQUFBTSxDQUFBO0VBQzVDLE9BQ0UsSUFBQVcsYUFBQSxDQUFBQyxJQUFBO0lBQUtDLFNBQVMsRUFBRU4sb0JBQUEsQ0FBQVYsT0FBTSxDQUFDaUIsU0FBUztJQUFBSixRQUFBLEdBRTlCLElBQUFDLGFBQUEsQ0FBQUksR0FBQTtNQUFRRixTQUFTLEVBQUVOLG9CQUFBLENBQUFWLE9BQU0sQ0FBQ21CLE1BQU07TUFBQU4sUUFBQSxFQUM5QixJQUFBQyxhQUFBLENBQUFDLElBQUE7UUFBS0MsU0FBUyxFQUFFTixvQkFBQSxDQUFBVixPQUFNLENBQUNvQixhQUFhO1FBQUFQLFFBQUEsR0FDbEMsSUFBQUMsYUFBQSxDQUFBSSxHQUFBLEVBQUNoQixNQUFBLENBQUFtQixJQUFJO1VBQUNDLE9BQU8sRUFBRWpCLFlBQUEsQ0FBQWtCLFdBQVcsQ0FBQ0MsT0FBTztVQUFFQyxJQUFJLEVBQUVwQixZQUFBLENBQUFxQixRQUFRLENBQUNDLEVBQUU7VUFBQWQsUUFBQTtRQUFBLEVBRTlDLEVBRVAsSUFBQUMsYUFBQSxDQUFBQyxJQUFBO1VBQUtDLFNBQVMsRUFBRU4sb0JBQUEsQ0FBQVYsT0FBTSxDQUFDNEIsR0FBRztVQUFBZixRQUFBLEdBQ3hCLElBQUFDLGFBQUEsQ0FBQUksR0FBQSxFQUFDVixNQUFBLENBQUFSLE9BQUk7WUFBQzZCLElBQUksRUFBQyxnQkFBZ0I7WUFBQWhCLFFBQUEsRUFDekIsSUFBQUMsYUFBQSxDQUFBSSxHQUFBLEVBQUNaLFFBQUEsQ0FBQXdCLE1BQU07Y0FBQ1IsT0FBTyxFQUFFZixjQUFBLENBQUF3QixhQUFhLENBQUNDLFNBQVM7Y0FBQW5CLFFBQUE7WUFBQTtVQUF3QixFQUMzRCxFQUNQLElBQUFDLGFBQUEsQ0FBQUksR0FBQSxFQUFDVixNQUFBLENBQUFSLE9BQUk7WUFBQzZCLElBQUksRUFBQyxHQUFHO1lBQUFoQixRQUFBLEVBQ1osSUFBQUMsYUFBQSxDQUFBSSxHQUFBLEVBQUNaLFFBQUEsQ0FBQXdCLE1BQU07Y0FBQ1IsT0FBTyxFQUFFZixjQUFBLENBQUF3QixhQUFhLENBQUNDLFNBQVM7Y0FBQW5CLFFBQUE7WUFBQTtVQUFlLEVBQ2xEO1FBQUEsRUFDSDtNQUFBO0lBQ0YsRUFDQyxFQUdULElBQUFDLGFBQUEsQ0FBQUMsSUFBQTtNQUFLQyxTQUFTLEVBQUVOLG9CQUFBLENBQUFWLE9BQU0sQ0FBQ2lDLE9BQU87TUFBQXBCLFFBQUEsR0FDNUIsSUFBQUMsYUFBQSxDQUFBQyxJQUFBO1FBQU9DLFNBQVMsRUFBRU4sb0JBQUEsQ0FBQVYsT0FBTSxDQUFDa0MsT0FBTztRQUFBckIsUUFBQSxHQUM5QixJQUFBQyxhQUFBLENBQUFJLEdBQUEsRUFBQ2hCLE1BQUEsQ0FBQW1CLElBQUk7VUFDSEMsT0FBTyxFQUFFakIsWUFBQSxDQUFBa0IsV0FBVyxDQUFDQyxPQUFPO1VBQzVCQyxJQUFJLEVBQUVwQixZQUFBLENBQUFxQixRQUFRLENBQUNTLEVBQUU7VUFDakJuQixTQUFTLEVBQUVOLG9CQUFBLENBQUFWLE9BQU0sQ0FBQ29DLFlBQVk7VUFBQXZCLFFBQUE7UUFBQSxFQUd6QixFQUNQLElBQUFDLGFBQUEsQ0FBQUMsSUFBQTtVQUFLQyxTQUFTLEVBQUVOLG9CQUFBLENBQUFWLE9BQU0sQ0FBQ3FDLFVBQVU7VUFBQXhCLFFBQUEsR0FDL0IsSUFBQUMsYUFBQSxDQUFBSSxHQUFBLEVBQUNWLE1BQUEsQ0FBQVIsT0FBSTtZQUFDNkIsSUFBSSxFQUFDLGdCQUFnQjtZQUFDYixTQUFTLEVBQUVOLG9CQUFBLENBQUFWLE9BQU0sQ0FBQ3NDLFdBQVc7WUFBQXpCLFFBQUE7VUFBQSxFQUVsRCxFQUNQLElBQUFDLGFBQUEsQ0FBQUksR0FBQSxFQUFDVixNQUFBLENBQUFSLE9BQUk7WUFBQzZCLElBQUksRUFBQyxnQkFBZ0I7WUFBQ2IsU0FBUyxFQUFFTixvQkFBQSxDQUFBVixPQUFNLENBQUNzQyxXQUFXO1lBQUF6QixRQUFBO1VBQUEsRUFFbEQsRUFDUCxJQUFBQyxhQUFBLENBQUFJLEdBQUEsRUFBQ1YsTUFBQSxDQUFBUixPQUFJO1lBQUM2QixJQUFJLEVBQUMsZ0JBQWdCO1lBQUNiLFNBQVMsRUFBRU4sb0JBQUEsQ0FBQVYsT0FBTSxDQUFDc0MsV0FBVztZQUFBekIsUUFBQTtVQUFBLEVBRWxEO1FBQUEsRUFDSDtNQUFBLEVBQ0EsRUFFUixJQUFBQyxhQUFBLENBQUFJLEdBQUE7UUFBTUYsU0FBUyxFQUFFTixvQkFBQSxDQUFBVixPQUFNLENBQUN1QyxJQUFJO1FBQUExQixRQUFBLEVBQUdBO01BQVEsRUFBUTtJQUFBLEVBQzNDLEVBR04sSUFBQUMsYUFBQSxDQUFBSSxHQUFBO01BQVFGLFNBQVMsRUFBRU4sb0JBQUEsQ0FBQVYsT0FBTSxDQUFDd0MsTUFBTTtNQUFBM0IsUUFBQSxFQUM5QixJQUFBQyxhQUFBLENBQUFJLEdBQUE7UUFBS0YsU0FBUyxFQUFFTixvQkFBQSxDQUFBVixPQUFNLENBQUN5QyxhQUFhO1FBQUE1QixRQUFBLEVBQ2xDLElBQUFDLGFBQUEsQ0FBQUksR0FBQSxFQUFDaEIsTUFBQSxDQUFBbUIsSUFBSTtVQUFDQyxPQUFPLEVBQUVqQixZQUFBLENBQUFrQixXQUFXLENBQUNDLE9BQU87VUFBRUMsSUFBSSxFQUFFcEIsWUFBQSxDQUFBcUIsUUFBUSxDQUFDZ0IsRUFBRTtVQUFBN0IsUUFBQTtRQUFBO01BRTlDO0lBQ0gsRUFDQztFQUFBLEVBQ0w7QUFFViIsImlnbm9yZUxpc3QiOltdfQ==

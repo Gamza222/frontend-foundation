@@ -1,0 +1,406 @@
+2c312c55f9b69c096e992f43bfdb6ed6
+"use strict";
+
+/* istanbul ignore next */
+function cov_15w61yyl24() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/app/(admin)/configuration/page.tsx";
+  var hash = "fbe9db4f6f8be151e80fe50129d5220a49717e48";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/app/(admin)/configuration/page.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 22
+        },
+        end: {
+          line: 4,
+          column: 1
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 4
+        },
+        end: {
+          line: 3,
+          column: 62
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 62
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 36
+        }
+      },
+      "4": {
+        start: {
+          line: 7,
+          column: 20
+        },
+        end: {
+          line: 7,
+          column: 48
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 14
+        },
+        end: {
+          line: 8,
+          column: 30
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 13
+        },
+        end: {
+          line: 9,
+          column: 40
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 19
+        },
+        end: {
+          line: 10,
+          column: 57
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 17
+        },
+        end: {
+          line: 11,
+          column: 53
+        }
+      },
+      "9": {
+        start: {
+          line: 12,
+          column: 25
+        },
+        end: {
+          line: 12,
+          column: 71
+        }
+      },
+      "10": {
+        start: {
+          line: 14,
+          column: 4
+        },
+        end: {
+          line: 14,
+          column: 793
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 2,
+            column: 57
+          }
+        },
+        loc: {
+          start: {
+            line: 2,
+            column: 71
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        line: 2
+      },
+      "1": {
+        name: "ConfigurationPage",
+        decl: {
+          start: {
+            line: 13,
+            column: 9
+          },
+          end: {
+            line: 13,
+            column: 26
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 29
+          },
+          end: {
+            line: 15,
+            column: 1
+          }
+        },
+        line: 13
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 2,
+            column: 22
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 2,
+            column: 23
+          },
+          end: {
+            line: 2,
+            column: 27
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 31
+          },
+          end: {
+            line: 2,
+            column: 51
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        }],
+        line: 2
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 3,
+            column: 11
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 37
+          },
+          end: {
+            line: 3,
+            column: 40
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 43
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        }],
+        line: 3
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 15
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 19
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        }],
+        line: 3
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {
+      "0": [0, 0, 0],
+      "1": [0, 0],
+      "2": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/app/(admin)/configuration/page.tsx",
+      mappings: ";;;;;AASA,oCA0BC;;AAnCD,+BAAiC;AACjC,yCAAwC;AACxC,0DAAoE;AACpE,sDAGmC;AACnC,wEAAwC;AAExC,SAAwB,iBAAiB;IACvC,OAAO,CACL,uBAAC,gBAAQ,IACP,QAAQ,EAAE,uBAAC,mCAAwB,IAAC,MAAM,EAAE,0BAAe,CAAC,KAAK,GAAI,YAErE,gCAAK,SAAS,EAAE,0BAAM,CAAC,SAAS,YAC9B,iCAAK,SAAS,EAAE,0BAAM,CAAC,IAAI,aACzB,uBAAC,WAAI,IACH,OAAO,EAAE,wBAAW,CAAC,OAAO,EAC5B,IAAI,EAAE,qBAAQ,CAAC,EAAE,EACjB,SAAS,EAAE,0BAAM,CAAC,KAAK,mCAGlB,EAEP,uBAAC,WAAI,IACH,OAAO,EAAE,wBAAW,CAAC,SAAS,EAC9B,IAAI,EAAE,qBAAQ,CAAC,EAAE,EACjB,SAAS,EAAE,0BAAM,CAAC,WAAW,+DAGxB,IACH,GACF,GACG,CACZ,CAAC;AACJ,CAAC",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/app/(admin)/configuration/page.tsx"],
+      sourcesContent: ["import { Suspense } from \"react\";\nimport { Text } from \"@/shared/ui/Text\";\nimport { TextSize, TextVariant } from \"@/shared/ui/Text/Text.types\";\nimport {\n  ComponentLoadingFallback,\n  ComponentHeight,\n} from \"@/infrastructure/suspense\";\nimport styles from \"./page.module.scss\";\n\nexport default function ConfigurationPage() {\n  return (\n    <Suspense\n      fallback={<ComponentLoadingFallback height={ComponentHeight.LARGE} />}\n    >\n      <div className={styles.container}>\n        <div className={styles.card}>\n          <Text\n            variant={TextVariant.PRIMARY}\n            size={TextSize.LG}\n            className={styles.title}\n          >\n            Configuration Page\n          </Text>\n\n          <Text\n            variant={TextVariant.SECONDARY}\n            size={TextSize.LG}\n            className={styles.description}\n          >\n            This page demonstrates configuration features.\n          </Text>\n        </div>\n      </div>\n    </Suspense>\n  );\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "fbe9db4f6f8be151e80fe50129d5220a49717e48"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_15w61yyl24 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_15w61yyl24();
+var __importDefault =
+/* istanbul ignore next */
+(cov_15w61yyl24().s[0]++,
+/* istanbul ignore next */
+(cov_15w61yyl24().b[0][0]++, this) &&
+/* istanbul ignore next */
+(cov_15w61yyl24().b[0][1]++, this.__importDefault) ||
+/* istanbul ignore next */
+(cov_15w61yyl24().b[0][2]++, function (mod) {
+  /* istanbul ignore next */
+  cov_15w61yyl24().f[0]++;
+  cov_15w61yyl24().s[1]++;
+  return /* istanbul ignore next */(cov_15w61yyl24().b[2][0]++, mod) &&
+  /* istanbul ignore next */
+  (cov_15w61yyl24().b[2][1]++, mod.__esModule) ?
+  /* istanbul ignore next */
+  (cov_15w61yyl24().b[1][0]++, mod) :
+  /* istanbul ignore next */
+  (cov_15w61yyl24().b[1][1]++, {
+    "default": mod
+  });
+}));
+/* istanbul ignore next */
+cov_15w61yyl24().s[2]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_15w61yyl24().s[3]++;
+exports.default = ConfigurationPage;
+var jsx_runtime_1 =
+/* istanbul ignore next */
+(cov_15w61yyl24().s[4]++, require("react/jsx-runtime"));
+var react_1 =
+/* istanbul ignore next */
+(cov_15w61yyl24().s[5]++, require("react"));
+var Text_1 =
+/* istanbul ignore next */
+(cov_15w61yyl24().s[6]++, require("@/shared/ui/Text"));
+var Text_types_1 =
+/* istanbul ignore next */
+(cov_15w61yyl24().s[7]++, require("@/shared/ui/Text/Text.types"));
+var suspense_1 =
+/* istanbul ignore next */
+(cov_15w61yyl24().s[8]++, require("@/infrastructure/suspense"));
+var page_module_scss_1 =
+/* istanbul ignore next */
+(cov_15w61yyl24().s[9]++, __importDefault(require("./page.module.scss")));
+function ConfigurationPage() {
+  /* istanbul ignore next */
+  cov_15w61yyl24().f[1]++;
+  cov_15w61yyl24().s[10]++;
+  return (0, jsx_runtime_1.jsx)(react_1.Suspense, {
+    fallback: (0, jsx_runtime_1.jsx)(suspense_1.ComponentLoadingFallback, {
+      height: suspense_1.ComponentHeight.LARGE
+    }),
+    children: (0, jsx_runtime_1.jsx)("div", {
+      className: page_module_scss_1.default.container,
+      children: (0, jsx_runtime_1.jsxs)("div", {
+        className: page_module_scss_1.default.card,
+        children: [(0, jsx_runtime_1.jsx)(Text_1.Text, {
+          variant: Text_types_1.TextVariant.PRIMARY,
+          size: Text_types_1.TextSize.LG,
+          className: page_module_scss_1.default.title,
+          children: "Configuration Page"
+        }), (0, jsx_runtime_1.jsx)(Text_1.Text, {
+          variant: Text_types_1.TextVariant.SECONDARY,
+          size: Text_types_1.TextSize.LG,
+          className: page_module_scss_1.default.description,
+          children: "This page demonstrates configuration features."
+        })]
+      })
+    })
+  });
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJleHBvcnRzIiwiZGVmYXVsdCIsIkNvbmZpZ3VyYXRpb25QYWdlIiwicmVhY3RfMSIsImNvdl8xNXc2MXl5bDI0IiwicyIsInJlcXVpcmUiLCJUZXh0XzEiLCJUZXh0X3R5cGVzXzEiLCJzdXNwZW5zZV8xIiwicGFnZV9tb2R1bGVfc2Nzc18xIiwiX19pbXBvcnREZWZhdWx0IiwiZiIsImpzeF9ydW50aW1lXzEiLCJqc3giLCJTdXNwZW5zZSIsImZhbGxiYWNrIiwiQ29tcG9uZW50TG9hZGluZ0ZhbGxiYWNrIiwiaGVpZ2h0IiwiQ29tcG9uZW50SGVpZ2h0IiwiTEFSR0UiLCJjaGlsZHJlbiIsImNsYXNzTmFtZSIsImNvbnRhaW5lciIsImpzeHMiLCJjYXJkIiwiVGV4dCIsInZhcmlhbnQiLCJUZXh0VmFyaWFudCIsIlBSSU1BUlkiLCJzaXplIiwiVGV4dFNpemUiLCJMRyIsInRpdGxlIiwiU0VDT05EQVJZIiwiZGVzY3JpcHRpb24iXSwic291cmNlcyI6WyIvVXNlcnMvZ2FtemFyYW1hemFub3YvRGVza3RvcC9hYnN0cmFjdC10ZWFtL3NyYy9hcHAvKGFkbWluKS9jb25maWd1cmF0aW9uL3BhZ2UudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFN1c3BlbnNlIH0gZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBUZXh0IH0gZnJvbSBcIkAvc2hhcmVkL3VpL1RleHRcIjtcbmltcG9ydCB7IFRleHRTaXplLCBUZXh0VmFyaWFudCB9IGZyb20gXCJAL3NoYXJlZC91aS9UZXh0L1RleHQudHlwZXNcIjtcbmltcG9ydCB7XG4gIENvbXBvbmVudExvYWRpbmdGYWxsYmFjayxcbiAgQ29tcG9uZW50SGVpZ2h0LFxufSBmcm9tIFwiQC9pbmZyYXN0cnVjdHVyZS9zdXNwZW5zZVwiO1xuaW1wb3J0IHN0eWxlcyBmcm9tIFwiLi9wYWdlLm1vZHVsZS5zY3NzXCI7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENvbmZpZ3VyYXRpb25QYWdlKCkge1xuICByZXR1cm4gKFxuICAgIDxTdXNwZW5zZVxuICAgICAgZmFsbGJhY2s9ezxDb21wb25lbnRMb2FkaW5nRmFsbGJhY2sgaGVpZ2h0PXtDb21wb25lbnRIZWlnaHQuTEFSR0V9IC8+fVxuICAgID5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMuY29udGFpbmVyfT5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5jYXJkfT5cbiAgICAgICAgICA8VGV4dFxuICAgICAgICAgICAgdmFyaWFudD17VGV4dFZhcmlhbnQuUFJJTUFSWX1cbiAgICAgICAgICAgIHNpemU9e1RleHRTaXplLkxHfVxuICAgICAgICAgICAgY2xhc3NOYW1lPXtzdHlsZXMudGl0bGV9XG4gICAgICAgICAgPlxuICAgICAgICAgICAgQ29uZmlndXJhdGlvbiBQYWdlXG4gICAgICAgICAgPC9UZXh0PlxuXG4gICAgICAgICAgPFRleHRcbiAgICAgICAgICAgIHZhcmlhbnQ9e1RleHRWYXJpYW50LlNFQ09OREFSWX1cbiAgICAgICAgICAgIHNpemU9e1RleHRTaXplLkxHfVxuICAgICAgICAgICAgY2xhc3NOYW1lPXtzdHlsZXMuZGVzY3JpcHRpb259XG4gICAgICAgICAgPlxuICAgICAgICAgICAgVGhpcyBwYWdlIGRlbW9uc3RyYXRlcyBjb25maWd1cmF0aW9uIGZlYXR1cmVzLlxuICAgICAgICAgIDwvVGV4dD5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L1N1c3BlbnNlPlxuICApO1xufVxuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBU0FBLE9BQUEsQ0FBQUMsT0FBQSxHQUFBQyxpQkFBQTs7OztBQVRBLElBQUFDLE9BQUE7QUFBQTtBQUFBLENBQUFDLGNBQUEsR0FBQUMsQ0FBQSxPQUFBQyxPQUFBO0FBQ0EsSUFBQUMsTUFBQTtBQUFBO0FBQUEsQ0FBQUgsY0FBQSxHQUFBQyxDQUFBLE9BQUFDLE9BQUE7QUFDQSxJQUFBRSxZQUFBO0FBQUE7QUFBQSxDQUFBSixjQUFBLEdBQUFDLENBQUEsT0FBQUMsT0FBQTtBQUNBLElBQUFHLFVBQUE7QUFBQTtBQUFBLENBQUFMLGNBQUEsR0FBQUMsQ0FBQSxPQUFBQyxPQUFBO0FBSUEsSUFBQUksa0JBQUE7QUFBQTtBQUFBLENBQUFOLGNBQUEsR0FBQUMsQ0FBQSxPQUFBTSxlQUFBLENBQUFMLE9BQUE7QUFFQSxTQUF3QkosaUJBQWlCQSxDQUFBO0VBQUE7RUFBQUUsY0FBQSxHQUFBUSxDQUFBO0VBQUFSLGNBQUEsR0FBQUMsQ0FBQTtFQUN2QyxPQUNFLElBQUFRLGFBQUEsQ0FBQUMsR0FBQSxFQUFDWCxPQUFBLENBQUFZLFFBQVE7SUFDUEMsUUFBUSxFQUFFLElBQUFILGFBQUEsQ0FBQUMsR0FBQSxFQUFDTCxVQUFBLENBQUFRLHdCQUF3QjtNQUFDQyxNQUFNLEVBQUVULFVBQUEsQ0FBQVUsZUFBZSxDQUFDQztJQUFLLEVBQUk7SUFBQUMsUUFBQSxFQUVyRSxJQUFBUixhQUFBLENBQUFDLEdBQUE7TUFBS1EsU0FBUyxFQUFFWixrQkFBQSxDQUFBVCxPQUFNLENBQUNzQixTQUFTO01BQUFGLFFBQUEsRUFDOUIsSUFBQVIsYUFBQSxDQUFBVyxJQUFBO1FBQUtGLFNBQVMsRUFBRVosa0JBQUEsQ0FBQVQsT0FBTSxDQUFDd0IsSUFBSTtRQUFBSixRQUFBLEdBQ3pCLElBQUFSLGFBQUEsQ0FBQUMsR0FBQSxFQUFDUCxNQUFBLENBQUFtQixJQUFJO1VBQ0hDLE9BQU8sRUFBRW5CLFlBQUEsQ0FBQW9CLFdBQVcsQ0FBQ0MsT0FBTztVQUM1QkMsSUFBSSxFQUFFdEIsWUFBQSxDQUFBdUIsUUFBUSxDQUFDQyxFQUFFO1VBQ2pCVixTQUFTLEVBQUVaLGtCQUFBLENBQUFULE9BQU0sQ0FBQ2dDLEtBQUs7VUFBQVosUUFBQTtRQUFBLEVBR2xCLEVBRVAsSUFBQVIsYUFBQSxDQUFBQyxHQUFBLEVBQUNQLE1BQUEsQ0FBQW1CLElBQUk7VUFDSEMsT0FBTyxFQUFFbkIsWUFBQSxDQUFBb0IsV0FBVyxDQUFDTSxTQUFTO1VBQzlCSixJQUFJLEVBQUV0QixZQUFBLENBQUF1QixRQUFRLENBQUNDLEVBQUU7VUFDakJWLFNBQVMsRUFBRVosa0JBQUEsQ0FBQVQsT0FBTSxDQUFDa0MsV0FBVztVQUFBZCxRQUFBO1FBQUEsRUFHeEI7TUFBQTtJQUNIO0VBQ0YsRUFDRztBQUVmIiwiaWdub3JlTGlzdCI6W119

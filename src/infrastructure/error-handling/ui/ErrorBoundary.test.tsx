@@ -8,7 +8,7 @@ jest.mock("@/infrastructure/suspense", () => ({
 
 // Mock PageError widget
 jest.mock("@/widgets/PageError", () => ({
-  PageError: () => <div>Error Page</div>,
+  PageError: () => <div>Something went wrong</div>,
 }));
 
 // Mock the log function
@@ -56,7 +56,7 @@ describe("ErrorBoundary", () => {
       </ErrorBoundary>
     );
 
-    expect(screen.getByText("Error Page")).toBeInTheDocument();
+    expect(screen.getByText("Something went wrong")).toBeInTheDocument();
     expect(screen.queryByText("No Error")).not.toBeInTheDocument();
   });
 

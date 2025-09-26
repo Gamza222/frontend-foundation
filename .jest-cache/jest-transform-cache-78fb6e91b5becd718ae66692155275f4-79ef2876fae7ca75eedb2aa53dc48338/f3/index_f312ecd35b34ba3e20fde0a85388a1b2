@@ -1,0 +1,303 @@
+c059e2325c14b229ac698bff872c12ad
+"use strict";
+
+/**
+ * External Library Mocks
+ *
+ * Type: 🔄 AUTOMATIC & 📦 MANUAL
+ *
+ * This file exports external library mocks and auto-applies global mocks.
+ * Some mocks are automatically applied globally (like Sentry), while others
+ * need to be manually imported and configured in tests.
+ *
+ * Organization follows SOLID principles:
+ * - sentry.mock.ts: Complete Sentry API mock (SRP: Sentry error reporting)
+ */
+/* istanbul ignore next */
+function cov_27v0gdvvrg() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/external/index.ts";
+  var hash = "83507dc28b72d6e1f7f4ec593c53fd290e9859be";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/external/index.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 14,
+          column: 0
+        },
+        end: {
+          line: 14,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 15,
+          column: 0
+        },
+        end: {
+          line: 15,
+          column: 81
+        }
+      },
+      "2": {
+        start: {
+          line: 17,
+          column: 0
+        },
+        end: {
+          line: 17,
+          column: 23
+        }
+      },
+      "3": {
+        start: {
+          line: 21,
+          column: 20
+        },
+        end: {
+          line: 21,
+          column: 48
+        }
+      },
+      "4": {
+        start: {
+          line: 22,
+          column: 0
+        },
+        end: {
+          line: 22,
+          column: 122
+        }
+      },
+      "5": {
+        start: {
+          line: 22,
+          column: 84
+        },
+        end: {
+          line: 22,
+          column: 116
+        }
+      },
+      "6": {
+        start: {
+          line: 23,
+          column: 0
+        },
+        end: {
+          line: 23,
+          column: 134
+        }
+      },
+      "7": {
+        start: {
+          line: 23,
+          column: 90
+        },
+        end: {
+          line: 23,
+          column: 128
+        }
+      },
+      "8": {
+        start: {
+          line: 24,
+          column: 0
+        },
+        end: {
+          line: 24,
+          column: 132
+        }
+      },
+      "9": {
+        start: {
+          line: 24,
+          column: 89
+        },
+        end: {
+          line: 24,
+          column: 126
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 22,
+            column: 70
+          },
+          end: {
+            line: 22,
+            column: 71
+          }
+        },
+        loc: {
+          start: {
+            line: 22,
+            column: 82
+          },
+          end: {
+            line: 22,
+            column: 118
+          }
+        },
+        line: 22
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 23,
+            column: 76
+          },
+          end: {
+            line: 23,
+            column: 77
+          }
+        },
+        loc: {
+          start: {
+            line: 23,
+            column: 88
+          },
+          end: {
+            line: 23,
+            column: 130
+          }
+        },
+        line: 23
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 24,
+            column: 75
+          },
+          end: {
+            line: 24,
+            column: 76
+          }
+        },
+        loc: {
+          start: {
+            line: 24,
+            column: 87
+          },
+          end: {
+            line: 24,
+            column: 128
+          }
+        },
+        line: 24
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/external/index.ts",
+      mappings: ";AAAA;;;;;;;;;;;GAWG;;;AAEH,0CAA0C;AAC1C,uBAAqB;AAErB,+EAA+E;AAC/E,+BAA+B;AAC/B,+EAA+E;AAE/E,iDAAkF;AAAzE,yGAAA,UAAU,OAAA;AAAE,+GAAA,gBAAgB,OAAA;AAAE,8GAAA,eAAe,OAAA;AAYtD,+EAA+E;AAC/E,wBAAwB;AACxB,+EAA+E;AAE/E,yDAAyD;AACzD,2BAA2B;AAC3B,qBAAqB;AACrB,gBAAgB;AAChB,kBAAkB;AAClB,OAAO",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/external/index.ts"],
+      sourcesContent: ["/**\n * External Library Mocks\n *\n * Type: \uD83D\uDD04 AUTOMATIC & \uD83D\uDCE6 MANUAL\n *\n * This file exports external library mocks and auto-applies global mocks.\n * Some mocks are automatically applied globally (like Sentry), while others\n * need to be manually imported and configured in tests.\n *\n * Organization follows SOLID principles:\n * - sentry.mock.ts: Complete Sentry API mock (SRP: Sentry error reporting)\n */\n\n// Auto-apply global mocks (must be first)\nimport './lib/setup';\n\n// ============================================================================\n// ANALYTICS & MONITORING MOCKS\n// ============================================================================\n\nexport { mockSentry, createSentryMock, sentryTestUtils } from './lib/sentry.mock';\n\n// ============================================================================\n// TYPES\n// ============================================================================\n\nexport type {\n  MockSentryInterface,\n  MockSentryTransaction,\n  SentryTestUtilsInterface,\n} from './types/types';\n\n// ============================================================================\n// FUTURE EXTERNAL MOCKS\n// ============================================================================\n\n// NOTE: Add other external library mocks here as needed:\n// - Google Analytics mocks\n// - Stripe SDK mocks\n// - Auth0 mocks\n// - AWS SDK mocks\n// etc.\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "83507dc28b72d6e1f7f4ec593c53fd290e9859be"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_27v0gdvvrg = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_27v0gdvvrg();
+cov_27v0gdvvrg().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_27v0gdvvrg().s[1]++;
+exports.sentryTestUtils = exports.createSentryMock = exports.mockSentry = void 0;
+// Auto-apply global mocks (must be first)
+/* istanbul ignore next */
+cov_27v0gdvvrg().s[2]++;
+require("./lib/setup");
+// ============================================================================
+// ANALYTICS & MONITORING MOCKS
+// ============================================================================
+var sentry_mock_1 =
+/* istanbul ignore next */
+(cov_27v0gdvvrg().s[3]++, require("./lib/sentry.mock"));
+/* istanbul ignore next */
+cov_27v0gdvvrg().s[4]++;
+Object.defineProperty(exports, "mockSentry", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_27v0gdvvrg().f[0]++;
+    cov_27v0gdvvrg().s[5]++;
+    return sentry_mock_1.mockSentry;
+  }
+});
+/* istanbul ignore next */
+cov_27v0gdvvrg().s[6]++;
+Object.defineProperty(exports, "createSentryMock", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_27v0gdvvrg().f[1]++;
+    cov_27v0gdvvrg().s[7]++;
+    return sentry_mock_1.createSentryMock;
+  }
+});
+/* istanbul ignore next */
+cov_27v0gdvvrg().s[8]++;
+Object.defineProperty(exports, "sentryTestUtils", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_27v0gdvvrg().f[2]++;
+    cov_27v0gdvvrg().s[9]++;
+    return sentry_mock_1.sentryTestUtils;
+  }
+});
+// ============================================================================
+// FUTURE EXTERNAL MOCKS
+// ============================================================================
+// NOTE: Add other external library mocks here as needed:
+// - Google Analytics mocks
+// - Stripe SDK mocks
+// - Auth0 mocks
+// - AWS SDK mocks
+// etc.
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMjd2MGdkdnZyZyIsInBhdGgiLCJoYXNoIiwiZ2xvYmFsIiwiRnVuY3Rpb24iLCJnY3YiLCJjb3ZlcmFnZURhdGEiLCJzdGF0ZW1lbnRNYXAiLCJzdGFydCIsImxpbmUiLCJjb2x1bW4iLCJlbmQiLCJmbk1hcCIsIm5hbWUiLCJkZWNsIiwibG9jIiwiYnJhbmNoTWFwIiwicyIsImYiLCJiIiwiaW5wdXRTb3VyY2VNYXAiLCJmaWxlIiwibWFwcGluZ3MiLCJuYW1lcyIsInNvdXJjZXMiLCJzb3VyY2VzQ29udGVudCIsInZlcnNpb24iLCJfY292ZXJhZ2VTY2hlbWEiLCJjb3ZlcmFnZSIsImFjdHVhbENvdmVyYWdlIiwicmVxdWlyZSIsInNlbnRyeV9tb2NrXzEiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJlbnVtZXJhYmxlIiwiZ2V0IiwibW9ja1NlbnRyeSIsImNyZWF0ZVNlbnRyeU1vY2siLCJzZW50cnlUZXN0VXRpbHMiXSwic291cmNlcyI6WyIvVXNlcnMvZ2FtemFyYW1hemFub3YvRGVza3RvcC9hYnN0cmFjdC10ZWFtL3NyYy9zaGFyZWQvdGVzdGluZy9tb2Nrcy9leHRlcm5hbC9pbmRleC50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEV4dGVybmFsIExpYnJhcnkgTW9ja3NcbiAqXG4gKiBUeXBlOiDwn5SEIEFVVE9NQVRJQyAmIPCfk6YgTUFOVUFMXG4gKlxuICogVGhpcyBmaWxlIGV4cG9ydHMgZXh0ZXJuYWwgbGlicmFyeSBtb2NrcyBhbmQgYXV0by1hcHBsaWVzIGdsb2JhbCBtb2Nrcy5cbiAqIFNvbWUgbW9ja3MgYXJlIGF1dG9tYXRpY2FsbHkgYXBwbGllZCBnbG9iYWxseSAobGlrZSBTZW50cnkpLCB3aGlsZSBvdGhlcnNcbiAqIG5lZWQgdG8gYmUgbWFudWFsbHkgaW1wb3J0ZWQgYW5kIGNvbmZpZ3VyZWQgaW4gdGVzdHMuXG4gKlxuICogT3JnYW5pemF0aW9uIGZvbGxvd3MgU09MSUQgcHJpbmNpcGxlczpcbiAqIC0gc2VudHJ5Lm1vY2sudHM6IENvbXBsZXRlIFNlbnRyeSBBUEkgbW9jayAoU1JQOiBTZW50cnkgZXJyb3IgcmVwb3J0aW5nKVxuICovXG5cbi8vIEF1dG8tYXBwbHkgZ2xvYmFsIG1vY2tzIChtdXN0IGJlIGZpcnN0KVxuaW1wb3J0ICcuL2xpYi9zZXR1cCc7XG5cbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbi8vIEFOQUxZVElDUyAmIE1PTklUT1JJTkcgTU9DS1Ncbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cblxuZXhwb3J0IHsgbW9ja1NlbnRyeSwgY3JlYXRlU2VudHJ5TW9jaywgc2VudHJ5VGVzdFV0aWxzIH0gZnJvbSAnLi9saWIvc2VudHJ5Lm1vY2snO1xuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBUWVBFU1xuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuXG5leHBvcnQgdHlwZSB7XG4gIE1vY2tTZW50cnlJbnRlcmZhY2UsXG4gIE1vY2tTZW50cnlUcmFuc2FjdGlvbixcbiAgU2VudHJ5VGVzdFV0aWxzSW50ZXJmYWNlLFxufSBmcm9tICcuL3R5cGVzL3R5cGVzJztcblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gRlVUVVJFIEVYVEVSTkFMIE1PQ0tTXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5cbi8vIE5PVEU6IEFkZCBvdGhlciBleHRlcm5hbCBsaWJyYXJ5IG1vY2tzIGhlcmUgYXMgbmVlZGVkOlxuLy8gLSBHb29nbGUgQW5hbHl0aWNzIG1vY2tzXG4vLyAtIFN0cmlwZSBTREsgbW9ja3Ncbi8vIC0gQXV0aDAgbW9ja3Ncbi8vIC0gQVdTIFNESyBtb2Nrc1xuLy8gZXRjLlxuIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7Ozs7Ozs7Ozs7QUFBQTtBQUFBLFNBQUFBLGVBQUE7RUFBQSxJQUFBQyxJQUFBO0VBQUEsSUFBQUMsSUFBQTtFQUFBLElBQUFDLE1BQUEsT0FBQUMsUUFBQTtFQUFBLElBQUFDLEdBQUE7RUFBQSxJQUFBQyxZQUFBO0lBQUFMLElBQUE7SUFBQU0sWUFBQTtNQUFBO1FBQUFDLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO0lBQUE7SUFBQUUsS0FBQTtNQUFBO1FBQUFDLElBQUE7UUFBQUMsSUFBQTtVQUFBTixLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtRQUFBSyxHQUFBO1VBQUFQLEtBQUE7WUFBQUMsSUFBQTtZQUFBQyxNQUFBO1VBQUE7VUFBQUMsR0FBQTtZQUFBRixJQUFBO1lBQUFDLE1BQUE7VUFBQTtRQUFBO1FBQUFELElBQUE7TUFBQTtNQUFBO1FBQUFJLElBQUE7UUFBQUMsSUFBQTtVQUFBTixLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtRQUFBSyxHQUFBO1VBQUFQLEtBQUE7WUFBQUMsSUFBQTtZQUFBQyxNQUFBO1VBQUE7VUFBQUMsR0FBQTtZQUFBRixJQUFBO1lBQUFDLE1BQUE7VUFBQTtRQUFBO1FBQUFELElBQUE7TUFBQTtNQUFBO1FBQUFJLElBQUE7UUFBQUMsSUFBQTtVQUFBTixLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtRQUFBSyxHQUFBO1VBQUFQLEtBQUE7WUFBQUMsSUFBQTtZQUFBQyxNQUFBO1VBQUE7VUFBQUMsR0FBQTtZQUFBRixJQUFBO1lBQUFDLE1BQUE7VUFBQTtRQUFBO1FBQUFELElBQUE7TUFBQTtJQUFBO0lBQUFPLFNBQUE7SUFBQUMsQ0FBQTtNQUFBO01BQUE7TUFBQTtNQUFBO01BQUE7TUFBQTtNQUFBO01BQUE7TUFBQTtNQUFBO0lBQUE7SUFBQUMsQ0FBQTtNQUFBO01BQUE7TUFBQTtJQUFBO0lBQUFDLENBQUE7SUFBQUMsY0FBQTtNQUFBQyxJQUFBO01BQUFDLFFBQUE7TUFBQUMsS0FBQTtNQUFBQyxPQUFBO01BQUFDLGNBQUE7TUFBQUMsT0FBQTtJQUFBO0lBQUFDLGVBQUE7SUFBQXpCLElBQUE7RUFBQTtFQUFBLElBQUEwQixRQUFBLEdBQUF6QixNQUFBLENBQUFFLEdBQUEsTUFBQUYsTUFBQSxDQUFBRSxHQUFBO0VBQUEsS0FBQXVCLFFBQUEsQ0FBQTNCLElBQUEsS0FBQTJCLFFBQUEsQ0FBQTNCLElBQUEsRUFBQUMsSUFBQSxLQUFBQSxJQUFBO0lBQUEwQixRQUFBLENBQUEzQixJQUFBLElBQUFLLFlBQUE7RUFBQTtFQUFBLElBQUF1QixjQUFBLEdBQUFELFFBQUEsQ0FBQTNCLElBQUE7RUFBQTtJQWFBO0lBQUFELGNBQUEsWUFBQUEsQ0FBQTtNQUFBLE9BQUE2QixjQUFBO0lBQUE7RUFBQTtFQUFBLE9BQUFBLGNBQUE7QUFBQTtBQUFBN0IsY0FBQTtBQUFBQSxjQUFBLEdBQUFpQixDQUFBOzs7Ozs7O0FBQUE7QUFBQTtBQUFBakIsY0FBQSxHQUFBaUIsQ0FBQTtBQUNBYSxPQUFBO0FBRUE7QUFDQTtBQUNBO0FBRUEsSUFBQUMsYUFBQTtBQUFBO0FBQUEsQ0FBQS9CLGNBQUEsR0FBQWlCLENBQUEsT0FBQWEsT0FBQTtBQUFrRjtBQUFBOUIsY0FBQSxHQUFBaUIsQ0FBQTtBQUF6RWUsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7RUFBQUMsVUFBQTtFQUFBQyxHQUFBLFdBQUFBLENBQUE7SUFBQTtJQUFBcEMsY0FBQSxHQUFBa0IsQ0FBQTtJQUFBbEIsY0FBQSxHQUFBaUIsQ0FBQTtJQUFBLE9BQUFjLGFBQUEsQ0FBQU0sVUFBVTtFQUFBO0FBQUE7QUFBQTtBQUFBckMsY0FBQSxHQUFBaUIsQ0FBQTtBQUFFZSxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtFQUFBQyxVQUFBO0VBQUFDLEdBQUEsV0FBQUEsQ0FBQTtJQUFBO0lBQUFwQyxjQUFBLEdBQUFrQixDQUFBO0lBQUFsQixjQUFBLEdBQUFpQixDQUFBO0lBQUEsT0FBQWMsYUFBQSxDQUFBTyxnQkFBZ0I7RUFBQTtBQUFBO0FBQUE7QUFBQXRDLGNBQUEsR0FBQWlCLENBQUE7QUFBRWUsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7RUFBQUMsVUFBQTtFQUFBQyxHQUFBLFdBQUFBLENBQUE7SUFBQTtJQUFBcEMsY0FBQSxHQUFBa0IsQ0FBQTtJQUFBbEIsY0FBQSxHQUFBaUIsQ0FBQTtJQUFBLE9BQUFjLGFBQUEsQ0FBQVEsZUFBZTtFQUFBO0FBQUE7QUFZdEQ7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiaWdub3JlTGlzdCI6W119

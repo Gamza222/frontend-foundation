@@ -1,0 +1,232 @@
+cc9c4babbb8134c6ab52806938480846
+"use strict";
+
+/**
+ * API-specific types for HTTP client and request/response handling
+ */
+/* istanbul ignore next */
+function cov_1mzjc5dnkx() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/api.types.ts";
+  var hash = "e425c2a92ca5596d5c01284462224a32fd4ed37a";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/api.types.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 27
+        }
+      },
+      "2": {
+        start: {
+          line: 9,
+          column: 0
+        },
+        end: {
+          line: 15,
+          column: 54
+        }
+      },
+      "3": {
+        start: {
+          line: 10,
+          column: 4
+        },
+        end: {
+          line: 10,
+          column: 29
+        }
+      },
+      "4": {
+        start: {
+          line: 11,
+          column: 4
+        },
+        end: {
+          line: 11,
+          column: 31
+        }
+      },
+      "5": {
+        start: {
+          line: 12,
+          column: 4
+        },
+        end: {
+          line: 12,
+          column: 29
+        }
+      },
+      "6": {
+        start: {
+          line: 13,
+          column: 4
+        },
+        end: {
+          line: 13,
+          column: 33
+        }
+      },
+      "7": {
+        start: {
+          line: 14,
+          column: 4
+        },
+        end: {
+          line: 14,
+          column: 35
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 9,
+            column: 1
+          },
+          end: {
+            line: 9,
+            column: 2
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 22
+          },
+          end: {
+            line: 15,
+            column: 1
+          }
+        },
+        line: 9
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 15,
+            column: 3
+          },
+          end: {
+            line: 15,
+            column: 52
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 15,
+            column: 3
+          },
+          end: {
+            line: 15,
+            column: 12
+          }
+        }, {
+          start: {
+            line: 15,
+            column: 17
+          },
+          end: {
+            line: 15,
+            column: 51
+          }
+        }],
+        line: 15
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/api.types.ts",
+      mappings: ";AAAA;;GAEG;;;AAEH,6BAA6B;AAC7B,IAAY,SAMX;AAND,WAAY,SAAS;IACnB,wBAAW,CAAA;IACX,0BAAa,CAAA;IACb,wBAAW,CAAA;IACX,4BAAe,CAAA;IACf,8BAAiB,CAAA;AACnB,CAAC,EANW,SAAS,yBAAT,SAAS,QAMpB",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/api.types.ts"],
+      sourcesContent: ["/**\n * API-specific types for HTTP client and request/response handling\n */\n\n/** Supported HTTP methods */\nexport enum ApiMethod {\n  GET = 'GET',\n  POST = 'POST',\n  PUT = 'PUT',\n  PATCH = 'PATCH',\n  DELETE = 'DELETE',\n}\n\n/** API request configuration */\nexport interface ApiConfig {\n  baseUrl: string;\n  timeout: number;\n  retryAttempts: number;\n  headers?: Record<string, string>;\n}\n\n/** Base API error structure */\nexport interface ApiError {\n  message: string;\n  code: string;\n  statusCode?: number;\n  details?: unknown;\n}\n\n/** API response wrapper */\nexport interface ApiResponse<T = unknown> {\n  data?: T;\n  error?: ApiError;\n  success: boolean;\n}\n\n/** Base API request options */\nexport interface ApiRequestOptions {\n  method: ApiMethod;\n  url: string;\n  data?: unknown;\n  headers?: Record<string, string>;\n  timeout?: number;\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e425c2a92ca5596d5c01284462224a32fd4ed37a"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1mzjc5dnkx = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_1mzjc5dnkx();
+cov_1mzjc5dnkx().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_1mzjc5dnkx().s[1]++;
+exports.ApiMethod = void 0;
+/** Supported HTTP methods */
+var ApiMethod;
+/* istanbul ignore next */
+cov_1mzjc5dnkx().s[2]++;
+(function (ApiMethod) {
+  /* istanbul ignore next */
+  cov_1mzjc5dnkx().f[0]++;
+  cov_1mzjc5dnkx().s[3]++;
+  ApiMethod["GET"] = "GET";
+  /* istanbul ignore next */
+  cov_1mzjc5dnkx().s[4]++;
+  ApiMethod["POST"] = "POST";
+  /* istanbul ignore next */
+  cov_1mzjc5dnkx().s[5]++;
+  ApiMethod["PUT"] = "PUT";
+  /* istanbul ignore next */
+  cov_1mzjc5dnkx().s[6]++;
+  ApiMethod["PATCH"] = "PATCH";
+  /* istanbul ignore next */
+  cov_1mzjc5dnkx().s[7]++;
+  ApiMethod["DELETE"] = "DELETE";
+})(
+/* istanbul ignore next */
+(cov_1mzjc5dnkx().b[0][0]++, ApiMethod) ||
+/* istanbul ignore next */
+(cov_1mzjc5dnkx().b[0][1]++, exports.ApiMethod = ApiMethod = {}));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMW16amM1ZG5reCIsInBhdGgiLCJoYXNoIiwiZ2xvYmFsIiwiRnVuY3Rpb24iLCJnY3YiLCJjb3ZlcmFnZURhdGEiLCJzdGF0ZW1lbnRNYXAiLCJzdGFydCIsImxpbmUiLCJjb2x1bW4iLCJlbmQiLCJmbk1hcCIsIm5hbWUiLCJkZWNsIiwibG9jIiwiYnJhbmNoTWFwIiwidHlwZSIsImxvY2F0aW9ucyIsInMiLCJmIiwiYiIsImlucHV0U291cmNlTWFwIiwiZmlsZSIsIm1hcHBpbmdzIiwibmFtZXMiLCJzb3VyY2VzIiwic291cmNlc0NvbnRlbnQiLCJ2ZXJzaW9uIiwiX2NvdmVyYWdlU2NoZW1hIiwiY292ZXJhZ2UiLCJhY3R1YWxDb3ZlcmFnZSIsIkFwaU1ldGhvZCIsImV4cG9ydHMiXSwic291cmNlcyI6WyIvVXNlcnMvZ2FtemFyYW1hemFub3YvRGVza3RvcC9hYnN0cmFjdC10ZWFtL3NyYy9zaGFyZWQvY29uZmlnL2FwaS9hcGkudHlwZXMudHMiXSwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBBUEktc3BlY2lmaWMgdHlwZXMgZm9yIEhUVFAgY2xpZW50IGFuZCByZXF1ZXN0L3Jlc3BvbnNlIGhhbmRsaW5nXG4gKi9cblxuLyoqIFN1cHBvcnRlZCBIVFRQIG1ldGhvZHMgKi9cbmV4cG9ydCBlbnVtIEFwaU1ldGhvZCB7XG4gIEdFVCA9ICdHRVQnLFxuICBQT1NUID0gJ1BPU1QnLFxuICBQVVQgPSAnUFVUJyxcbiAgUEFUQ0ggPSAnUEFUQ0gnLFxuICBERUxFVEUgPSAnREVMRVRFJyxcbn1cblxuLyoqIEFQSSByZXF1ZXN0IGNvbmZpZ3VyYXRpb24gKi9cbmV4cG9ydCBpbnRlcmZhY2UgQXBpQ29uZmlnIHtcbiAgYmFzZVVybDogc3RyaW5nO1xuICB0aW1lb3V0OiBudW1iZXI7XG4gIHJldHJ5QXR0ZW1wdHM6IG51bWJlcjtcbiAgaGVhZGVycz86IFJlY29yZDxzdHJpbmcsIHN0cmluZz47XG59XG5cbi8qKiBCYXNlIEFQSSBlcnJvciBzdHJ1Y3R1cmUgKi9cbmV4cG9ydCBpbnRlcmZhY2UgQXBpRXJyb3Ige1xuICBtZXNzYWdlOiBzdHJpbmc7XG4gIGNvZGU6IHN0cmluZztcbiAgc3RhdHVzQ29kZT86IG51bWJlcjtcbiAgZGV0YWlscz86IHVua25vd247XG59XG5cbi8qKiBBUEkgcmVzcG9uc2Ugd3JhcHBlciAqL1xuZXhwb3J0IGludGVyZmFjZSBBcGlSZXNwb25zZTxUID0gdW5rbm93bj4ge1xuICBkYXRhPzogVDtcbiAgZXJyb3I/OiBBcGlFcnJvcjtcbiAgc3VjY2VzczogYm9vbGVhbjtcbn1cblxuLyoqIEJhc2UgQVBJIHJlcXVlc3Qgb3B0aW9ucyAqL1xuZXhwb3J0IGludGVyZmFjZSBBcGlSZXF1ZXN0T3B0aW9ucyB7XG4gIG1ldGhvZDogQXBpTWV0aG9kO1xuICB1cmw6IHN0cmluZztcbiAgZGF0YT86IHVua25vd247XG4gIGhlYWRlcnM/OiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+O1xuICB0aW1lb3V0PzogbnVtYmVyO1xufVxuIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7QUFBQTtBQUFBLFNBQUFBLGVBQUE7RUFBQSxJQUFBQyxJQUFBO0VBQUEsSUFBQUMsSUFBQTtFQUFBLElBQUFDLE1BQUEsT0FBQUMsUUFBQTtFQUFBLElBQUFDLEdBQUE7RUFBQSxJQUFBQyxZQUFBO0lBQUFMLElBQUE7SUFBQU0sWUFBQTtNQUFBO1FBQUFDLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7SUFBQTtJQUFBRSxLQUFBO01BQUE7UUFBQUMsSUFBQTtRQUFBQyxJQUFBO1VBQUFOLEtBQUE7WUFBQUMsSUFBQTtZQUFBQyxNQUFBO1VBQUE7VUFBQUMsR0FBQTtZQUFBRixJQUFBO1lBQUFDLE1BQUE7VUFBQTtRQUFBO1FBQUFLLEdBQUE7VUFBQVAsS0FBQTtZQUFBQyxJQUFBO1lBQUFDLE1BQUE7VUFBQTtVQUFBQyxHQUFBO1lBQUFGLElBQUE7WUFBQUMsTUFBQTtVQUFBO1FBQUE7UUFBQUQsSUFBQTtNQUFBO0lBQUE7SUFBQU8sU0FBQTtNQUFBO1FBQUFELEdBQUE7VUFBQVAsS0FBQTtZQUFBQyxJQUFBO1lBQUFDLE1BQUE7VUFBQTtVQUFBQyxHQUFBO1lBQUFGLElBQUE7WUFBQUMsTUFBQTtVQUFBO1FBQUE7UUFBQU8sSUFBQTtRQUFBQyxTQUFBO1VBQUFWLEtBQUE7WUFBQUMsSUFBQTtZQUFBQyxNQUFBO1VBQUE7VUFBQUMsR0FBQTtZQUFBRixJQUFBO1lBQUFDLE1BQUE7VUFBQTtRQUFBO1VBQUFGLEtBQUE7WUFBQUMsSUFBQTtZQUFBQyxNQUFBO1VBQUE7VUFBQUMsR0FBQTtZQUFBRixJQUFBO1lBQUFDLE1BQUE7VUFBQTtRQUFBO1FBQUFELElBQUE7TUFBQTtJQUFBO0lBQUFVLENBQUE7TUFBQTtNQUFBO01BQUE7TUFBQTtNQUFBO01BQUE7TUFBQTtNQUFBO0lBQUE7SUFBQUMsQ0FBQTtNQUFBO0lBQUE7SUFBQUMsQ0FBQTtNQUFBO0lBQUE7SUFBQUMsY0FBQTtNQUFBQyxJQUFBO01BQUFDLFFBQUE7TUFBQUMsS0FBQTtNQUFBQyxPQUFBO01BQUFDLGNBQUE7TUFBQUMsT0FBQTtJQUFBO0lBQUFDLGVBQUE7SUFBQTNCLElBQUE7RUFBQTtFQUFBLElBQUE0QixRQUFBLEdBQUEzQixNQUFBLENBQUFFLEdBQUEsTUFBQUYsTUFBQSxDQUFBRSxHQUFBO0VBQUEsS0FBQXlCLFFBQUEsQ0FBQTdCLElBQUEsS0FBQTZCLFFBQUEsQ0FBQTdCLElBQUEsRUFBQUMsSUFBQSxLQUFBQSxJQUFBO0lBQUE0QixRQUFBLENBQUE3QixJQUFBLElBQUFLLFlBQUE7RUFBQTtFQUFBLElBQUF5QixjQUFBLEdBQUFELFFBQUEsQ0FBQTdCLElBQUE7RUFBQTs7Ozs7Ozs7Ozs7Ozs7OztBQUlBO0FBQ0EsSUFBWStCLFNBTVg7QUFBQTtBQUFBaEMsY0FBQSxHQUFBbUIsQ0FBQTtBQU5ELFdBQVlhLFNBQVM7RUFBQTtFQUFBaEMsY0FBQSxHQUFBb0IsQ0FBQTtFQUFBcEIsY0FBQSxHQUFBbUIsQ0FBQTtFQUNuQmEsU0FBQSxlQUFXO0VBQUE7RUFBQWhDLGNBQUEsR0FBQW1CLENBQUE7RUFDWGEsU0FBQSxpQkFBYTtFQUFBO0VBQUFoQyxjQUFBLEdBQUFtQixDQUFBO0VBQ2JhLFNBQUEsZUFBVztFQUFBO0VBQUFoQyxjQUFBLEdBQUFtQixDQUFBO0VBQ1hhLFNBQUEsbUJBQWU7RUFBQTtFQUFBaEMsY0FBQSxHQUFBbUIsQ0FBQTtFQUNmYSxTQUFBLHFCQUFpQjtBQUNuQixDQUFDO0FBTlc7QUFBQSxDQUFBaEMsY0FBQSxHQUFBcUIsQ0FBQSxVQUFBVyxTQUFTO0FBQUE7QUFBQSxDQUFBaEMsY0FBQSxHQUFBcUIsQ0FBQSxVQUFBWSxPQUFBLENBQUFELFNBQUEsR0FBVEEsU0FBUyIsImlnbm9yZUxpc3QiOltdfQ==

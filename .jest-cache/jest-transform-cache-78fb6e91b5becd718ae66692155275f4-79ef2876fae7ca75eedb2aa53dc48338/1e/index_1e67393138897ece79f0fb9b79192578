@@ -1,0 +1,292 @@
+f710343d3c67e5e6ba38224c69b610bd
+"use strict";
+
+/* istanbul ignore next */
+function cov_2e0ltz5h6d() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/index.ts";
+  var hash = "70857fd62f7e87c47558c73a3ce2d1d96ddde27a";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/index.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 72
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 18
+        },
+        end: {
+          line: 4,
+          column: 40
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 118
+        }
+      },
+      "4": {
+        start: {
+          line: 5,
+          column: 83
+        },
+        end: {
+          line: 5,
+          column: 112
+        }
+      },
+      "5": {
+        start: {
+          line: 6,
+          column: 19
+        },
+        end: {
+          line: 6,
+          column: 42
+        }
+      },
+      "6": {
+        start: {
+          line: 7,
+          column: 0
+        },
+        end: {
+          line: 7,
+          column: 119
+        }
+      },
+      "7": {
+        start: {
+          line: 7,
+          column: 83
+        },
+        end: {
+          line: 7,
+          column: 113
+        }
+      },
+      "8": {
+        start: {
+          line: 8,
+          column: 22
+        },
+        end: {
+          line: 8,
+          column: 48
+        }
+      },
+      "9": {
+        start: {
+          line: 9,
+          column: 0
+        },
+        end: {
+          line: 9,
+          column: 132
+        }
+      },
+      "10": {
+        start: {
+          line: 9,
+          column: 88
+        },
+        end: {
+          line: 9,
+          column: 126
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 69
+          },
+          end: {
+            line: 5,
+            column: 70
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 81
+          },
+          end: {
+            line: 5,
+            column: 114
+          }
+        },
+        line: 5
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 7,
+            column: 69
+          },
+          end: {
+            line: 7,
+            column: 70
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 81
+          },
+          end: {
+            line: 7,
+            column: 115
+          }
+        },
+        line: 7
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 9,
+            column: 74
+          },
+          end: {
+            line: 9,
+            column: 75
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 86
+          },
+          end: {
+            line: 9,
+            column: 128
+          }
+        },
+        line: 9
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/index.ts",
+      mappings: ";;;AAAA,yCAAwC;AAA/B,sGAAA,SAAS,OAAA;AAElB,2CAAyC;AAAhC,uGAAA,SAAS,OAAA;AAClB,iDAAiD;AAAxC,+GAAA,cAAc,OAAA",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/config/api/index.ts"],
+      sourcesContent: ["export { ApiMethod } from './api.types';\nexport type { ApiConfig, ApiError } from './api.types';\nexport { apiConfig } from './api.config';\nexport { ERROR_MESSAGES } from './api.constants';\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "70857fd62f7e87c47558c73a3ce2d1d96ddde27a"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2e0ltz5h6d = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_2e0ltz5h6d();
+cov_2e0ltz5h6d().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_2e0ltz5h6d().s[1]++;
+exports.ERROR_MESSAGES = exports.apiConfig = exports.ApiMethod = void 0;
+var api_types_1 =
+/* istanbul ignore next */
+(cov_2e0ltz5h6d().s[2]++, require("./api.types"));
+/* istanbul ignore next */
+cov_2e0ltz5h6d().s[3]++;
+Object.defineProperty(exports, "ApiMethod", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_2e0ltz5h6d().f[0]++;
+    cov_2e0ltz5h6d().s[4]++;
+    return api_types_1.ApiMethod;
+  }
+});
+var api_config_1 =
+/* istanbul ignore next */
+(cov_2e0ltz5h6d().s[5]++, require("./api.config"));
+/* istanbul ignore next */
+cov_2e0ltz5h6d().s[6]++;
+Object.defineProperty(exports, "apiConfig", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_2e0ltz5h6d().f[1]++;
+    cov_2e0ltz5h6d().s[7]++;
+    return api_config_1.apiConfig;
+  }
+});
+var api_constants_1 =
+/* istanbul ignore next */
+(cov_2e0ltz5h6d().s[8]++, require("./api.constants"));
+/* istanbul ignore next */
+cov_2e0ltz5h6d().s[9]++;
+Object.defineProperty(exports, "ERROR_MESSAGES", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_2e0ltz5h6d().f[2]++;
+    cov_2e0ltz5h6d().s[10]++;
+    return api_constants_1.ERROR_MESSAGES;
+  }
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJhcGlfdHlwZXNfMSIsImNvdl8yZTBsdHo1aDZkIiwicyIsInJlcXVpcmUiLCJPYmplY3QiLCJkZWZpbmVQcm9wZXJ0eSIsImV4cG9ydHMiLCJlbnVtZXJhYmxlIiwiZ2V0IiwiZiIsIkFwaU1ldGhvZCIsImFwaV9jb25maWdfMSIsImFwaUNvbmZpZyIsImFwaV9jb25zdGFudHNfMSIsIkVSUk9SX01FU1NBR0VTIl0sInNvdXJjZXMiOlsiL1VzZXJzL2dhbXphcmFtYXphbm92L0Rlc2t0b3AvYWJzdHJhY3QtdGVhbS9zcmMvc2hhcmVkL2NvbmZpZy9hcGkvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHsgQXBpTWV0aG9kIH0gZnJvbSAnLi9hcGkudHlwZXMnO1xuZXhwb3J0IHR5cGUgeyBBcGlDb25maWcsIEFwaUVycm9yIH0gZnJvbSAnLi9hcGkudHlwZXMnO1xuZXhwb3J0IHsgYXBpQ29uZmlnIH0gZnJvbSAnLi9hcGkuY29uZmlnJztcbmV4cG9ydCB7IEVSUk9SX01FU1NBR0VTIH0gZnJvbSAnLi9hcGkuY29uc3RhbnRzJztcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxJQUFBQSxXQUFBO0FBQUE7QUFBQSxDQUFBQyxjQUFBLEdBQUFDLENBQUEsT0FBQUMsT0FBQTtBQUF3QztBQUFBRixjQUFBLEdBQUFDLENBQUE7QUFBL0JFLE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO0VBQUFDLFVBQUE7RUFBQUMsR0FBQSxXQUFBQSxDQUFBO0lBQUE7SUFBQVAsY0FBQSxHQUFBUSxDQUFBO0lBQUFSLGNBQUEsR0FBQUMsQ0FBQTtJQUFBLE9BQUFGLFdBQUEsQ0FBQVUsU0FBUztFQUFBO0FBQUE7QUFFbEIsSUFBQUMsWUFBQTtBQUFBO0FBQUEsQ0FBQVYsY0FBQSxHQUFBQyxDQUFBLE9BQUFDLE9BQUE7QUFBeUM7QUFBQUYsY0FBQSxHQUFBQyxDQUFBO0FBQWhDRSxNQUFBLENBQUFDLGNBQUEsQ0FBQUMsT0FBQTtFQUFBQyxVQUFBO0VBQUFDLEdBQUEsV0FBQUEsQ0FBQTtJQUFBO0lBQUFQLGNBQUEsR0FBQVEsQ0FBQTtJQUFBUixjQUFBLEdBQUFDLENBQUE7SUFBQSxPQUFBUyxZQUFBLENBQUFDLFNBQVM7RUFBQTtBQUFBO0FBQ2xCLElBQUFDLGVBQUE7QUFBQTtBQUFBLENBQUFaLGNBQUEsR0FBQUMsQ0FBQSxPQUFBQyxPQUFBO0FBQWlEO0FBQUFGLGNBQUEsR0FBQUMsQ0FBQTtBQUF4Q0UsTUFBQSxDQUFBQyxjQUFBLENBQUFDLE9BQUE7RUFBQUMsVUFBQTtFQUFBQyxHQUFBLFdBQUFBLENBQUE7SUFBQTtJQUFBUCxjQUFBLEdBQUFRLENBQUE7SUFBQVIsY0FBQSxHQUFBQyxDQUFBO0lBQUEsT0FBQVcsZUFBQSxDQUFBQyxjQUFjO0VBQUE7QUFBQSIsImlnbm9yZUxpc3QiOltdfQ==

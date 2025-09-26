@@ -1,0 +1,51 @@
+9140ac705dc0f6d1dc7f88cff3e28290
+"use strict";
+
+/**
+ * Error mock types
+ *
+ * Contains only types that are actually used in the error mock system.
+ * Currently only supports reset function mocking for ErrorBoundary testing.
+ */
+// No types are currently needed since createMockResetFunction uses jest.MockedFunction directly
+// This file is kept for future expansion if additional error mock types are needed
+/* istanbul ignore next */
+function cov_1rquvabokj() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/errors/types/types.ts";
+  var hash = "e5a46eacb1ec1d40f4c3b35da6ba1af5280b3ca6";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/errors/types/types.ts",
+    statementMap: {},
+    fnMap: {},
+    branchMap: {},
+    s: {},
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/errors/types/types.ts",
+      mappings: ";AAAA;;;;;GAKG;AAEH,gGAAgG;AAChG,mFAAmF",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/testing/mocks/errors/types/types.ts"],
+      sourcesContent: ["/**\n * Error mock types\n *\n * Contains only types that are actually used in the error mock system.\n * Currently only supports reset function mocking for ErrorBoundary testing.\n */\n\n// No types are currently needed since createMockResetFunction uses jest.MockedFunction directly\n// This file is kept for future expansion if additional error mock types are needed\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e5a46eacb1ec1d40f4c3b35da6ba1af5280b3ca6"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1rquvabokj = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_1rquvabokj();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMXJxdXZhYm9raiIsInBhdGgiLCJoYXNoIiwiZ2xvYmFsIiwiRnVuY3Rpb24iLCJnY3YiLCJjb3ZlcmFnZURhdGEiLCJzdGF0ZW1lbnRNYXAiLCJmbk1hcCIsImJyYW5jaE1hcCIsInMiLCJmIiwiYiIsImlucHV0U291cmNlTWFwIiwiZmlsZSIsIm1hcHBpbmdzIiwibmFtZXMiLCJzb3VyY2VzIiwic291cmNlc0NvbnRlbnQiLCJ2ZXJzaW9uIiwiX2NvdmVyYWdlU2NoZW1hIiwiY292ZXJhZ2UiLCJhY3R1YWxDb3ZlcmFnZSJdLCJzb3VyY2VzIjpbIi9Vc2Vycy9nYW16YXJhbWF6YW5vdi9EZXNrdG9wL2Fic3RyYWN0LXRlYW0vc3JjL3NoYXJlZC90ZXN0aW5nL21vY2tzL2Vycm9ycy90eXBlcy90eXBlcy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEVycm9yIG1vY2sgdHlwZXNcbiAqXG4gKiBDb250YWlucyBvbmx5IHR5cGVzIHRoYXQgYXJlIGFjdHVhbGx5IHVzZWQgaW4gdGhlIGVycm9yIG1vY2sgc3lzdGVtLlxuICogQ3VycmVudGx5IG9ubHkgc3VwcG9ydHMgcmVzZXQgZnVuY3Rpb24gbW9ja2luZyBmb3IgRXJyb3JCb3VuZGFyeSB0ZXN0aW5nLlxuICovXG5cbi8vIE5vIHR5cGVzIGFyZSBjdXJyZW50bHkgbmVlZGVkIHNpbmNlIGNyZWF0ZU1vY2tSZXNldEZ1bmN0aW9uIHVzZXMgamVzdC5Nb2NrZWRGdW5jdGlvbiBkaXJlY3RseVxuLy8gVGhpcyBmaWxlIGlzIGtlcHQgZm9yIGZ1dHVyZSBleHBhbnNpb24gaWYgYWRkaXRpb25hbCBlcnJvciBtb2NrIHR5cGVzIGFyZSBuZWVkZWRcbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7Ozs7O0FBT0E7QUFDQTtBQUFBO0FBQUEsU0FBQUEsZUFBQTtFQUFBLElBQUFDLElBQUE7RUFBQSxJQUFBQyxJQUFBO0VBQUEsSUFBQUMsTUFBQSxPQUFBQyxRQUFBO0VBQUEsSUFBQUMsR0FBQTtFQUFBLElBQUFDLFlBQUE7SUFBQUwsSUFBQTtJQUFBTSxZQUFBO0lBQUFDLEtBQUE7SUFBQUMsU0FBQTtJQUFBQyxDQUFBO0lBQUFDLENBQUE7SUFBQUMsQ0FBQTtJQUFBQyxjQUFBO01BQUFDLElBQUE7TUFBQUMsUUFBQTtNQUFBQyxLQUFBO01BQUFDLE9BQUE7TUFBQUMsY0FBQTtNQUFBQyxPQUFBO0lBQUE7SUFBQUMsZUFBQTtJQUFBbEIsSUFBQTtFQUFBO0VBQUEsSUFBQW1CLFFBQUEsR0FBQWxCLE1BQUEsQ0FBQUUsR0FBQSxNQUFBRixNQUFBLENBQUFFLEdBQUE7RUFBQSxLQUFBZ0IsUUFBQSxDQUFBcEIsSUFBQSxLQUFBb0IsUUFBQSxDQUFBcEIsSUFBQSxFQUFBQyxJQUFBLEtBQUFBLElBQUE7SUFBQW1CLFFBQUEsQ0FBQXBCLElBQUEsSUFBQUssWUFBQTtFQUFBO0VBQUEsSUFBQWdCLGNBQUEsR0FBQUQsUUFBQSxDQUFBcEIsSUFBQTtFQUFBIiwiaWdub3JlTGlzdCI6W119

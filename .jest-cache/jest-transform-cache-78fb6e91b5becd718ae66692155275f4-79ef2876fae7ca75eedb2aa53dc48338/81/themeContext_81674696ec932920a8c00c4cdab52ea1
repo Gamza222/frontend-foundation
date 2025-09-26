@@ -1,0 +1,229 @@
+c3f3f923dc2de38470d0f0e438a58161
+"use strict";
+"use client";
+
+/* istanbul ignore next */
+function cov_2hkft8e4l3() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/providers/theme/lib/themeContext.ts";
+  var hash = "500332ce170c92449af0157d805ae340a7e6ab39";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/providers/theme/lib/themeContext.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 4,
+          column: 0
+        },
+        end: {
+          line: 4,
+          column: 80
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 14
+        },
+        end: {
+          line: 5,
+          column: 30
+        }
+      },
+      "3": {
+        start: {
+          line: 7,
+          column: 0
+        },
+        end: {
+          line: 10,
+          column: 42
+        }
+      },
+      "4": {
+        start: {
+          line: 8,
+          column: 4
+        },
+        end: {
+          line: 8,
+          column: 39
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 4
+        },
+        end: {
+          line: 9,
+          column: 37
+        }
+      },
+      "6": {
+        start: {
+          line: 11,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 54
+        }
+      },
+      "7": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 12,
+          column: 42
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 1
+          },
+          end: {
+            line: 7,
+            column: 2
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 18
+          },
+          end: {
+            line: 10,
+            column: 1
+          }
+        },
+        line: 7
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 10,
+            column: 3
+          },
+          end: {
+            line: 10,
+            column: 40
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 10,
+            column: 3
+          },
+          end: {
+            line: 10,
+            column: 8
+          }
+        }, {
+          start: {
+            line: 10,
+            column: 13
+          },
+          end: {
+            line: 10,
+            column: 39
+          }
+        }],
+        line: 10
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/providers/theme/lib/themeContext.ts",
+      mappings: ";AAAA,YAAY,CAAC;;;AAEb,+BAAsC;AAEtC,IAAY,KAGX;AAHD,WAAY,KAAK;IACf,kCAAyB,CAAA;IACzB,gCAAuB,CAAA;AACzB,CAAC,EAHW,KAAK,qBAAL,KAAK,QAGhB;AAOY,QAAA,YAAY,GAAG,IAAA,qBAAa,EAAoB,EAAE,CAAC,CAAC;AAEpD,QAAA,uBAAuB,GAAG,OAAO,CAAC",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/infrastructure/providers/theme/lib/themeContext.ts"],
+      sourcesContent: ["\"use client\";\n\nimport { createContext } from \"react\";\n\nexport enum Theme {\n  LIGHT = \"app_light_theme\",\n  DARK = \"app_dark_theme\",\n}\n\nexport interface ThemeContextProps {\n  theme?: Theme;\n  setTheme?: (theme: Theme) => void;\n}\n\nexport const ThemeContext = createContext<ThemeContextProps>({});\n\nexport const LOCAL_STORAGE_THEME_KEY = \"theme\";\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "500332ce170c92449af0157d805ae340a7e6ab39"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2hkft8e4l3 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_2hkft8e4l3();
+cov_2hkft8e4l3().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_2hkft8e4l3().s[1]++;
+exports.LOCAL_STORAGE_THEME_KEY = exports.ThemeContext = exports.Theme = void 0;
+var react_1 =
+/* istanbul ignore next */
+(cov_2hkft8e4l3().s[2]++, require("react"));
+var Theme;
+/* istanbul ignore next */
+cov_2hkft8e4l3().s[3]++;
+(function (Theme) {
+  /* istanbul ignore next */
+  cov_2hkft8e4l3().f[0]++;
+  cov_2hkft8e4l3().s[4]++;
+  Theme["LIGHT"] = "app_light_theme";
+  /* istanbul ignore next */
+  cov_2hkft8e4l3().s[5]++;
+  Theme["DARK"] = "app_dark_theme";
+})(
+/* istanbul ignore next */
+(cov_2hkft8e4l3().b[0][0]++, Theme) ||
+/* istanbul ignore next */
+(cov_2hkft8e4l3().b[0][1]++, exports.Theme = Theme = {}));
+/* istanbul ignore next */
+cov_2hkft8e4l3().s[6]++;
+exports.ThemeContext = (0, react_1.createContext)({});
+/* istanbul ignore next */
+cov_2hkft8e4l3().s[7]++;
+exports.LOCAL_STORAGE_THEME_KEY = "theme";
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMmhrZnQ4ZTRsMyIsInBhdGgiLCJoYXNoIiwiZ2xvYmFsIiwiRnVuY3Rpb24iLCJnY3YiLCJjb3ZlcmFnZURhdGEiLCJzdGF0ZW1lbnRNYXAiLCJzdGFydCIsImxpbmUiLCJjb2x1bW4iLCJlbmQiLCJmbk1hcCIsIm5hbWUiLCJkZWNsIiwibG9jIiwiYnJhbmNoTWFwIiwidHlwZSIsImxvY2F0aW9ucyIsInMiLCJmIiwiYiIsImlucHV0U291cmNlTWFwIiwiZmlsZSIsIm1hcHBpbmdzIiwibmFtZXMiLCJzb3VyY2VzIiwic291cmNlc0NvbnRlbnQiLCJ2ZXJzaW9uIiwiX2NvdmVyYWdlU2NoZW1hIiwiY292ZXJhZ2UiLCJhY3R1YWxDb3ZlcmFnZSIsInJlYWN0XzEiLCJyZXF1aXJlIiwiVGhlbWUiLCJleHBvcnRzIiwiVGhlbWVDb250ZXh0IiwiY3JlYXRlQ29udGV4dCIsIkxPQ0FMX1NUT1JBR0VfVEhFTUVfS0VZIl0sInNvdXJjZXMiOlsiL1VzZXJzL2dhbXphcmFtYXphbm92L0Rlc2t0b3AvYWJzdHJhY3QtdGVhbS9zcmMvaW5mcmFzdHJ1Y3R1cmUvcHJvdmlkZXJzL3RoZW1lL2xpYi90aGVtZUNvbnRleHQudHMiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2UgY2xpZW50XCI7XG5cbmltcG9ydCB7IGNyZWF0ZUNvbnRleHQgfSBmcm9tIFwicmVhY3RcIjtcblxuZXhwb3J0IGVudW0gVGhlbWUge1xuICBMSUdIVCA9IFwiYXBwX2xpZ2h0X3RoZW1lXCIsXG4gIERBUksgPSBcImFwcF9kYXJrX3RoZW1lXCIsXG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgVGhlbWVDb250ZXh0UHJvcHMge1xuICB0aGVtZT86IFRoZW1lO1xuICBzZXRUaGVtZT86ICh0aGVtZTogVGhlbWUpID0+IHZvaWQ7XG59XG5cbmV4cG9ydCBjb25zdCBUaGVtZUNvbnRleHQgPSBjcmVhdGVDb250ZXh0PFRoZW1lQ29udGV4dFByb3BzPih7fSk7XG5cbmV4cG9ydCBjb25zdCBMT0NBTF9TVE9SQUdFX1RIRU1FX0tFWSA9IFwidGhlbWVcIjtcbiJdLCJtYXBwaW5ncyI6IjtBQUFBLFlBQVk7O0FBQUM7QUFBQSxTQUFBQSxlQUFBO0VBQUEsSUFBQUMsSUFBQTtFQUFBLElBQUFDLElBQUE7RUFBQSxJQUFBQyxNQUFBLE9BQUFDLFFBQUE7RUFBQSxJQUFBQyxHQUFBO0VBQUEsSUFBQUMsWUFBQTtJQUFBTCxJQUFBO0lBQUFNLFlBQUE7TUFBQTtRQUFBQyxLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO01BQUE7UUFBQUYsS0FBQTtVQUFBQyxJQUFBO1VBQUFDLE1BQUE7UUFBQTtRQUFBQyxHQUFBO1VBQUFGLElBQUE7VUFBQUMsTUFBQTtRQUFBO01BQUE7TUFBQTtRQUFBRixLQUFBO1VBQUFDLElBQUE7VUFBQUMsTUFBQTtRQUFBO1FBQUFDLEdBQUE7VUFBQUYsSUFBQTtVQUFBQyxNQUFBO1FBQUE7TUFBQTtNQUFBO1FBQUFGLEtBQUE7VUFBQUMsSUFBQTtVQUFBQyxNQUFBO1FBQUE7UUFBQUMsR0FBQTtVQUFBRixJQUFBO1VBQUFDLE1BQUE7UUFBQTtNQUFBO0lBQUE7SUFBQUUsS0FBQTtNQUFBO1FBQUFDLElBQUE7UUFBQUMsSUFBQTtVQUFBTixLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtRQUFBSyxHQUFBO1VBQUFQLEtBQUE7WUFBQUMsSUFBQTtZQUFBQyxNQUFBO1VBQUE7VUFBQUMsR0FBQTtZQUFBRixJQUFBO1lBQUFDLE1BQUE7VUFBQTtRQUFBO1FBQUFELElBQUE7TUFBQTtJQUFBO0lBQUFPLFNBQUE7TUFBQTtRQUFBRCxHQUFBO1VBQUFQLEtBQUE7WUFBQUMsSUFBQTtZQUFBQyxNQUFBO1VBQUE7VUFBQUMsR0FBQTtZQUFBRixJQUFBO1lBQUFDLE1BQUE7VUFBQTtRQUFBO1FBQUFPLElBQUE7UUFBQUMsU0FBQTtVQUFBVixLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtVQUFBRixLQUFBO1lBQUFDLElBQUE7WUFBQUMsTUFBQTtVQUFBO1VBQUFDLEdBQUE7WUFBQUYsSUFBQTtZQUFBQyxNQUFBO1VBQUE7UUFBQTtRQUFBRCxJQUFBO01BQUE7SUFBQTtJQUFBVSxDQUFBO01BQUE7TUFBQTtNQUFBO01BQUE7TUFBQTtNQUFBO01BQUE7TUFBQTtJQUFBO0lBQUFDLENBQUE7TUFBQTtJQUFBO0lBQUFDLENBQUE7TUFBQTtJQUFBO0lBQUFDLGNBQUE7TUFBQUMsSUFBQTtNQUFBQyxRQUFBO01BQUFDLEtBQUE7TUFBQUMsT0FBQTtNQUFBQyxjQUFBO01BQUFDLE9BQUE7SUFBQTtJQUFBQyxlQUFBO0lBQUEzQixJQUFBO0VBQUE7RUFBQSxJQUFBNEIsUUFBQSxHQUFBM0IsTUFBQSxDQUFBRSxHQUFBLE1BQUFGLE1BQUEsQ0FBQUUsR0FBQTtFQUFBLEtBQUF5QixRQUFBLENBQUE3QixJQUFBLEtBQUE2QixRQUFBLENBQUE3QixJQUFBLEVBQUFDLElBQUEsS0FBQUEsSUFBQTtJQUFBNEIsUUFBQSxDQUFBN0IsSUFBQSxJQUFBSyxZQUFBO0VBQUE7RUFBQSxJQUFBeUIsY0FBQSxHQUFBRCxRQUFBLENBQUE3QixJQUFBO0VBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFYixJQUFBK0IsT0FBQTtBQUFBO0FBQUEsQ0FBQWhDLGNBQUEsR0FBQW1CLENBQUEsT0FBQWMsT0FBQTtBQUVBLElBQVlDLEtBR1g7QUFBQTtBQUFBbEMsY0FBQSxHQUFBbUIsQ0FBQTtBQUhELFdBQVllLEtBQUs7RUFBQTtFQUFBbEMsY0FBQSxHQUFBb0IsQ0FBQTtFQUFBcEIsY0FBQSxHQUFBbUIsQ0FBQTtFQUNmZSxLQUFBLDZCQUF5QjtFQUFBO0VBQUFsQyxjQUFBLEdBQUFtQixDQUFBO0VBQ3pCZSxLQUFBLDJCQUF1QjtBQUN6QixDQUFDO0FBSFc7QUFBQSxDQUFBbEMsY0FBQSxHQUFBcUIsQ0FBQSxVQUFBYSxLQUFLO0FBQUE7QUFBQSxDQUFBbEMsY0FBQSxHQUFBcUIsQ0FBQSxVQUFBYyxPQUFBLENBQUFELEtBQUEsR0FBTEEsS0FBSztBQUdoQjtBQUFBbEMsY0FBQSxHQUFBbUIsQ0FBQTtBQU9ZZ0IsT0FBQSxDQUFBQyxZQUFZLEdBQUcsSUFBQUosT0FBQSxDQUFBSyxhQUFhLEVBQW9CLEVBQUUsQ0FBQztBQUFDO0FBQUFyQyxjQUFBLEdBQUFtQixDQUFBO0FBRXBEZ0IsT0FBQSxDQUFBRyx1QkFBdUIsR0FBRyxPQUFPIiwiaWdub3JlTGlzdCI6W119

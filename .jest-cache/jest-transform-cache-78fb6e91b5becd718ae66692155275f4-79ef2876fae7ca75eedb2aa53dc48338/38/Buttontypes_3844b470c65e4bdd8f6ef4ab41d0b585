@@ -1,0 +1,322 @@
+8677760928c898e5ce621a2b1edb558b
+"use strict";
+
+/* istanbul ignore next */
+function cov_ewnyhmp5l() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/ui/Button/Button.types.ts";
+  var hash = "ad889137b3e26657429dc76e2e56c9f243179bb8";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/ui/Button/Button.types.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 52
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 9,
+          column: 66
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 4
+        },
+        end: {
+          line: 6,
+          column: 41
+        }
+      },
+      "4": {
+        start: {
+          line: 7,
+          column: 4
+        },
+        end: {
+          line: 7,
+          column: 45
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 4
+        },
+        end: {
+          line: 8,
+          column: 39
+        }
+      },
+      "6": {
+        start: {
+          line: 11,
+          column: 0
+        },
+        end: {
+          line: 15,
+          column: 57
+        }
+      },
+      "7": {
+        start: {
+          line: 12,
+          column: 4
+        },
+        end: {
+          line: 12,
+          column: 28
+        }
+      },
+      "8": {
+        start: {
+          line: 13,
+          column: 4
+        },
+        end: {
+          line: 13,
+          column: 28
+        }
+      },
+      "9": {
+        start: {
+          line: 14,
+          column: 4
+        },
+        end: {
+          line: 14,
+          column: 28
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 1
+          },
+          end: {
+            line: 5,
+            column: 2
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 26
+          },
+          end: {
+            line: 9,
+            column: 1
+          }
+        },
+        line: 5
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 11,
+            column: 1
+          },
+          end: {
+            line: 11,
+            column: 2
+          }
+        },
+        loc: {
+          start: {
+            line: 11,
+            column: 23
+          },
+          end: {
+            line: 15,
+            column: 1
+          }
+        },
+        line: 11
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 9,
+            column: 3
+          },
+          end: {
+            line: 9,
+            column: 64
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 9,
+            column: 3
+          },
+          end: {
+            line: 9,
+            column: 16
+          }
+        }, {
+          start: {
+            line: 9,
+            column: 21
+          },
+          end: {
+            line: 9,
+            column: 63
+          }
+        }],
+        line: 9
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 15,
+            column: 3
+          },
+          end: {
+            line: 15,
+            column: 55
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 15,
+            column: 3
+          },
+          end: {
+            line: 15,
+            column: 13
+          }
+        }, {
+          start: {
+            line: 15,
+            column: 18
+          },
+          end: {
+            line: 15,
+            column: 54
+          }
+        }],
+        line: 15
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/shared/ui/Button/Button.types.ts",
+      mappings: ";;;AAEA,IAAY,aAIX;AAJD,WAAY,aAAa;IACvB,oCAAmB,CAAA;IACnB,wCAAuB,CAAA;IACvB,kCAAiB,CAAA;AACnB,CAAC,EAJW,aAAa,6BAAb,aAAa,QAIxB;AAED,IAAY,UAIX;AAJD,WAAY,UAAU;IACpB,uBAAS,CAAA;IACT,uBAAS,CAAA;IACT,uBAAS,CAAA;AACX,CAAC,EAJW,UAAU,0BAAV,UAAU,QAIrB",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/shared/ui/Button/Button.types.ts"],
+      sourcesContent: ["import { ButtonHTMLAttributes, ReactNode } from 'react';\n\nexport enum ButtonVariant {\n  PRIMARY = 'primary',\n  SECONDARY = 'secondary',\n  DANGER = 'danger',\n}\n\nexport enum ButtonSize {\n  SM = 'sm',\n  MD = 'md',\n  LG = 'lg',\n}\n\nexport interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {\n  variant?: ButtonVariant;\n  size?: ButtonSize;\n  fullWidth?: boolean;\n  loading?: boolean;\n  icon?: ReactNode;\n  className?: string | undefined;\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "ad889137b3e26657429dc76e2e56c9f243179bb8"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_ewnyhmp5l = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_ewnyhmp5l();
+cov_ewnyhmp5l().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_ewnyhmp5l().s[1]++;
+exports.ButtonSize = exports.ButtonVariant = void 0;
+var ButtonVariant;
+/* istanbul ignore next */
+cov_ewnyhmp5l().s[2]++;
+(function (ButtonVariant) {
+  /* istanbul ignore next */
+  cov_ewnyhmp5l().f[0]++;
+  cov_ewnyhmp5l().s[3]++;
+  ButtonVariant["PRIMARY"] = "primary";
+  /* istanbul ignore next */
+  cov_ewnyhmp5l().s[4]++;
+  ButtonVariant["SECONDARY"] = "secondary";
+  /* istanbul ignore next */
+  cov_ewnyhmp5l().s[5]++;
+  ButtonVariant["DANGER"] = "danger";
+})(
+/* istanbul ignore next */
+(cov_ewnyhmp5l().b[0][0]++, ButtonVariant) ||
+/* istanbul ignore next */
+(cov_ewnyhmp5l().b[0][1]++, exports.ButtonVariant = ButtonVariant = {}));
+var ButtonSize;
+/* istanbul ignore next */
+cov_ewnyhmp5l().s[6]++;
+(function (ButtonSize) {
+  /* istanbul ignore next */
+  cov_ewnyhmp5l().f[1]++;
+  cov_ewnyhmp5l().s[7]++;
+  ButtonSize["SM"] = "sm";
+  /* istanbul ignore next */
+  cov_ewnyhmp5l().s[8]++;
+  ButtonSize["MD"] = "md";
+  /* istanbul ignore next */
+  cov_ewnyhmp5l().s[9]++;
+  ButtonSize["LG"] = "lg";
+})(
+/* istanbul ignore next */
+(cov_ewnyhmp5l().b[1][0]++, ButtonSize) ||
+/* istanbul ignore next */
+(cov_ewnyhmp5l().b[1][1]++, exports.ButtonSize = ButtonSize = {}));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJCdXR0b25WYXJpYW50IiwiY292X2V3bnlobXA1bCIsInMiLCJmIiwiYiIsImV4cG9ydHMiLCJCdXR0b25TaXplIl0sInNvdXJjZXMiOlsiL1VzZXJzL2dhbXphcmFtYXphbm92L0Rlc2t0b3AvYWJzdHJhY3QtdGVhbS9zcmMvc2hhcmVkL3VpL0J1dHRvbi9CdXR0b24udHlwZXMudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQnV0dG9uSFRNTEF0dHJpYnV0ZXMsIFJlYWN0Tm9kZSB9IGZyb20gJ3JlYWN0JztcblxuZXhwb3J0IGVudW0gQnV0dG9uVmFyaWFudCB7XG4gIFBSSU1BUlkgPSAncHJpbWFyeScsXG4gIFNFQ09OREFSWSA9ICdzZWNvbmRhcnknLFxuICBEQU5HRVIgPSAnZGFuZ2VyJyxcbn1cblxuZXhwb3J0IGVudW0gQnV0dG9uU2l6ZSB7XG4gIFNNID0gJ3NtJyxcbiAgTUQgPSAnbWQnLFxuICBMRyA9ICdsZycsXG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgQnV0dG9uUHJvcHMgZXh0ZW5kcyBCdXR0b25IVE1MQXR0cmlidXRlczxIVE1MQnV0dG9uRWxlbWVudD4ge1xuICB2YXJpYW50PzogQnV0dG9uVmFyaWFudDtcbiAgc2l6ZT86IEJ1dHRvblNpemU7XG4gIGZ1bGxXaWR0aD86IGJvb2xlYW47XG4gIGxvYWRpbmc/OiBib29sZWFuO1xuICBpY29uPzogUmVhY3ROb2RlO1xuICBjbGFzc05hbWU/OiBzdHJpbmcgfCB1bmRlZmluZWQ7XG59XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUVBLElBQVlBLGFBSVg7QUFBQTtBQUFBQyxhQUFBLEdBQUFDLENBQUE7QUFKRCxXQUFZRixhQUFhO0VBQUE7RUFBQUMsYUFBQSxHQUFBRSxDQUFBO0VBQUFGLGFBQUEsR0FBQUMsQ0FBQTtFQUN2QkYsYUFBQSx1QkFBbUI7RUFBQTtFQUFBQyxhQUFBLEdBQUFDLENBQUE7RUFDbkJGLGFBQUEsMkJBQXVCO0VBQUE7RUFBQUMsYUFBQSxHQUFBQyxDQUFBO0VBQ3ZCRixhQUFBLHFCQUFpQjtBQUNuQixDQUFDO0FBSlc7QUFBQSxDQUFBQyxhQUFBLEdBQUFHLENBQUEsVUFBQUosYUFBYTtBQUFBO0FBQUEsQ0FBQUMsYUFBQSxHQUFBRyxDQUFBLFVBQUFDLE9BQUEsQ0FBQUwsYUFBQSxHQUFiQSxhQUFhO0FBTXpCLElBQVlNLFVBSVg7QUFBQTtBQUFBTCxhQUFBLEdBQUFDLENBQUE7QUFKRCxXQUFZSSxVQUFVO0VBQUE7RUFBQUwsYUFBQSxHQUFBRSxDQUFBO0VBQUFGLGFBQUEsR0FBQUMsQ0FBQTtFQUNwQkksVUFBQSxhQUFTO0VBQUE7RUFBQUwsYUFBQSxHQUFBQyxDQUFBO0VBQ1RJLFVBQUEsYUFBUztFQUFBO0VBQUFMLGFBQUEsR0FBQUMsQ0FBQTtFQUNUSSxVQUFBLGFBQVM7QUFDWCxDQUFDO0FBSlc7QUFBQSxDQUFBTCxhQUFBLEdBQUFHLENBQUEsVUFBQUUsVUFBVTtBQUFBO0FBQUEsQ0FBQUwsYUFBQSxHQUFBRyxDQUFBLFVBQUFDLE9BQUEsQ0FBQUMsVUFBQSxHQUFWQSxVQUFVIiwiaWdub3JlTGlzdCI6W119

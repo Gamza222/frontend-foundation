@@ -1,0 +1,415 @@
+092697abede658c8dacebbd9972dbe78
+"use strict";
+
+/* istanbul ignore next */
+function cov_1m44x38700() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/app/(app)/workspace/page.tsx";
+  var hash = "659dcb980e41204223ab7a2e4409058d29197e4b";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/app/(app)/workspace/page.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 22
+        },
+        end: {
+          line: 4,
+          column: 1
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 4
+        },
+        end: {
+          line: 3,
+          column: 62
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 62
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 32
+        }
+      },
+      "4": {
+        start: {
+          line: 7,
+          column: 20
+        },
+        end: {
+          line: 7,
+          column: 48
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 14
+        },
+        end: {
+          line: 8,
+          column: 30
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 13
+        },
+        end: {
+          line: 9,
+          column: 40
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 19
+        },
+        end: {
+          line: 10,
+          column: 57
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 17
+        },
+        end: {
+          line: 11,
+          column: 53
+        }
+      },
+      "9": {
+        start: {
+          line: 12,
+          column: 19
+        },
+        end: {
+          line: 12,
+          column: 57
+        }
+      },
+      "10": {
+        start: {
+          line: 13,
+          column: 25
+        },
+        end: {
+          line: 13,
+          column: 71
+        }
+      },
+      "11": {
+        start: {
+          line: 15,
+          column: 4
+        },
+        end: {
+          line: 15,
+          column: 653
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 2,
+            column: 57
+          }
+        },
+        loc: {
+          start: {
+            line: 2,
+            column: 71
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        line: 2
+      },
+      "1": {
+        name: "WorkspacePage",
+        decl: {
+          start: {
+            line: 14,
+            column: 9
+          },
+          end: {
+            line: 14,
+            column: 22
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 25
+          },
+          end: {
+            line: 16,
+            column: 1
+          }
+        },
+        line: 14
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 2,
+            column: 22
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 2,
+            column: 23
+          },
+          end: {
+            line: 2,
+            column: 27
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 31
+          },
+          end: {
+            line: 2,
+            column: 51
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        }],
+        line: 2
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 3,
+            column: 11
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 37
+          },
+          end: {
+            line: 3,
+            column: 40
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 43
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        }],
+        line: 3
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 15
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 19
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        }],
+        line: 3
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {
+      "0": [0, 0, 0],
+      "1": [0, 0],
+      "2": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/app/(app)/workspace/page.tsx",
+      mappings: ";;;;;AAUA,gCAoBC;;AA9BD,+BAAiC;AACjC,yCAAwC;AACxC,0DAAoE;AACpE,sDAGmC;AACnC,0DAAkE;AAClE,wEAAwC;AAExC,SAAwB,aAAa;IACnC,OAAO,CACL,uBAAC,gBAAQ,IACP,QAAQ,EAAE,uBAAC,mCAAwB,IAAC,MAAM,EAAE,0BAAe,CAAC,KAAK,GAAI,YAErE,iCAAK,SAAS,EAAE,0BAAM,CAAC,SAAS,aAC9B,uBAAC,WAAI,IACH,OAAO,EAAE,wBAAW,CAAC,OAAO,EAC5B,IAAI,EAAE,qBAAQ,CAAC,EAAE,EACjB,SAAS,EAAE,0BAAM,CAAC,KAAK,8DAGlB,EAEP,gCAAK,SAAS,EAAE,0BAAM,CAAC,IAAI,YACzB,uBAAC,gCAAmB,KAAG,GACnB,IACF,GACG,CACZ,CAAC;AACJ,CAAC",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/app/(app)/workspace/page.tsx"],
+      sourcesContent: ["import { Suspense } from \"react\";\nimport { Text } from \"@/shared/ui/Text\";\nimport { TextSize, TextVariant } from \"@/shared/ui/Text/Text.types\";\nimport {\n  ComponentLoadingFallback,\n  ComponentHeight,\n} from \"@/infrastructure/suspense\";\nimport { MonitoringDashboard } from \"@/infrastructure/monitoring\";\nimport styles from \"./page.module.scss\";\n\nexport default function WorkspacePage() {\n  return (\n    <Suspense\n      fallback={<ComponentLoadingFallback height={ComponentHeight.LARGE} />}\n    >\n      <div className={styles.container}>\n        <Text\n          variant={TextVariant.PRIMARY}\n          size={TextSize.LG}\n          className={styles.title}\n        >\n          Workspace Page - Monitoring Dashboard Feature\n        </Text>\n\n        <div className={styles.card}>\n          <MonitoringDashboard />\n        </div>\n      </div>\n    </Suspense>\n  );\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "659dcb980e41204223ab7a2e4409058d29197e4b"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1m44x38700 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_1m44x38700();
+var __importDefault =
+/* istanbul ignore next */
+(cov_1m44x38700().s[0]++,
+/* istanbul ignore next */
+(cov_1m44x38700().b[0][0]++, this) &&
+/* istanbul ignore next */
+(cov_1m44x38700().b[0][1]++, this.__importDefault) ||
+/* istanbul ignore next */
+(cov_1m44x38700().b[0][2]++, function (mod) {
+  /* istanbul ignore next */
+  cov_1m44x38700().f[0]++;
+  cov_1m44x38700().s[1]++;
+  return /* istanbul ignore next */(cov_1m44x38700().b[2][0]++, mod) &&
+  /* istanbul ignore next */
+  (cov_1m44x38700().b[2][1]++, mod.__esModule) ?
+  /* istanbul ignore next */
+  (cov_1m44x38700().b[1][0]++, mod) :
+  /* istanbul ignore next */
+  (cov_1m44x38700().b[1][1]++, {
+    "default": mod
+  });
+}));
+/* istanbul ignore next */
+cov_1m44x38700().s[2]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_1m44x38700().s[3]++;
+exports.default = WorkspacePage;
+var jsx_runtime_1 =
+/* istanbul ignore next */
+(cov_1m44x38700().s[4]++, require("react/jsx-runtime"));
+var react_1 =
+/* istanbul ignore next */
+(cov_1m44x38700().s[5]++, require("react"));
+var Text_1 =
+/* istanbul ignore next */
+(cov_1m44x38700().s[6]++, require("@/shared/ui/Text"));
+var Text_types_1 =
+/* istanbul ignore next */
+(cov_1m44x38700().s[7]++, require("@/shared/ui/Text/Text.types"));
+var suspense_1 =
+/* istanbul ignore next */
+(cov_1m44x38700().s[8]++, require("@/infrastructure/suspense"));
+var monitoring_1 =
+/* istanbul ignore next */
+(cov_1m44x38700().s[9]++, require("@/infrastructure/monitoring"));
+var page_module_scss_1 =
+/* istanbul ignore next */
+(cov_1m44x38700().s[10]++, __importDefault(require("./page.module.scss")));
+function WorkspacePage() {
+  /* istanbul ignore next */
+  cov_1m44x38700().f[1]++;
+  cov_1m44x38700().s[11]++;
+  return (0, jsx_runtime_1.jsx)(react_1.Suspense, {
+    fallback: (0, jsx_runtime_1.jsx)(suspense_1.ComponentLoadingFallback, {
+      height: suspense_1.ComponentHeight.LARGE
+    }),
+    children: (0, jsx_runtime_1.jsxs)("div", {
+      className: page_module_scss_1.default.container,
+      children: [(0, jsx_runtime_1.jsx)(Text_1.Text, {
+        variant: Text_types_1.TextVariant.PRIMARY,
+        size: Text_types_1.TextSize.LG,
+        className: page_module_scss_1.default.title,
+        children: "Workspace Page - Monitoring Dashboard Feature"
+      }), (0, jsx_runtime_1.jsx)("div", {
+        className: page_module_scss_1.default.card,
+        children: (0, jsx_runtime_1.jsx)(monitoring_1.MonitoringDashboard, {})
+      })]
+    })
+  });
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMW00NHgzODcwMCIsImFjdHVhbENvdmVyYWdlIiwiZXhwb3J0cyIsImRlZmF1bHQiLCJXb3Jrc3BhY2VQYWdlIiwicmVhY3RfMSIsInMiLCJyZXF1aXJlIiwiVGV4dF8xIiwiVGV4dF90eXBlc18xIiwic3VzcGVuc2VfMSIsIm1vbml0b3JpbmdfMSIsInBhZ2VfbW9kdWxlX3Njc3NfMSIsIl9faW1wb3J0RGVmYXVsdCIsImYiLCJqc3hfcnVudGltZV8xIiwianN4IiwiU3VzcGVuc2UiLCJmYWxsYmFjayIsIkNvbXBvbmVudExvYWRpbmdGYWxsYmFjayIsImhlaWdodCIsIkNvbXBvbmVudEhlaWdodCIsIkxBUkdFIiwiY2hpbGRyZW4iLCJqc3hzIiwiY2xhc3NOYW1lIiwiY29udGFpbmVyIiwiVGV4dCIsInZhcmlhbnQiLCJUZXh0VmFyaWFudCIsIlBSSU1BUlkiLCJzaXplIiwiVGV4dFNpemUiLCJMRyIsInRpdGxlIiwiY2FyZCIsIk1vbml0b3JpbmdEYXNoYm9hcmQiXSwic291cmNlcyI6WyIvVXNlcnMvZ2FtemFyYW1hemFub3YvRGVza3RvcC9hYnN0cmFjdC10ZWFtL3NyYy9hcHAvKGFwcCkvd29ya3NwYWNlL3BhZ2UudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFN1c3BlbnNlIH0gZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBUZXh0IH0gZnJvbSBcIkAvc2hhcmVkL3VpL1RleHRcIjtcbmltcG9ydCB7IFRleHRTaXplLCBUZXh0VmFyaWFudCB9IGZyb20gXCJAL3NoYXJlZC91aS9UZXh0L1RleHQudHlwZXNcIjtcbmltcG9ydCB7XG4gIENvbXBvbmVudExvYWRpbmdGYWxsYmFjayxcbiAgQ29tcG9uZW50SGVpZ2h0LFxufSBmcm9tIFwiQC9pbmZyYXN0cnVjdHVyZS9zdXNwZW5zZVwiO1xuaW1wb3J0IHsgTW9uaXRvcmluZ0Rhc2hib2FyZCB9IGZyb20gXCJAL2luZnJhc3RydWN0dXJlL21vbml0b3JpbmdcIjtcbmltcG9ydCBzdHlsZXMgZnJvbSBcIi4vcGFnZS5tb2R1bGUuc2Nzc1wiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBXb3Jrc3BhY2VQYWdlKCkge1xuICByZXR1cm4gKFxuICAgIDxTdXNwZW5zZVxuICAgICAgZmFsbGJhY2s9ezxDb21wb25lbnRMb2FkaW5nRmFsbGJhY2sgaGVpZ2h0PXtDb21wb25lbnRIZWlnaHQuTEFSR0V9IC8+fVxuICAgID5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMuY29udGFpbmVyfT5cbiAgICAgICAgPFRleHRcbiAgICAgICAgICB2YXJpYW50PXtUZXh0VmFyaWFudC5QUklNQVJZfVxuICAgICAgICAgIHNpemU9e1RleHRTaXplLkxHfVxuICAgICAgICAgIGNsYXNzTmFtZT17c3R5bGVzLnRpdGxlfVxuICAgICAgICA+XG4gICAgICAgICAgV29ya3NwYWNlIFBhZ2UgLSBNb25pdG9yaW5nIERhc2hib2FyZCBGZWF0dXJlXG4gICAgICAgIDwvVGV4dD5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmNhcmR9PlxuICAgICAgICAgIDxNb25pdG9yaW5nRGFzaGJvYXJkIC8+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9TdXNwZW5zZT5cbiAgKTtcbn1cbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUE4QkM7SUFBQUEsY0FBQSxZQUFBQSxDQUFBO01BQUEsT0FBQUMsY0FBQTtJQUFBO0VBQUE7RUFBQSxPQUFBQSxjQUFBO0FBQUE7QUFBQUQsY0FBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBcEJERSxPQUFBLENBQUFDLE9BQUEsR0FBQUMsYUFBQTs7OztBQVZBLElBQUFDLE9BQUE7QUFBQTtBQUFBLENBQUFMLGNBQUEsR0FBQU0sQ0FBQSxPQUFBQyxPQUFBO0FBQ0EsSUFBQUMsTUFBQTtBQUFBO0FBQUEsQ0FBQVIsY0FBQSxHQUFBTSxDQUFBLE9BQUFDLE9BQUE7QUFDQSxJQUFBRSxZQUFBO0FBQUE7QUFBQSxDQUFBVCxjQUFBLEdBQUFNLENBQUEsT0FBQUMsT0FBQTtBQUNBLElBQUFHLFVBQUE7QUFBQTtBQUFBLENBQUFWLGNBQUEsR0FBQU0sQ0FBQSxPQUFBQyxPQUFBO0FBSUEsSUFBQUksWUFBQTtBQUFBO0FBQUEsQ0FBQVgsY0FBQSxHQUFBTSxDQUFBLE9BQUFDLE9BQUE7QUFDQSxJQUFBSyxrQkFBQTtBQUFBO0FBQUEsQ0FBQVosY0FBQSxHQUFBTSxDQUFBLFFBQUFPLGVBQUEsQ0FBQU4sT0FBQTtBQUVBLFNBQXdCSCxhQUFhQSxDQUFBO0VBQUE7RUFBQUosY0FBQSxHQUFBYyxDQUFBO0VBQUFkLGNBQUEsR0FBQU0sQ0FBQTtFQUNuQyxPQUNFLElBQUFTLGFBQUEsQ0FBQUMsR0FBQSxFQUFDWCxPQUFBLENBQUFZLFFBQVE7SUFDUEMsUUFBUSxFQUFFLElBQUFILGFBQUEsQ0FBQUMsR0FBQSxFQUFDTixVQUFBLENBQUFTLHdCQUF3QjtNQUFDQyxNQUFNLEVBQUVWLFVBQUEsQ0FBQVcsZUFBZSxDQUFDQztJQUFLLEVBQUk7SUFBQUMsUUFBQSxFQUVyRSxJQUFBUixhQUFBLENBQUFTLElBQUE7TUFBS0MsU0FBUyxFQUFFYixrQkFBQSxDQUFBVCxPQUFNLENBQUN1QixTQUFTO01BQUFILFFBQUEsR0FDOUIsSUFBQVIsYUFBQSxDQUFBQyxHQUFBLEVBQUNSLE1BQUEsQ0FBQW1CLElBQUk7UUFDSEMsT0FBTyxFQUFFbkIsWUFBQSxDQUFBb0IsV0FBVyxDQUFDQyxPQUFPO1FBQzVCQyxJQUFJLEVBQUV0QixZQUFBLENBQUF1QixRQUFRLENBQUNDLEVBQUU7UUFDakJSLFNBQVMsRUFBRWIsa0JBQUEsQ0FBQVQsT0FBTSxDQUFDK0IsS0FBSztRQUFBWCxRQUFBO01BQUEsRUFHbEIsRUFFUCxJQUFBUixhQUFBLENBQUFDLEdBQUE7UUFBS1MsU0FBUyxFQUFFYixrQkFBQSxDQUFBVCxPQUFNLENBQUNnQyxJQUFJO1FBQUFaLFFBQUEsRUFDekIsSUFBQVIsYUFBQSxDQUFBQyxHQUFBLEVBQUNMLFlBQUEsQ0FBQXlCLG1CQUFtQjtNQUFHLEVBQ25CO0lBQUE7RUFDRixFQUNHO0FBRWYiLCJpZ25vcmVMaXN0IjpbXX0=

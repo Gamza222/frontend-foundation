@@ -1,0 +1,148 @@
+91f988ee8be48164774228dca7d8802e
+"use strict";
+
+/* istanbul ignore next */
+function cov_2eqh3arnin() {
+  var path = "/Users/gamzaramazanov/Desktop/abstract-team/src/widgets/PerformanceDashboard/index.ts";
+  var hash = "d2199b7428a8711cfc9cb7498c3933789ac8bf0e";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/gamzaramazanov/Desktop/abstract-team/src/widgets/PerformanceDashboard/index.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 38
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 29
+        },
+        end: {
+          line: 4,
+          column: 65
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 151
+        }
+      },
+      "4": {
+        start: {
+          line: 5,
+          column: 94
+        },
+        end: {
+          line: 5,
+          column: 145
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 80
+          },
+          end: {
+            line: 5,
+            column: 81
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 92
+          },
+          end: {
+            line: 5,
+            column: 147
+          }
+        },
+        line: 5
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/gamzaramazanov/Desktop/abstract-team/src/widgets/PerformanceDashboard/index.ts",
+      mappings: ";;;AAAA,kEAAiE;AAAxD,4HAAA,oBAAoB,OAAA",
+      names: [],
+      sources: ["/Users/gamzaramazanov/Desktop/abstract-team/src/widgets/PerformanceDashboard/index.ts"],
+      sourcesContent: ["export { PerformanceDashboard } from './ui/PerformanceDashboard';\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "d2199b7428a8711cfc9cb7498c3933789ac8bf0e"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2eqh3arnin = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_2eqh3arnin();
+cov_2eqh3arnin().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_2eqh3arnin().s[1]++;
+exports.PerformanceDashboard = void 0;
+var PerformanceDashboard_1 =
+/* istanbul ignore next */
+(cov_2eqh3arnin().s[2]++, require("./ui/PerformanceDashboard"));
+/* istanbul ignore next */
+cov_2eqh3arnin().s[3]++;
+Object.defineProperty(exports, "PerformanceDashboard", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_2eqh3arnin().f[0]++;
+    cov_2eqh3arnin().s[4]++;
+    return PerformanceDashboard_1.PerformanceDashboard;
+  }
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJQZXJmb3JtYW5jZURhc2hib2FyZF8xIiwiY292XzJlcWgzYXJuaW4iLCJzIiwicmVxdWlyZSIsIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwiZXhwb3J0cyIsImVudW1lcmFibGUiLCJnZXQiLCJmIiwiUGVyZm9ybWFuY2VEYXNoYm9hcmQiXSwic291cmNlcyI6WyIvVXNlcnMvZ2FtemFyYW1hemFub3YvRGVza3RvcC9hYnN0cmFjdC10ZWFtL3NyYy93aWRnZXRzL1BlcmZvcm1hbmNlRGFzaGJvYXJkL2luZGV4LnRzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IFBlcmZvcm1hbmNlRGFzaGJvYXJkIH0gZnJvbSAnLi91aS9QZXJmb3JtYW5jZURhc2hib2FyZCc7XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLElBQUFBLHNCQUFBO0FBQUE7QUFBQSxDQUFBQyxjQUFBLEdBQUFDLENBQUEsT0FBQUMsT0FBQTtBQUFpRTtBQUFBRixjQUFBLEdBQUFDLENBQUE7QUFBeERFLE1BQUEsQ0FBQUMsY0FBQSxDQUFBQyxPQUFBO0VBQUFDLFVBQUE7RUFBQUMsR0FBQSxXQUFBQSxDQUFBO0lBQUE7SUFBQVAsY0FBQSxHQUFBUSxDQUFBO0lBQUFSLGNBQUEsR0FBQUMsQ0FBQTtJQUFBLE9BQUFGLHNCQUFBLENBQUFVLG9CQUFvQjtFQUFBO0FBQUEiLCJpZ25vcmVMaXN0IjpbXX0=
